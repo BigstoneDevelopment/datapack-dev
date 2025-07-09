@@ -1,5 +1,5 @@
 {
     "values": [
-        "community_components_bigstone:load"
+        "example_addon:load"
     ]
 }
