@@ -3,7 +3,7 @@ data merge entity @s {Items:[]}
 kill
 
 # Clear interaction prompt
-title @p actionbar ""
+#title @p actionbar ""
 
 # Clear blindness when spamming
 effect clear @p blindness
