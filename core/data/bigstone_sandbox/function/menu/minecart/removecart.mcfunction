@@ -2,6 +2,9 @@
 data merge entity @s {Items:[]}
 kill
 
+
+tp @p ~ ~-99999 ~
+
 # Clear interaction prompt
 #title @p actionbar ""
 

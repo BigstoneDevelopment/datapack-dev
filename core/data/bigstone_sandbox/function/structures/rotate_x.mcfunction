@@ -13,7 +13,8 @@ title @s actionbar ["",{text:"⬆",bold:true,color:"gray"},{text:"   x ᴀxɪꜱ
 # Put item back in hand
 data remove storage bigstone_sandbox:components_temp dropped
 data modify storage bigstone_sandbox:components_temp dropped set from entity @e[type=item,limit=1,sort=nearest] Item
-function bigstone_sandbox:menu/components/give_dropped with storage bigstone_sandbox:components_temp dropped
+execute if items entity @s weapon.mainhand * run function bigstone_sandbox:menu/components/give_dropped with storage bigstone_sandbox:components_temp dropped
+execute unless items entity @s weapon.mainhand * run function bigstone_sandbox:menu/components/replace_dropped with storage bigstone_sandbox:components_temp dropped
 data remove storage bigstone_sandbox:components_temp dropped
 
 # Kill item
