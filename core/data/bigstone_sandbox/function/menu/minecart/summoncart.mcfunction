@@ -1,2 +1,5 @@
 summon minecraft:chest_minecart ~ ~1 ~ {DisplayState:{Name:"minecraft:dragon_head"},NoGravity:true,Invulnerable:true,Tags:["bs_menu_container"],CustomName:[{"text":"     ʙɪɢꜱᴛᴏɴᴇ ꜱᴀɴᴅʙᴏx ᴍᴇɴᴜ","italic":false,"color":"dark_gray"}],Silent:true}
+execute as @e[distance=..1,tag=bs_menu_container] run rotate @s ~90 ~
 execute as @e[distance=..1,tag=bs_menu_container] run function bigstone_sandbox:menu/container/slots
+
+effect give @s blindness 2 1 true
