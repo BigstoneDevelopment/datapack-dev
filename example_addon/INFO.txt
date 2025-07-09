@@ -8,7 +8,7 @@ THE WIKI:
 http://wiki.bigstone.ovh
 
 THE REPO:
-https://github.com/CrazyH2/Bigstone
+https://github.com/BigstoneDevelopment/datapack
 
 
 © Copyright 2025 BigstoneDevelopment
