@@ -1,1 +1,1 @@
-schedule function community_components_bigstone:add_components 2s
+schedule function example_addon:add_components 2s
