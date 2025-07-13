@@ -1,2 +1,0 @@
-tp @e[type=minecraft:chest_minecart,tag=bs_menu_container,distance=..8,sort=nearest,limit=1] ~ ~1 ~
-#X#rotate @e[type=minecraft:chest_minecart,tag=bs_menu_container,distance=..8,sort=nearest, limit=1] ~90 0

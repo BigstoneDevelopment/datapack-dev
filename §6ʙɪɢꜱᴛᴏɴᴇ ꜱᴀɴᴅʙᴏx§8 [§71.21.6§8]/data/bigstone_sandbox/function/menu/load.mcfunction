@@ -1,2 +1,0 @@
-scoreboard objectives add bs_page_number dummy
-scoreboard objectives add bs_catagory_number dummy
