@@ -1,309 +1,300 @@
 {
-    "type": "minecraft:server_links",
-    "title": {
-        "translate": "bigstone_sandbox.dialog_menu.components_menu",
-        "fallback": "ʙɪɢꜱᴛᴏɴᴇ ꜱᴀɴᴅʙᴏx - ᴄᴏᴍᴘᴏɴᴇɴᴛ ɪɴꜰᴏ",
-        "color": "gold"
-    },
-    "body": [
+  "type": "minecraft:server_links",
+  "title": {
+    "translate": "bigstone_sandbox.dialog_menu.components_menu",
+    "fallback": "ʙɪɢꜱᴛᴏɴᴇ ꜱᴀɴᴅʙᴏx - ᴄᴏᴍᴘᴏɴᴇɴᴛ ɪɴꜰᴏ",
+    "color": "gold"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
         {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.background.top",
-                    "font": "bigstone_sandbox:menu",
-                    "shadow_color": 0
-                },
-                {
-                    "translate": "space.246",
-                    "font": "space:default"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.x",
-                    "color": "dark_red",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -1"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.close_menu",
-                            "fallback": "Close Menu",
-                            "color": "dark_red"
-                        }
-                    }
-                },
-                {
-                    "text": "\n",
-                    "font": "minecraft:default"
-                },
-                {
-                    "text": "Comparator",
-                    "font": "minecraft:default",
-                    "underlined": true
-                },
-                {
-                    "text": "\n",
-                    "font": "minecraft:default"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.background.middle",
-                    "font": "bigstone_sandbox:menu",
-                    "shadow_color": 0
-                },
-                {
-                    "text": "\n",
-                    "font": "minecraft:default"
-                },
-                {
-                    "text": "Mojang",
-                    "color": "gray",
-                    "font": "minecraft:default",
-                    "italic": true
-                }
-            ],
-            "width": 256
+          "translate": "bigstone_sandbox.dialog_menu.background.top",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
         },
         {
-            "type": "minecraft:item",
-            "item": {
-                "id": "minecraft:comparator"
-            },
-            "description": "It can be set to either stop outputting a signal while its side input is receiving a stronger one, or subtract its side input's signal strength from its main input.",
-            "show_tooltip": false,
-            "width": 32,
-            "height": 32
+          "translate": "space.246",
+          "font": "space:default"
         },
         {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "text": "\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.background.bottom",
-                    "font": "bigstone_sandbox:menu",
-                    "shadow_color": 0
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.port_north",
-                    "font": "minecraft:default",
-                    "extra": [
-                        {
-                            "text": "IHEX",
-                            "color": "dark_gray"
-                        }
-                    ],
-                    "color": "blue"
-                },
-                {
-                    "text": "\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.port_south",
-                    "font": "minecraft:default",
-                    "extra": [
-                        {
-                            "text": "OHEX",
-                            "color": "dark_gray"
-                        }
-                    ],
-                    "color": "red"
-                },
-                {
-                    "text": "\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.port_east",
-                    "font": "minecraft:default",
-                    "extra": [
-                        {
-                            "text": "IHEX",
-                            "color": "dark_gray"
-                        }
-                    ],
-                    "color": "green"
-                },
-                {
-                    "text": "\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.port_west",
-                    "font": "minecraft:default",
-                    "extra": [
-                        {
-                            "text": "IHEX",
-                            "color": "dark_gray"
-                        }
-                    ],
-                    "color": "yellow"
-                },
-                {
-                    "text": "\n"
-                },
-                {
-                    "text": "\n\n\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.tags",
-                    "font": "minecraft:default",
-                    "extra": [
-                        {
-                            "text": "Vanilla Redstone Component Inspired, Logic Component, Fully Combinational / Togglestateless, Has Selectable Modes",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": "\n"
-                }
-            ],
-            "width": 192
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.import",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -7"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.import",
-                            "color": "blue"
-                        }
-                    }
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.filter",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -5"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.filter",
-                            "color": "aqua"
-                        }
-                    }
-                },
-                {
-                    "translate": "space.48",
-                    "font": "space:default"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.give",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -6"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.give",
-                            "color": "dark_green"
-                        }
-                    }
-                },
-                {
-                    "translate": "space.31",
-                    "font": "space:default"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.delete",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -2"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.delete",
-                            "color": "red"
-                        }
-                    }
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.edit",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -3"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.edit",
-                            "color": "yellow"
-                        }
-                    }
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.button.export",
-                    "font": "bigstone_sandbox:menu",
-                    "click_event": {
-                        "action": "run_command",
-                        "command": "trigger bigstone_sandbox.dialog_action set -4"
-                    },
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": {
-                            "translate": "bigstone_sandbox.dialog_menu.export",
-                            "color": "green"
-                        }
-                    }
-                }
-            ],
-            "width": 256
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.background.credits",
-                    "font": "bigstone_sandbox:menu",
-                    "shadow_color": 0
-                },
-                {
-                    "text": "\n\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.credits_line1",
-                    "font": "minecraft:default",
-                    "color": "dark_gray"
-                },
-                {
-                    "text": "\n"
-                },
-                {
-                    "translate": "bigstone_sandbox.dialog_menu.credits_line2",
-                    "font": "minecraft:default",
-                    "color": "dark_gray"
-                }
-            ],
-            "width": 256
-        }
-    ],
-    "can_close_with_escape": true,
-    "pause": false,
-    "after_action": "none",
-    "exit_action": {
-        "label": "Exit",
-        "action": {
-            "type": "run_command",
+          "translate": "bigstone_sandbox.dialog_menu.button.x",
+          "color": "dark_red",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
             "command": "trigger bigstone_sandbox.dialog_action set -1"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.close_menu",
+              "fallback": "Close Menu",
+              "color": "dark_red"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "text": "Comparator",
+          "font": "minecraft:default",
+          "underlined": true
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.middle",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "text": "Mojang",
+          "color": "gray",
+          "font": "minecraft:default",
+          "italic": true
         }
+      ],
+      "width": 256
     },
-    "columns": 10,
-    "actions": []
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:comparator"
+      },
+      "description": "It can be set to either stop outputting a signal while its side input is receiving a stronger one, or subtract its side input's signal strength from its main input.",
+      "show_tooltip": false,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.bottom",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.port_north",
+          "font": "minecraft:default",
+          "extra": [
+            {
+              "text": "IHEX",
+              "color": "dark_gray"
+            }
+          ],
+          "color": "blue"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.port_south",
+          "font": "minecraft:default",
+          "extra": [
+            {
+              "text": "OHEX",
+              "color": "dark_gray"
+            }
+          ],
+          "color": "red"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.port_east",
+          "font": "minecraft:default",
+          "extra": [
+            {
+              "text": "IHEX",
+              "color": "dark_gray"
+            }
+          ],
+          "color": "green"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.port_west",
+          "font": "minecraft:default",
+          "extra": [
+            {
+              "text": "IHEX",
+              "color": "dark_gray"
+            }
+          ],
+          "color": "yellow"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "text": "\n\n\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.tags",
+          "font": "minecraft:default",
+          "extra": [
+            {
+              "text": "Vanilla Redstone Component Inspired, Logic Component, Fully Combinational / Togglestateless, Has Selectable Modes",
+              "color": "dark_gray"
+            }
+          ]
+        },
+        {
+          "text": "\n"
+        }
+      ],
+      "width": 192
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.import",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -7"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.import",
+              "color": "blue"
+            }
+          }
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.filter",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -5"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.filter",
+              "color": "aqua"
+            }
+          }
+        },
+        {
+          "translate": "space.48",
+          "font": "space:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.give",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -6"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.give",
+              "color": "dark_green"
+            }
+          }
+        },
+        {
+          "translate": "space.31",
+          "font": "space:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.delete",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -2"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.delete",
+              "color": "red"
+            }
+          }
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.edit",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -3"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.edit",
+              "color": "yellow"
+            }
+          }
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.export",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -4"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.export",
+              "color": "green"
+            }
+          }
+        }
+      ],
+      "width": 256
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.credits",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.credits_line1",
+          "font": "minecraft:default",
+          "color": "dark_gray"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.credits_line2",
+          "font": "minecraft:default",
+          "color": "dark_gray"
+        }
+      ],
+      "width": 256
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none"
 }
