@@ -24,7 +24,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"close menu\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -1"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -170,7 +170,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"import\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -7"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -185,7 +185,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"filter\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -5"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -204,7 +204,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"give\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -6"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -223,7 +223,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"delete\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -2"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -238,7 +238,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"edit\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -3"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -253,7 +253,7 @@
                     "font": "bigstone_sandbox:menu",
                     "click_event": {
                         "action": "run_command",
-                        "command": "tellraw @s \"export\""
+                        "command": "trigger bigstone_sandbox.dialog_action set -4"
                     },
                     "hover_event": {
                         "action": "show_text",
@@ -297,6 +297,13 @@
     "can_close_with_escape": true,
     "pause": false,
     "after_action": "none",
+    "exit_action": {
+        "label": "Exit",
+        "action": {
+            "type": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -1"
+        }
+    },
     "columns": 10,
     "actions": []
 }
