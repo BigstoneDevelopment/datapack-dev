@@ -2,8 +2,8 @@
   "type": "minecraft:server_links",
   "title": {
     "translate": "bigstone_sandbox.dialog_menu.components_menu",
-    "fallback": "ʙɪɢꜱᴛᴏɴᴇ ꜱᴀɴᴅʙᴏx - ᴄᴏᴍᴘᴏɴᴇɴᴛ ɪɴꜰᴏ",
-    "color": "gold"
+    "color": "gold",
+    "font": "bigstone_sandbox:small_caps"
   },
   "body": [
     {
@@ -15,12 +15,31 @@
           "shadow_color": 0
         },
         {
-          "translate": "space.246",
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.back",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -1"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.back",
+              "color": "yellow",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "translate": "space.195",
           "font": "space:default"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.x",
-          "color": "dark_red",
+          "translate": "bigstone_sandbox.dialog_menu.button.close_menu",
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
@@ -30,8 +49,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.close_menu",
-              "fallback": "Close Menu",
-              "color": "dark_red"
+              "color": "dark_red",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         },
@@ -89,11 +108,12 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_north",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "extra": [
             {
               "text": "IHEX",
-              "color": "dark_gray"
+              "color": "dark_gray",
+              "font": "minecraft:default"
             }
           ],
           "color": "blue"
@@ -103,11 +123,12 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_south",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "extra": [
             {
               "text": "OHEX",
-              "color": "dark_gray"
+              "color": "dark_gray",
+              "font": "minecraft:default"
             }
           ],
           "color": "red"
@@ -117,11 +138,12 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_east",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "extra": [
             {
               "text": "IHEX",
-              "color": "dark_gray"
+              "color": "dark_gray",
+              "font": "minecraft:default"
             }
           ],
           "color": "green"
@@ -131,11 +153,12 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_west",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "extra": [
             {
               "text": "IHEX",
-              "color": "dark_gray"
+              "color": "dark_gray",
+              "font": "minecraft:default"
             }
           ],
           "color": "yellow"
@@ -148,11 +171,12 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.tags",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "extra": [
             {
               "text": "Vanilla Redstone Component Inspired, Logic Component, Fully Combinational / Togglestateless, Has Selectable Modes",
-              "color": "dark_gray"
+              "color": "dark_gray",
+              "font": "minecraft:default"
             }
           ]
         },
@@ -176,7 +200,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.import",
-              "color": "blue"
+              "color": "blue",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         },
@@ -191,7 +216,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.filter",
-              "color": "aqua"
+              "color": "aqua",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         },
@@ -210,7 +236,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.give",
-              "color": "dark_green"
+              "color": "dark_green",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         },
@@ -229,7 +256,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.delete",
-              "color": "red"
+              "color": "red",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         },
@@ -244,7 +272,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.edit",
-              "color": "yellow"
+              "color": "yellow",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         },
@@ -259,7 +288,8 @@
             "action": "show_text",
             "value": {
               "translate": "bigstone_sandbox.dialog_menu.export",
-              "color": "green"
+              "color": "gold",
+              "font": "bigstone_sandbox:small_caps"
             }
           }
         }
@@ -279,7 +309,7 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits_line1",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "color": "dark_gray"
         },
         {
@@ -287,7 +317,7 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits_line2",
-          "font": "minecraft:default",
+          "font": "bigstone_sandbox:small_caps",
           "color": "dark_gray"
         }
       ],
