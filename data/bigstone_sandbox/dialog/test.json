@@ -1,0 +1,650 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Components Menu",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "translate": "dialog_menu.background",
+          "font": "bigstone_sandbox:menu"
+        },
+        {
+          "text": "Test Text ",
+          "font": "minecraft:default"
+        }
+      ],
+      "width": 256
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "diamond"
+      },
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "\n\n\n\n\n\n\n\n\n"
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "columns": 12,
+  "actions": [
+    {
+      "label": "",
+      "width": 120
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    },
+    {
+      "label": "",
+      "width": 20
+    }
+  ]
+}
