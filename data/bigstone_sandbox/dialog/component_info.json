@@ -123,10 +123,10 @@
       "item": {
         "id": "minecraft:comparator"
       },
-      "description": "It can be set to either stop outputting a signal while its side input is receiving a stronger one, or subtract its side input's signal strength from its main input.",
+      "description": "Subtracts and Compares",
       "show_tooltip": false,
       "width": 32,
-      "height": 32
+      "height": 16
     },
     {
       "type": "minecraft:plain_message",
@@ -205,14 +205,14 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.tags",
           "font": "bigstone_sandbox:small_caps",
           "extra": [
             {
-              "text": "Lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots of tags",
+              "text": "Vanilla redstone component inspired",
               "color": "dark_gray",
               "font": "minecraft:default"
             }

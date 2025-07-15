@@ -1,20 +1,129 @@
 {
-  "type": "minecraft:multi_action",
+  "type": "minecraft:server_links",
   "title": {
-    "text": "ʙɪɢꜱᴛᴏɴᴇ ꜱᴀɴᴅʙᴏx - ᴄᴏᴍᴘᴏɴᴇɴᴛ ɪɴꜰᴏ",
-    "color": "gold"
+    "translate": "bigstone_sandbox.dialog_menu.components_menu",
+    "color": "gold",
+    "font": "bigstone_sandbox:small_caps"
   },
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": [
         {
-          "translate": "dialog_menu.background",
-          "font": "bigstone_sandbox:menu"
+          "translate": "bigstone_sandbox.dialog_menu.background.top",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
         },
         {
-          "text": "Test Text ",
+          "text": "\n\n",
           "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.import",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -7"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.import",
+              "color": "blue",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.filter",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -5"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.filter",
+              "color": "aqua",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "translate": "space.179",
+          "font": "space:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.close_menu",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -1"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.close_menu",
+              "color": "dark_red",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -7"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.import",
+              "color": "blue",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -5"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.filter",
+              "color": "aqua",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "translate": "space.179",
+          "font": "space:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -1"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.close_menu",
+              "color": "dark_red",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
         }
       ],
       "width": 256
@@ -22,648 +131,15 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "diamond"
+        "id": "minecraft:comparator"
       },
-      "width": 16,
-      "height": 16
-    },
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "diamond"
+      "description": {
+        "contents": "contents"
       },
-      "width": 16,
-      "height": 16
-    },
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "diamond"
-      },
-      "width": 16,
-      "height": 16
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": "\n\n\n\n\n\n\n\n\n"
+      "width": 16
     }
   ],
   "can_close_with_escape": true,
   "pause": false,
-  "after_action": "none",
-  "columns": 12,
-  "actions": [
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    },
-    {
-      "label": "",
-      "width": 20
-    }
-  ]
+  "after_action": "none"
 }
