@@ -9,21 +9,21 @@
     {
       "type": "minecraft:plain_message",
       "contents": [
+        "",
         {
-          "translate": "bigstone_sandbox.dialog_menu.background.top",
+          "translate": "bigstone_sandbox.dialog_menu.background.button_box",
           "font": "bigstone_sandbox:menu",
           "shadow_color": 0
         },
         {
-          "text": "\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.home",
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -10"
+            "command": "triggerbigstone_sandbox.dialog_actionset-10"
           },
           "hover_event": {
             "action": "show_text",
@@ -39,7 +39,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -9"
+            "command": "triggerbigstone_sandbox.dialog_actionset-9"
           },
           "hover_event": {
             "action": "show_text",
@@ -55,7 +55,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -5"
+            "command": "triggerbigstone_sandbox.dialog_actionset-5"
           },
           "hover_event": {
             "action": "show_text",
@@ -71,7 +71,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -7"
+            "command": "triggerbigstone_sandbox.dialog_actionset-7"
           },
           "hover_event": {
             "action": "show_text",
@@ -83,7 +83,7 @@
           }
         },
         {
-          "translate": "space.143",
+          "translate": "space.144",
           "font": "space:default"
         },
         {
@@ -91,7 +91,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -1"
+            "command": "triggerbigstone_sandbox.dialog_actionset-1"
           },
           "hover_event": {
             "action": "show_text",
@@ -106,11 +106,12 @@
           "text": "\n"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_2",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -10"
+            "command": "triggerbigstone_sandbox.dialog_actionset-10"
           },
           "hover_event": {
             "action": "show_text",
@@ -122,11 +123,12 @@
           }
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_2",
+          "shadow_color": 0,
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -9"
+            "command": "triggerbigstone_sandbox.dialog_actionset-9"
           },
           "hover_event": {
             "action": "show_text",
@@ -138,11 +140,12 @@
           }
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_2",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -5"
+            "command": "triggerbigstone_sandbox.dialog_actionset-5"
           },
           "hover_event": {
             "action": "show_text",
@@ -154,11 +157,12 @@
           }
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_2",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -7"
+            "command": "triggerbigstone_sandbox.dialog_actionset-7"
           },
           "hover_event": {
             "action": "show_text",
@@ -170,15 +174,16 @@
           }
         },
         {
-          "translate": "space.143",
+          "translate": "space.144",
           "font": "space:default"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_2",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -1"
+            "command": "triggerbigstone_sandbox.dialog_actionset-1"
           },
           "hover_event": {
             "action": "show_text",
@@ -188,6 +193,9 @@
               "font": "bigstone_sandbox:small_caps"
             }
           }
+        },
+        {
+          "translate": "\n"
         }
       ],
       "width": 256
@@ -201,41 +209,25 @@
         "contents": [
           "",
           {
-            "translate": "space.-211",
+            "translate": "bigstone_sandbox.dialog_menu.button.info_short",
+            "font": "bigstone_sandbox:menu"
+          },
+          {
+            "translate": "bigstone_sandbox.dialog_menu.button.give_short",
+            "font": "bigstone_sandbox:menu"
+          },
+          {
+            "translate": "space.5",
             "font": "space:default"
           },
           {
-            "translate": "bigstone_sandbox.dialog_menu.button.export",
-            "font": "bigstone_sandbox:menu"
-          },
-          {
-            "translate": "bigstone_sandbox.dialog_menu.button.export",
-            "font": "bigstone_sandbox:menu"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "translate": "space.-211",
-            "font": "space:default"
-          },
-          {
-            "translate": "bigstone_sandbox.dialog_menu.button.blank",
-            "font": "bigstone_sandbox:menu"
-          },
-          {
-            "translate": "bigstone_sandbox.dialog_menu.button.blank",
-            "font": "bigstone_sandbox:menu"
-          },
-          {
-            "translate": "space.max",
-            "font": "space:default"
+            "text": "Comparator"
           }
         ],
         "width": 128
       },
       "width": 16,
-      "height": 31
+      "height": 16
     },
     {
       "type": "minecraft:item",
@@ -244,50 +236,85 @@
       },
       "description": {
         "contents": [
-          "Test",
+          "",
           {
-            "translate": "space.-211",
-            "font": "space:default"
-          },
-          {
-            "translate": "bigstone_sandbox.dialog_menu.button.export",
+            "translate": "bigstone_sandbox.dialog_menu.button.info_short",
             "font": "bigstone_sandbox:menu"
           },
           {
-            "translate": "bigstone_sandbox.dialog_menu.button.export",
+            "translate": "bigstone_sandbox.dialog_menu.button.give_short",
             "font": "bigstone_sandbox:menu"
           },
           {
-            "translate": "space.20",
+            "translate": "space.5",
             "font": "space:default"
           },
           {
-            "text": "Test"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "translate": "space.-211",
-            "font": "space:default"
-          },
-          {
-            "translate": "bigstone_sandbox.dialog_menu.button.blank",
-            "font": "bigstone_sandbox:menu"
-          },
-          {
-            "translate": "bigstone_sandbox.dialog_menu.button.blank",
-            "font": "bigstone_sandbox:menu"
-          },
-          {
-            "translate": "space.max",
-            "font": "space:default"
+            "text": "Repeater"
           }
         ],
         "width": 128
       },
       "width": 16,
-      "height": 31
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:observer"
+      },
+      "description": {
+        "contents": [
+          "",
+          {
+            "translate": "bigstone_sandbox.dialog_menu.button.info_short",
+            "font": "bigstone_sandbox:menu"
+          },
+          {
+            "translate": "bigstone_sandbox.dialog_menu.button.give_short",
+            "font": "bigstone_sandbox:menu"
+          },
+          {
+            "translate": "space.5",
+            "font": "space:default"
+          },
+          {
+            "text": "Observer"
+          }
+        ],
+        "width": 128
+      },
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:comparator"
+      },
+      "description": {
+        "contents": [
+          "",
+          {
+            "translate": "bigstone_sandbox.dialog_menu.button.info_short",
+            "font": "bigstone_sandbox:menu"
+          },
+          {
+            "translate": "bigstone_sandbox.dialog_menu.button.give_short",
+            "font": "bigstone_sandbox:menu"
+          },
+          {
+            "translate": "space.5",
+            "font": "space:default"
+          },
+          {
+            "text": "Comparator"
+          }
+        ],
+        "width": 128
+      },
+      "width": 16,
+      "height": 16
     }
   ],
   "can_close_with_escape": true,

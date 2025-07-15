@@ -9,6 +9,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": [
+        "",
         {
           "translate": "bigstone_sandbox.dialog_menu.background.top",
           "font": "bigstone_sandbox:menu",

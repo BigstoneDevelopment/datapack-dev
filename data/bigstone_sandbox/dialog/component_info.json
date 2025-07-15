@@ -9,6 +9,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": [
+        "",
         {
           "translate": "bigstone_sandbox.dialog_menu.background.top",
           "font": "bigstone_sandbox:menu",
@@ -133,6 +134,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": [
+        "",
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
           "font": "bigstone_sandbox:menu",
@@ -230,7 +232,7 @@
           "font": "space:default"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.give",
+          "translate": "bigstone_sandbox.dialog_menu.button.give_long",
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
