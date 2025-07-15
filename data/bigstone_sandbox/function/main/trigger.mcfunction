@@ -7,6 +7,11 @@ execute as @a[scores={bigstone_sandbox.dialog_action=-6}] run function bigstone_
 execute as @a[scores={bigstone_sandbox.dialog_action=-7}] run function bigstone_sandbox:dialog_action/import
 execute as @a[scores={bigstone_sandbox.dialog_action=-8}] run function bigstone_sandbox:dialog_action/back
 execute as @a[scores={bigstone_sandbox.dialog_action=-9}] run function bigstone_sandbox:dialog_action/search
+execute as @a[scores={bigstone_sandbox.dialog_action=-10}] run function bigstone_sandbox:dialog_action/home
+
+execute as @a[scores={bigstone_sandbox.dialog_action=-11}] run function bigstone_sandbox:dialog_action/credits
+execute as @a[scores={bigstone_sandbox.dialog_action=-12}] run function bigstone_sandbox:dialog_action/components
+execute as @a[scores={bigstone_sandbox.dialog_action=-13}] run function bigstone_sandbox:dialog_action/options
 
 execute as @a[scores={bigstone_sandbox.dialog_action=1..}] run function bigstone_sandbox:dialog_action/select_item
 

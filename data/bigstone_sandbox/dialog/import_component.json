@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "translate": "bigstone_sandbox.dialog_menu.import_component",
+    "color": "gold",
+    "font": "bigstone_sandbox:small_caps"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "You can import components by entering its data below and clicking import.",
+      "color": "yellow"
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "",
+      "label": {
+        "text": "Enter the component data:",
+        "color": "gray"
+      },
+      "multiline": {
+        "height": 100
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": {
+      "text": "Import",
+      "color": "blue"
+    }
+  },
+  "no": {
+    "label": {
+      "text": "Back",
+      "color": "yellow"
+    }
+  }
+}

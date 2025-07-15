@@ -19,6 +19,22 @@
           "font": "minecraft:default"
         },
         {
+          "translate": "bigstone_sandbox.dialog_menu.button.home",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -10"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.home",
+              "color": "white",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
           "translate": "bigstone_sandbox.dialog_menu.button.search",
           "font": "bigstone_sandbox:menu",
           "click_event": {
@@ -67,7 +83,7 @@
           }
         },
         {
-          "translate": "space.161",
+          "translate": "space.143",
           "font": "space:default"
         },
         {
@@ -88,6 +104,22 @@
         },
         {
           "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -10"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.home",
+              "color": "white",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank",
@@ -138,7 +170,7 @@
           }
         },
         {
-          "translate": "space.161",
+          "translate": "space.143",
           "font": "space:default"
         },
         {

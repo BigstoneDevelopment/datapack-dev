@@ -1,0 +1,400 @@
+{
+  "type": "minecraft:server_links",
+  "title": {
+    "translate": "bigstone_sandbox.dialog_menu.bigstone_sandbox_home",
+    "color": "gold",
+    "font": "bigstone_sandbox:small_caps"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.top",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "space.213",
+          "font": "space:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.close_menu",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -1"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.close_menu",
+              "color": "dark_red",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "space.213",
+          "font": "space:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank",
+          "shadow_color": 0,
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -1"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.close_menu",
+              "color": "dark_red",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+
+
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.project_name",
+          "font": "bigstone_sandbox:small_caps",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.middle",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.project_description",
+          "font": "minecraft:default",
+          "color": "dark_gray",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+
+
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.components",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -12"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.components",
+              "color": "yellow",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -12"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.components",
+              "color": "yellow",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.options",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -13"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.options",
+              "color": "dark_aqua",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -13"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.options",
+              "color": "dark_aqua",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.wiki",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "open_url",
+            "url": "https://wiki.bigstone.ovh"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.wiki",
+              "color": "light_purple",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "open_url",
+            "url": "https://wiki.bigstone.ovh"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.wiki",
+              "color": "light_purple",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.discord",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "open_url",
+            "url": "https://dsc.gg/bigstone"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.discord",
+              "color": "blue",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "open_url",
+            "url": "https://dsc.gg/bigstone"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.discord",
+              "color": "blue",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.github",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "open_url",
+            "url": "https://github.com/bigstonedevelopment"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.github",
+              "color": "white",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "open_url",
+            "url": "https://github.com/bigstonedevelopment"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.github",
+              "color": "white",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.credits",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -11"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.credits",
+              "color": "gray",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
+          "font": "bigstone_sandbox:menu",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger bigstone_sandbox.dialog_action set -11"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.credits",
+              "color": "gray",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          }
+        },
+        
+
+        {
+          "text": "\n\n\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.credits_line1",
+          "font": "minecraft:default",
+          "color": "dark_gray",
+          "shadow_color": 0,
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.click_event_help",
+              "color": "gray",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          },
+          "click_event": {
+            "action": "open_url",
+            "url": "https://github.com/bigstonedevelopment"
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.credits_line2",
+          "font": "minecraft:default",
+          "color": "dark_gray",
+          "shadow_color": 0,
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "translate": "bigstone_sandbox.dialog_menu.click_event_help",
+              "color": "gray",
+              "font": "bigstone_sandbox:small_caps"
+            }
+          },
+          "click_event": {
+            "action": "open_url",
+            "url": "https://github.com/bigstonedevelopment"
+          }
+        },
+        {
+          "text": "\n",
+          "font": "minecraft:default"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.bottom",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        }
+      ],
+      "width": 256
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none"
+}

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:server_links",
   "title": {
-    "translate": "bigstone_sandbox.dialog_menu.components_menu",
+    "translate": "bigstone_sandbox.dialog_menu.component_info",
     "color": "gold",
     "font": "bigstone_sandbox:small_caps"
   },
@@ -206,6 +206,8 @@
           "font": "bigstone_sandbox:menu",
           "shadow_color": 0
         },
+        
+
         {
           "text": "\n\n"
         },
@@ -219,15 +221,9 @@
               "font": "minecraft:default"
             }
           ]
-        }
-      ],
-      "width": 192
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": [
+        },
         {
-          "text": "\n"
+          "text": "\n\n"
         },
         {
           "translate": "space.83",
