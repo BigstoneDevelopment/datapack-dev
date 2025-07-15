@@ -123,9 +123,11 @@
       "item": {
         "id": "minecraft:comparator"
       },
-      "description": "Subtracts and Compares",
+      "description": {
+        "text": "Compares and subtracts"
+      },
       "show_tooltip": false,
-      "width": 32,
+      "width": 16,
       "height": 16
     },
     {
@@ -228,39 +230,7 @@
           "text": "\n"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.import",
-          "font": "bigstone_sandbox:menu",
-          "click_event": {
-            "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -7"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.import",
-              "color": "blue",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          }
-        },
-        {
-          "translate": "bigstone_sandbox.dialog_menu.button.filter",
-          "font": "bigstone_sandbox:menu",
-          "click_event": {
-            "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -5"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.filter",
-              "color": "aqua",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          }
-        },
-        {
-          "translate": "space.48",
+          "translate": "space.83",
           "font": "space:default"
         },
         {
@@ -284,17 +254,17 @@
           "font": "space:default"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.delete",
+          "translate": "bigstone_sandbox.dialog_menu.button.export",
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -2"
+            "command": "trigger bigstone_sandbox.dialog_action set -4"
           },
           "hover_event": {
             "action": "show_text",
             "value": {
-              "translate": "bigstone_sandbox.dialog_menu.delete",
-              "color": "red",
+              "translate": "bigstone_sandbox.dialog_menu.export",
+              "color": "gold",
               "font": "bigstone_sandbox:small_caps"
             }
           }
@@ -316,17 +286,17 @@
           }
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.export",
+          "translate": "bigstone_sandbox.dialog_menu.button.delete",
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -4"
+            "command": "trigger bigstone_sandbox.dialog_action set -2"
           },
           "hover_event": {
             "action": "show_text",
             "value": {
-              "translate": "bigstone_sandbox.dialog_menu.export",
-              "color": "gold",
+              "translate": "bigstone_sandbox.dialog_menu.delete",
+              "color": "red",
               "font": "bigstone_sandbox:small_caps"
             }
           }
@@ -335,41 +305,7 @@
           "text": "\n"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
-          "shadow_color": 0,
-          "font": "bigstone_sandbox:menu",
-          "click_event": {
-            "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -7"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.import",
-              "color": "blue",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          }
-        },
-        {
-          "translate": "bigstone_sandbox.dialog_menu.button.blank",
-          "shadow_color": 0,
-          "font": "bigstone_sandbox:menu",
-          "click_event": {
-            "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -5"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.filter",
-              "color": "aqua",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          }
-        },
-        {
-          "translate": "space.48",
+          "translate": "space.83",
           "font": "space:default"
         },
         {
@@ -399,13 +335,13 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -2"
+            "command": "trigger bigstone_sandbox.dialog_action set -4"
           },
           "hover_event": {
             "action": "show_text",
             "value": {
-              "translate": "bigstone_sandbox.dialog_menu.delete",
-              "color": "red",
+              "translate": "bigstone_sandbox.dialog_menu.export",
+              "color": "gold",
               "font": "bigstone_sandbox:small_caps"
             }
           }
@@ -433,13 +369,13 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -4"
+            "command": "trigger bigstone_sandbox.dialog_action set -2"
           },
           "hover_event": {
             "action": "show_text",
             "value": {
-              "translate": "bigstone_sandbox.dialog_menu.export",
-              "color": "gold",
+              "translate": "bigstone_sandbox.dialog_menu.delete",
+              "color": "red",
               "font": "bigstone_sandbox:small_caps"
             }
           }

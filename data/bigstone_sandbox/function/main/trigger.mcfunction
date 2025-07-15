@@ -6,6 +6,7 @@ execute as @a[scores={bigstone_sandbox.dialog_action=-5}] run function bigstone_
 execute as @a[scores={bigstone_sandbox.dialog_action=-6}] run function bigstone_sandbox:dialog_action/give
 execute as @a[scores={bigstone_sandbox.dialog_action=-7}] run function bigstone_sandbox:dialog_action/import
 execute as @a[scores={bigstone_sandbox.dialog_action=-8}] run function bigstone_sandbox:dialog_action/back
+execute as @a[scores={bigstone_sandbox.dialog_action=-9}] run function bigstone_sandbox:dialog_action/search
 
 execute as @a[scores={bigstone_sandbox.dialog_action=1..}] run function bigstone_sandbox:dialog_action/select_item
 
