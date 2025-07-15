@@ -140,28 +140,6 @@
           "text": "\n"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.tags",
-          "font": "bigstone_sandbox:small_caps",
-          "extra": [
-            {
-              "text": "Lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots of tags",
-              "color": "dark_gray",
-              "font": "minecraft:default"
-            }
-          ]
-        },
-        {
-          "text": "\n"
-        },
-        {
-          "translate": "bigstone_sandbox.dialog_menu.background.middle",
-          "font": "bigstone_sandbox:menu",
-          "shadow_color": 0
-        },
-        {
-          "text": "\n"
-        },
-        {
           "translate": "bigstone_sandbox.dialog_menu.port_north",
           "font": "bigstone_sandbox:small_caps",
           "extra": [
@@ -217,6 +195,28 @@
             }
           ],
           "color": "yellow"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.background.middle",
+          "font": "bigstone_sandbox:menu",
+          "shadow_color": 0
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "bigstone_sandbox.dialog_menu.tags",
+          "font": "bigstone_sandbox:small_caps",
+          "extra": [
+            {
+              "text": "Lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots of tags",
+              "color": "dark_gray",
+              "font": "minecraft:default"
+            }
+          ]
         }
       ],
       "width": 192
