@@ -16,8 +16,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.back",
@@ -56,8 +55,7 @@
           }
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank",
@@ -98,22 +96,18 @@
           }
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "text": "Comparator",
-          "font": "minecraft:default",
           "underlined": true
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "text": "Mojang",
           "color": "gray",
-          "font": "minecraft:default",
           "italic": true
         }
       ],

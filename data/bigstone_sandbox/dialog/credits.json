@@ -16,8 +16,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.home",
@@ -56,8 +55,7 @@
           }
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank",
@@ -98,8 +96,7 @@
           }
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits",
@@ -107,18 +104,15 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.devs_subtitle",
-          "font": "minecraft:default",
           "color": "gray",
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -126,28 +120,23 @@
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.devs",
-          "font": "minecraft:default",
           "color": "dark_gray",
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.uiux_artists_subtitle",
-          "font": "minecraft:default",
           "color": "gray",
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -155,28 +144,23 @@
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.uiux_artists",
-          "font": "minecraft:default",
           "color": "dark_gray",
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.wiki_maintainers_subtitle",
-          "font": "minecraft:default",
           "color": "gray",
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -184,28 +168,23 @@
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.wiki_maintainers",
-          "font": "minecraft:default",
           "color": "dark_gray",
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.attributions_subtitle",
-          "font": "minecraft:default",
           "color": "gray",
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -213,26 +192,21 @@
           "shadow_color": 0
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.attributions",
-          "font": "minecraft:default",
           "color": "dark_gray",
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n\n"
         },
         {
-          "text": "\n\n",
-          "font": "minecraft:default"
+          "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits_line1",
-          "font": "minecraft:default",
           "color": "dark_gray",
           "shadow_color": 0,
           "hover_event": {
@@ -249,12 +223,10 @@
           }
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits_line2",
-          "font": "minecraft:default",
           "color": "dark_gray",
           "shadow_color": 0,
           "hover_event": {
@@ -271,8 +243,7 @@
           }
         },
         {
-          "text": "\n",
-          "font": "minecraft:default"
+          "text": "\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.bottom",
