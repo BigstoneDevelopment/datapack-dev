@@ -1,18 +1,21 @@
-execute as @a[scores={bigstone_sandbox.dialog_action=-1}] run function bigstone_sandbox:dialog_action/close_menu
-execute as @a[scores={bigstone_sandbox.dialog_action=-2}] run function bigstone_sandbox:dialog_action/delete
-execute as @a[scores={bigstone_sandbox.dialog_action=-3}] run function bigstone_sandbox:dialog_action/edit
-execute as @a[scores={bigstone_sandbox.dialog_action=-4}] run function bigstone_sandbox:dialog_action/export
-execute as @a[scores={bigstone_sandbox.dialog_action=-5}] run function bigstone_sandbox:dialog_action/filter
-execute as @a[scores={bigstone_sandbox.dialog_action=-6}] run function bigstone_sandbox:dialog_action/give
-execute as @a[scores={bigstone_sandbox.dialog_action=-7}] run function bigstone_sandbox:dialog_action/import
-execute as @a[scores={bigstone_sandbox.dialog_action=-8}] run function bigstone_sandbox:dialog_action/back
-execute as @a[scores={bigstone_sandbox.dialog_action=-9}] run function bigstone_sandbox:dialog_action/search
-execute as @a[scores={bigstone_sandbox.dialog_action=-10}] run function bigstone_sandbox:dialog_action/home
+scoreboard players enable @a bigstone_menu
+playsound minecraft:ui.button.click ui @s ~ ~ ~ 0.3
 
-execute as @a[scores={bigstone_sandbox.dialog_action=-11}] run function bigstone_sandbox:dialog_action/credits
-execute as @a[scores={bigstone_sandbox.dialog_action=-12}] run function bigstone_sandbox:dialog_action/components
-execute as @a[scores={bigstone_sandbox.dialog_action=-13}] run function bigstone_sandbox:dialog_action/options
+execute if score @s bigstone_menu matches -1 run return run function bigstone_sandbox:dialog_action/close_menu
+execute if score @s bigstone_menu matches -2 run return run function bigstone_sandbox:dialog_action/delete
+execute if score @s bigstone_menu matches -3 run return run function bigstone_sandbox:dialog_action/edit
+execute if score @s bigstone_menu matches -4 run return run function bigstone_sandbox:dialog_action/export
+execute if score @s bigstone_menu matches -5 run return run function bigstone_sandbox:dialog_action/filter
+execute if score @s bigstone_menu matches -6 run return run function bigstone_sandbox:dialog_action/give
+execute if score @s bigstone_menu matches -7 run return run function bigstone_sandbox:dialog_action/import
+execute if score @s bigstone_menu matches -8 run return run function bigstone_sandbox:dialog_action/back
+execute if score @s bigstone_menu matches -9 run return run function bigstone_sandbox:dialog_action/search
+execute if score @s bigstone_menu matches -10 run return run function bigstone_sandbox:dialog_action/home
 
-execute as @a[scores={bigstone_sandbox.dialog_action=1..}] run function bigstone_sandbox:dialog_action/select_item
+execute if score @s bigstone_menu matches -11 run return run function bigstone_sandbox:dialog_action/credits
+execute if score @s bigstone_menu matches -12 run return run function bigstone_sandbox:dialog_action/components
+execute if score @s bigstone_menu matches -13 run return run function bigstone_sandbox:dialog_action/options
 
-execute as @a[scores={bigstone_menu=1..}] run function bigstone_sandbox:dialog_action/open_menu
+#execute if score @s bigstone_menu matches 1.. run return run function bigstone_sandbox:dialog_action/select_item
+
+return run function bigstone_sandbox:dialog_action/open_menu

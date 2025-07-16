@@ -1,2 +1,1 @@
-scoreboard objectives add bigstone_sandbox.dialog_action trigger
 scoreboard objectives add bigstone_menu trigger

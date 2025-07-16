@@ -28,7 +28,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -1"
+            "command": "trigger bigstone_menu set -1"
           },
           "hover_event": {
             "action": "show_text",
@@ -53,7 +53,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -1"
+            "command": "trigger bigstone_menu set -1"
           },
           "hover_event": {
             "action": "show_text",
@@ -64,8 +64,6 @@
             }
           }
         },
-
-
         {
           "text": "\n",
           "font": "minecraft:default"
@@ -98,14 +96,12 @@
           "text": "\n\n",
           "font": "minecraft:default"
         },
-
-
         {
           "translate": "bigstone_sandbox.dialog_menu.button.components",
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -12"
+            "command": "trigger bigstone_menu set -12"
           },
           "hover_event": {
             "action": "show_text",
@@ -123,9 +119,10 @@
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -12"
+            "command": "trigger bigstone_menu set -12"
           },
           "hover_event": {
             "action": "show_text",
@@ -145,7 +142,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -13"
+            "command": "trigger bigstone_menu set -13"
           },
           "hover_event": {
             "action": "show_text",
@@ -163,9 +160,10 @@
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -13"
+            "command": "trigger bigstone_menu set -13"
           },
           "hover_event": {
             "action": "show_text",
@@ -203,6 +201,7 @@
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "open_url",
             "url": "https://wiki.bigstone.ovh"
@@ -243,6 +242,7 @@
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "open_url",
             "url": "https://dsc.gg/bigstone"
@@ -283,6 +283,7 @@
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "open_url",
             "url": "https://github.com/bigstonedevelopment"
@@ -305,7 +306,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -11"
+            "command": "trigger bigstone_menu set -11"
           },
           "hover_event": {
             "action": "show_text",
@@ -323,9 +324,10 @@
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank_long",
           "font": "bigstone_sandbox:menu",
+          "shadow_color": 0,
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_sandbox.dialog_action set -11"
+            "command": "trigger bigstone_menu set -11"
           },
           "hover_event": {
             "action": "show_text",
@@ -336,8 +338,6 @@
             }
           }
         },
-        
-
         {
           "text": "\n\n\n",
           "font": "minecraft:default"
