@@ -1,0 +1,41 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+            "mainhand": {
+                "predicates": {
+                "minecraft:custom_data": {
+                    "item_use_effect": {
+                    "type": "bigstone",
+                    "effect":"place_component"
+                    }
+                }
+                }
+            }
+            }
+        }
+    },
+        {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+            "offhand": {
+                "predicates": {
+                "minecraft:custom_data": {
+                    "item_use_effect": {
+                    "type": "bigstone",
+                    "effect":"place_component"
+                    }
+                }
+                }
+            }
+            }
+        }
+        }
+    ]
+}

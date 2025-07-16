@@ -1,0 +1,11 @@
+{
+  "id": "bs.block",
+  "pack": {
+    "pack_format": 81,
+    "description": "Bookshelf block management module, enabling id and state transformations.",
+    "supported_formats": {
+      "min_inclusive": 81,
+      "max_inclusive": 81
+    }
+  }
+}

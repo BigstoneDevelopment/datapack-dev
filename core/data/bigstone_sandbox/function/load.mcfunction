@@ -5,3 +5,4 @@ tellraw @a ["",{"text":"\n\n\n"},{"text":"[","color":"dark_gray"},{"text":"\u029
 function bigstone_sandbox:load/scoreboards
 function bigstone_sandbox:load/storage
 function bigstone_sandbox:load/menu
+function bigstone_sandbox:load/reset_entities
