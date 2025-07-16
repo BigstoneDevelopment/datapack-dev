@@ -1,0 +1,2 @@
+$data modify storage bigstone_sandbox:components temp.add_item.description.contents[1].click_event.command set value "trigger bigstone_menu set $(item_index_0)"
+$data modify storage bigstone_sandbox:components temp.add_item.description.contents[2].click_event.command set value "trigger bigstone_menu set $(item_index_0)"

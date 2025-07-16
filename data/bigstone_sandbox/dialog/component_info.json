@@ -139,14 +139,19 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_north",
-          "font": "bigstone_sandbox:small_caps",
-          "extra": [
+          "with": [
             {
-              "text": "IHEX",
+              "text": "",
+              "extra": [
+                [
+                  "IHEX"
+                ]
+              ],
               "color": "dark_gray",
               "font": "minecraft:default"
             }
           ],
+          "font": "bigstone_sandbox:small_caps",
           "color": "blue"
         },
         {
@@ -154,14 +159,19 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_south",
-          "font": "bigstone_sandbox:small_caps",
-          "extra": [
+          "with": [
             {
-              "text": "OHEX",
+              "text": "",
+              "extra": [
+                [
+                  "OHEX"
+                ]
+              ],
               "color": "dark_gray",
               "font": "minecraft:default"
             }
           ],
+          "font": "bigstone_sandbox:small_caps",
           "color": "red"
         },
         {
@@ -169,14 +179,19 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_east",
-          "font": "bigstone_sandbox:small_caps",
-          "extra": [
+          "with": [
             {
-              "text": "IHEX",
+              "text": "",
+              "extra": [
+                [
+                  "IHEX"
+                ]
+              ],
               "color": "dark_gray",
               "font": "minecraft:default"
             }
           ],
+          "font": "bigstone_sandbox:small_caps",
           "color": "green"
         },
         {
@@ -184,14 +199,19 @@
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.port_west",
-          "font": "bigstone_sandbox:small_caps",
-          "extra": [
+          "with": [
             {
-              "text": "IHEX",
+              "text": "",
+              "extra": [
+                [
+                  "IHEX"
+                ]
+              ],
               "color": "dark_gray",
               "font": "minecraft:default"
             }
           ],
+          "font": "bigstone_sandbox:small_caps",
           "color": "yellow"
         },
         {
@@ -202,21 +222,24 @@
           "font": "bigstone_sandbox:menu",
           "shadow_color": 0
         },
-        
-
         {
           "text": "\n\n"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.tags",
-          "font": "bigstone_sandbox:small_caps",
-          "extra": [
+          "with": [
             {
-              "text": "Vanilla redstone component inspired",
+              "text": "",
+              "extra": [
+                [
+                  "Vanilla Redstone Component Inspired"
+                ]
+              ],
               "color": "dark_gray",
               "font": "minecraft:default"
             }
-          ]
+          ],
+          "font": "bigstone_sandbox:small_caps"
         },
         {
           "text": "\n\n"

@@ -1,1 +1,1 @@
-dialog show @s bigstone_sandbox:components_menu
+function bigstone_sandbox:dialog/component_menu
