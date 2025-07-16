@@ -325,7 +325,7 @@
       "height": 16
     }
   ],
-  "can_close_with_escape": true,
+  "can_close_with_escape": false,
   "pause": false,
   "after_action": "none"
 }
