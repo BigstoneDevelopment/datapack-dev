@@ -37,7 +37,8 @@ data modify storage bigstone_sandbox:components temp.add_item set value \
       { \
         "translate": "space.5", \
         "font": "space:default" \
-      } \
+      }, \
+      {} \
     ], \
     "width": 128 \
   }, \

@@ -1,8 +1,5 @@
 function xolibs:api/playerdata/load
-data remove storage bigstone_sandbox:components temp.body
-data remove storage bigstone_sandbox:components temp.menu_items
-data remove storage bigstone_sandbox:components temp.macros
-data remove storage bigstone_sandbox:components temp.add_item
+data remove storage bigstone_sandbox:components temp
 scoreboard players reset item_index bigstone_sandbox.temp
 
 data modify storage bigstone_sandbox:components temp.menu_items set from storage xolibs:playerdata player.bigstone_sandbox.loaded_list
@@ -12,3 +9,5 @@ function bigstone_sandbox:dialog/component_menu/add_items_loop
 function bigstone_sandbox:dialog/component_menu/add_body_init
 
 function bigstone_sandbox:dialog/component_menu/run_dialog with storage bigstone_sandbox:components temp
+data remove storage bigstone_sandbox:components temp
+scoreboard players reset item_index bigstone_sandbox.temp

@@ -16,7 +16,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n"
+          "translate": "newline_2"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.home",
@@ -55,7 +55,7 @@
           }
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.button.blank",
@@ -96,7 +96,7 @@
           }
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits",
@@ -104,7 +104,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n"
+          "translate": "newline_2"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.devs_subtitle",
@@ -112,7 +112,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -120,7 +120,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.devs",
@@ -128,7 +128,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n"
+          "translate": "newline_3"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.uiux_artists_subtitle",
@@ -136,7 +136,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -144,7 +144,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.uiux_artists",
@@ -152,7 +152,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n"
+          "translate": "newline_3"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.wiki_maintainers_subtitle",
@@ -160,7 +160,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -168,7 +168,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.wiki_maintainers",
@@ -176,7 +176,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n"
+          "translate": "newline_3"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.attributions_subtitle",
@@ -184,7 +184,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.middle",
@@ -192,7 +192,7 @@
           "shadow_color": 0
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits.attributions",
@@ -200,10 +200,10 @@
           "shadow_color": 0
         },
         {
-          "text": "\n\n\n"
+          "translate": "newline_3"
         },
         {
-          "text": "\n\n"
+          "translate": "newline_2"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits_line1",
@@ -223,7 +223,7 @@
           }
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.credits_line2",
@@ -243,7 +243,7 @@
           }
         },
         {
-          "text": "\n"
+          "translate": "newline_1"
         },
         {
           "translate": "bigstone_sandbox.dialog_menu.background.bottom",
@@ -254,7 +254,7 @@
       "width": 256
     }
   ],
-  "can_close_with_escape": false,
+  "can_close_with_escape": true,
   "pause": false,
   "after_action": "none"
 }
