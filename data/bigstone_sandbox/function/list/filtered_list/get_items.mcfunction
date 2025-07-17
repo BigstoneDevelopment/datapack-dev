@@ -1,0 +1,2 @@
+$data modify storage xolibs:playerdata player.bigstone_sandbox.filtered_list append from storage bigstone_sandbox:components list[$(include)]
+#$data remove storage xolibs:playerdata player.bigstone_sandbox.filtered_list[$(exclude)]
