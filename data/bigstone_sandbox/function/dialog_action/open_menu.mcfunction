@@ -1,4 +1,5 @@
 stopsound @s music
+stopsound @s master
 playsound minecraft:custom.menu.blooper_nova master @s ~ ~ ~
 
 execute unless score @s bigstone_sandbox.last_dialog_page matches -12 run dialog show @s bigstone_sandbox:home
