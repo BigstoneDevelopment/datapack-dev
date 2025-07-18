@@ -15,7 +15,6 @@ execute if score @s bigstone_menu matches -10 run return run function bigstone_s
 execute if score @s bigstone_menu matches -11 run return run function bigstone_sandbox:dialog_action/credits
 execute if score @s bigstone_menu matches -12 run return run function bigstone_sandbox:dialog_action/components
 execute if score @s bigstone_menu matches -13 run return run function bigstone_sandbox:dialog_action/options
-execute if score @s bigstone_menu matches -14 run return run function bigstone_sandbox:dialog_action/admin_options
 
 execute if score @s bigstone_menu matches 1000..1999 run return run function bigstone_sandbox:dialog_action/info
 execute if score @s bigstone_menu matches 2000..2999 run return run function bigstone_sandbox:dialog_action/give
