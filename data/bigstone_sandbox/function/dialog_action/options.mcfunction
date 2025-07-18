@@ -1,1 +1,1 @@
-dialog show @s bigstone_sandbox:options
+function bigstone_sandbox:dialog/options

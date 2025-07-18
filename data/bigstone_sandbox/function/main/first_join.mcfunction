@@ -1,5 +1,11 @@
 function xolibs:api/playerdata/load
 
 data modify storage xolibs:playerdata player.bigstone_sandbox merge value {filter: {include: {}, exclude: {}}}
-scoreboard players set @s bigstone_sandbox.loaded_index 0
-function bigstone_sandbox:list/make_filtered_list
+#tag @s add bigstone_sandbox.default_to_components
+tag @s add bigstone_sandbox.info_on_join
+tag @s add bigstone_sandbox.sound_effects
+#tag @s add bigstone_sandbox.music
+tag @s add bigstone_sandbox.placement_highlight
+
+
+function bigstone_sandbox:main/on_join

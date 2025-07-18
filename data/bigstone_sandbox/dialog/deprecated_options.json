@@ -123,30 +123,58 @@
           "translate": "newline_1"
         },
         {
+          "translate": "bigstone_sandbox.dialog_menu.options.open_components_menu_by_default",
+          "color": "dark_gray",
+          "shadow_color": 0,
+          "extra": [
+            {
+              "text": " "
+            },
+            {
+              "translate": "bigstone_sandbox.dialog_menu.toggle.off",
+              "fallback": "◆",
+              "color": "white",
+              "font": "bigstone_sandbox:menu",
+              "shadow_color": 0,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "bigstone_sandbox.dialog_menu.options.action",
+                  "color": "gray",
+                  "font": "bigstone_sandbox:small_caps"
+                }
+              }
+            },
+            {
+              "translate": "newline_1"
+            }
+          ]
+        },
+        {
           "translate": "bigstone_sandbox.dialog_menu.options.open_info_dialog_on_join",
           "color": "dark_gray",
           "shadow_color": 0,
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.options.action",
-              "color": "gray",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          },
           "extra": [
             {
-                "text": " "
+              "text": " "
             },
             {
-                "translate": "bigstone_sandbox.dialog_menu.toggle.on",
-                "fallback": "◆",
-                "color": "white",
-                "font": "bigstone_sandbox:menu",
-                "shadow_color": 0
+              "translate": "bigstone_sandbox.dialog_menu.toggle.on",
+              "fallback": "◆",
+              "color": "white",
+              "font": "bigstone_sandbox:menu",
+              "shadow_color": 0,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "bigstone_sandbox.dialog_menu.options.action",
+                  "color": "gray",
+                  "font": "bigstone_sandbox:small_caps"
+                }
+              }
             },
             {
-                "translate": "newline_1"
+              "translate": "newline_1"
             }
           ]
         },
@@ -154,27 +182,27 @@
           "translate": "bigstone_sandbox.dialog_menu.options.have_dialog_sound_effects",
           "color": "dark_gray",
           "shadow_color": 0,
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.options.action",
-              "color": "gray",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          },
           "extra": [
             {
-                "text": " "
+              "text": " "
             },
             {
-                "translate": "bigstone_sandbox.dialog_menu.toggle.on",
-                "fallback": "◆",
-                "color": "white",
-                "font": "bigstone_sandbox:menu",
-                "shadow_color": 0
+              "translate": "bigstone_sandbox.dialog_menu.toggle.on",
+              "fallback": "◆",
+              "color": "white",
+              "font": "bigstone_sandbox:menu",
+              "shadow_color": 0,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "bigstone_sandbox.dialog_menu.options.action",
+                  "color": "gray",
+                  "font": "bigstone_sandbox:small_caps"
+                }
+              }
             },
             {
-                "translate": "newline_1"
+              "translate": "newline_1"
             }
           ]
         },
@@ -182,27 +210,27 @@
           "translate": "bigstone_sandbox.dialog_menu.options.enable_dialog_music",
           "color": "dark_gray",
           "shadow_color": 0,
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.options.action",
-              "color": "gray",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          },
           "extra": [
             {
-                "text": " "
+              "text": " "
             },
             {
-                "translate": "bigstone_sandbox.dialog_menu.toggle.off",
-                "fallback": "◆",
-                "color": "white",
-                "font": "bigstone_sandbox:menu",
-                "shadow_color": 0
+              "translate": "bigstone_sandbox.dialog_menu.toggle.off",
+              "fallback": "◆",
+              "color": "white",
+              "font": "bigstone_sandbox:menu",
+              "shadow_color": 0,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "bigstone_sandbox.dialog_menu.options.action",
+                  "color": "gray",
+                  "font": "bigstone_sandbox:small_caps"
+                }
+              }
             },
             {
-                "translate": "newline_1"
+              "translate": "newline_1"
             }
           ]
         },
@@ -226,86 +254,30 @@
           "translate": "newline_1"
         },
         {
-          "translate": "bigstone_sandbox.dialog_menu.options.switch_q_f_for_rotation",
-          "color": "dark_gray",
-          "shadow_color": 0,
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.options.action",
-              "color": "gray",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          },
-          "extra": [
-            {
-                "text": " "
-            },
-            {
-                "translate": "bigstone_sandbox.dialog_menu.toggle.off",
-                "fallback": "◆",
-                "color": "white",
-                "font": "bigstone_sandbox:menu",
-                "shadow_color": 0
-            },
-            {
-                "translate": "newline_1"
-            }
-          ]
-        },
-        {
-          "translate": "bigstone_sandbox.dialog_menu.options.placement_previews",
-          "color": "dark_gray",
-          "shadow_color": 0,
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.options.action",
-              "color": "gray",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          },
-          "extra": [
-            {
-                "text": " "
-            },
-            {
-                "translate": "bigstone_sandbox.dialog_menu.toggle.off",
-                "fallback": "◆",
-                "color": "white",
-                "font": "bigstone_sandbox:menu",
-                "shadow_color": 0
-            },
-            {
-                "translate": "newline_1"
-            }
-          ]
-        },
-        {
           "translate": "bigstone_sandbox.dialog_menu.options.placement_highlight_box",
           "color": "dark_gray",
           "shadow_color": 0,
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "translate": "bigstone_sandbox.dialog_menu.options.action",
-              "color": "gray",
-              "font": "bigstone_sandbox:small_caps"
-            }
-          },
           "extra": [
             {
-                "text": " "
+              "text": " "
             },
             {
-                "translate": "bigstone_sandbox.dialog_menu.toggle.on",
-                "fallback": "◆",
-                "color": "white",
-                "font": "bigstone_sandbox:menu",
-                "shadow_color": 0
+              "translate": "bigstone_sandbox.dialog_menu.toggle.on",
+              "fallback": "◆",
+              "color": "white",
+              "font": "bigstone_sandbox:menu",
+              "shadow_color": 0,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "bigstone_sandbox.dialog_menu.options.action",
+                  "color": "gray",
+                  "font": "bigstone_sandbox:small_caps"
+                }
+              }
             },
             {
-                "translate": "newline_1"
+              "translate": "newline_1"
             }
           ]
         },
@@ -317,7 +289,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_menu set -14"
+            "command": "function bigstone_sandbox:dialog_action/admin_options"
           },
           "hover_event": {
             "action": "show_text",

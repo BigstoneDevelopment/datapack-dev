@@ -1,1 +1,0 @@
-dialog show @s bigstone_sandbox:admin_options
