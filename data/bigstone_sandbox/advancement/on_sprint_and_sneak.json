@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "sprint": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "input": {
+              "sneak": true,
+              "sprint": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bigstone_sandbox:dialog_action/open_menu"
+  }
+}
