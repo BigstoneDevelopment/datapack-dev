@@ -4,6 +4,11 @@ data modify storage bigstone_sandbox:components temp.add_item set value \
   "description": { \
     "contents": [ \
       "", \
+      "", \
+      { \
+        "translate": "space.2", \
+        "font": "space:default" \
+      }, \
       { \
         "translate": "bigstone_sandbox.dialog_menu.button.info_short", \
         "font": "bigstone_sandbox:menu", \
@@ -38,7 +43,9 @@ data modify storage bigstone_sandbox:components temp.add_item set value \
         "translate": "space.5", \
         "font": "space:default" \
       }, \
-      {} \
+      { \
+        "text": "" \
+      } \
     ], \
     "width": 128 \
   }, \
