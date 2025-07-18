@@ -4,7 +4,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "bigstone_menu": 0
+      "bigstone_sandbox_menu": 0
     }
   }
 }

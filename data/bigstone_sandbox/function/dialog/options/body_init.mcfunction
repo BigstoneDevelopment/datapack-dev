@@ -16,7 +16,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
-        "command": "trigger bigstone_menu set -10" \
+        "command": "trigger bigstone_sandbox_menu set -10" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -36,7 +36,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
-        "command": "trigger bigstone_menu set -1" \
+        "command": "trigger bigstone_sandbox_menu set -1" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -56,7 +56,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "trigger bigstone_menu set -10" \
+        "command": "trigger bigstone_sandbox_menu set -10" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -77,7 +77,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
-        "command": "trigger bigstone_menu set -1" \
+        "command": "trigger bigstone_sandbox_menu set -1" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -131,7 +131,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
           "shadow_color": 0, \
           "click_event": { \
             "action": "run_command", \
-            "command": "/trigger bigstone_menu set 900" \
+            "command": "/trigger bigstone_sandbox_menu set 900" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -162,7 +162,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
           "shadow_color": 0, \
           "click_event": { \
             "action": "run_command", \
-            "command": "/trigger bigstone_menu set 901" \
+            "command": "/trigger bigstone_sandbox_menu set 901" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -193,7 +193,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
           "shadow_color": 0, \
           "click_event": { \
             "action": "run_command", \
-            "command": "/trigger bigstone_menu set 902" \
+            "command": "/trigger bigstone_sandbox_menu set 902" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -224,7 +224,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
           "shadow_color": 0, \
           "click_event": { \
             "action": "run_command", \
-            "command": "/trigger bigstone_menu set 903" \
+            "command": "/trigger bigstone_sandbox_menu set 903" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -274,7 +274,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
           "shadow_color": 0, \
           "click_event": { \
             "action": "run_command", \
-            "command": "/trigger bigstone_menu set 904" \
+            "command": "/trigger bigstone_sandbox_menu set 904" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -318,7 +318,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "trigger bigstone_menu set -14" \
+        "command": "trigger bigstone_sandbox_menu set -14" \
       }, \
       "hover_event": { \
         "action": "show_text", \

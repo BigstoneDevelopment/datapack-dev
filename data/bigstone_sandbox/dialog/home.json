@@ -75,7 +75,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_menu set -1"
+            "command": "trigger bigstone_sandbox_menu set -1"
           },
           "hover_event": {
             "action": "show_text",
@@ -103,7 +103,7 @@
           "font": "bigstone_sandbox:menu",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_menu set -1"
+            "command": "trigger bigstone_sandbox_menu set -1"
           },
           "hover_event": {
             "action": "show_text",
@@ -155,7 +155,7 @@
           "color": "yellow",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_menu set -12"
+            "command": "trigger bigstone_sandbox_menu set -12"
           },
           "hover_event": {
             "action": "show_text",
@@ -177,7 +177,7 @@
           "color": "dark_aqua",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_menu set -13"
+            "command": "trigger bigstone_sandbox_menu set -13"
           },
           "hover_event": {
             "action": "show_text",
@@ -264,7 +264,7 @@
           "color": "gray",
           "click_event": {
             "action": "run_command",
-            "command": "trigger bigstone_menu set -11"
+            "command": "trigger bigstone_sandbox_menu set -11"
           },
           "hover_event": {
             "action": "show_text",
