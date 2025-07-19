@@ -451,6 +451,21 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       } \
     }, \
     { \
+      "translate": "newline_2" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.version_info", \
+      "color": "dark_gray", \
+      "with": [ \
+        "Unknown", \
+        "Unknown", \
+        { \
+          "translate": "bigstone_sandbox.resource_version", \
+          "fallback": "Unknown" \
+        } \
+      ] \
+    }, \
+    { \
       "translate": "newline_1" \
     }, \
     { \
