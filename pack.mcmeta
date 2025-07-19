@@ -14,7 +14,7 @@
         "italic": true,
         "color": "gray"
       },
-    ]
+    ],
     "supported_formats": {
       "min_inclusive": 80,
       "max_inclusive": 81
