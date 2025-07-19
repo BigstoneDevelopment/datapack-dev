@@ -30,5 +30,15 @@ execute if score @s bigstone_sandbox_menu matches 907 run return run function bi
 execute unless entity @s[tag=bigstone_sandbox.admin] run return run function bigstone_sandbox:dialog_action/open_menu
 
 execute if score @s bigstone_sandbox_menu matches -14 run return run function bigstone_sandbox:dialog_action/admin_options
+execute if score @s bigstone_sandbox_menu matches 800 run return run function bigstone_sandbox:dialog_action/admin_options/add
+execute if score @s bigstone_sandbox_menu matches 801 run return run function bigstone_sandbox:dialog_action/admin_options/delete
+execute if score @s bigstone_sandbox_menu matches 802 run return run function bigstone_sandbox:dialog_action/admin_options/edit
+execute if score @s bigstone_sandbox_menu matches 803 run return run function bigstone_sandbox:dialog_action/admin_options/private
+execute if score @s bigstone_sandbox_menu matches 804 run return run function bigstone_sandbox:dialog_action/admin_options/reload_message
+execute if score @s bigstone_sandbox_menu matches 805 run return run function bigstone_sandbox:dialog_action/admin_options/import_logs
+execute if score @s bigstone_sandbox_menu matches 806 run return run function bigstone_sandbox:dialog_action/admin_options/command_feedback
+execute if score @s bigstone_sandbox_menu matches 807 run return run function bigstone_sandbox:dialog_action/admin_options/placement_highlight
+execute if score @s bigstone_sandbox_menu matches 808 run return run function bigstone_sandbox:dialog_action/admin_options/search
 
 return run function bigstone_sandbox:dialog_action/open_menu
+

@@ -20,4 +20,4 @@ execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigston
 
 function bigstone_sandbox:dialog/options/run_dialog with storage bigstone_sandbox:components temp
 
-#data remove storage bigstone_sandbox:components temp
+data remove storage bigstone_sandbox:components temp
