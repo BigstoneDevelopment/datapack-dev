@@ -7,8 +7,7 @@
           "type_specific": {
             "type": "minecraft:player",
             "input": {
-              "sneak": true,
-              "sprint": true
+              "sneak": true
             }
           }
         }
@@ -16,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "bigstone_sandbox:dialog_action/keybind/sprint_and_sneak"
+    "function": "bigstone_sandbox:dialog_action/keybind/double_sneak"
   }
 }

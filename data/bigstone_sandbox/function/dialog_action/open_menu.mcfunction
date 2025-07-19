@@ -1,8 +1,4 @@
-stopsound @s music
-stopsound @s master
-playsound minecraft:custom.menu.blooper_nova master @s ~ ~ ~
+execute if entity @s[tag=bigstone_sandbox.music] run function bigstone_sandbox:dialog_action/music/start
 
-execute unless score @s bigstone_sandbox.last_dialog_page matches -12 run dialog show @s bigstone_sandbox:home
-execute if score @s bigstone_sandbox.last_dialog_page matches -12 run function bigstone_sandbox:dialog/component_menu
-
-advancement revoke @s only bigstone_sandbox:on_sprint_and_sneak
+execute if entity @s[tag=bigstone_sandbox.default_to_components] run function bigstone_sandbox:dialog/component_menu
+execute unless entity @s[tag=bigstone_sandbox.default_to_components] run dialog show @s bigstone_sandbox:home

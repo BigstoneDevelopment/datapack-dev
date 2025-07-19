@@ -117,15 +117,9 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.options.open_components_menu_by_default", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "extra": [ \
-        { \
-          "text": " " \
-        }, \
+      "with": [ \
         { \
           "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
-          "fallback": "◆", \
           "color": "white", \
           "font": "bigstone_sandbox:menu", \
           "shadow_color": 0, \
@@ -141,7 +135,11 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
               "font": "bigstone_sandbox:small_caps" \
             } \
           } \
-        }, \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
         { \
           "translate": "newline_1" \
         } \
@@ -149,12 +147,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.options.open_info_dialog_on_join", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "extra": [ \
-        { \
-          "text": " " \
-        }, \
+      "with": [ \
         { \
           "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
           "color": "white", \
@@ -172,7 +165,11 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
               "font": "bigstone_sandbox:small_caps" \
             } \
           } \
-        }, \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
         { \
           "translate": "newline_1" \
         } \
@@ -180,12 +177,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.options.have_dialog_sound_effects", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "extra": [ \
-        { \
-          "text": " " \
-        }, \
+      "with": [ \
         { \
           "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
           "color": "white", \
@@ -203,7 +195,11 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
               "font": "bigstone_sandbox:small_caps" \
             } \
           } \
-        }, \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
         { \
           "translate": "newline_1" \
         } \
@@ -211,12 +207,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.options.enable_dialog_music", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "extra": [ \
-        { \
-          "text": " " \
-        }, \
+      "with": [ \
         { \
           "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
           "color": "white", \
@@ -234,14 +225,145 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
               "font": "bigstone_sandbox:small_caps" \
             } \
           } \
-        }, \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
         { \
           "translate": "newline_1" \
         } \
       ] \
     }, \
     { \
-      "translate": "newline_3" \
+      "translate": "newline_2" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.keybinds_subtitle", \
+      "color": "gray", \
+      "shadow_color": 0 \
+    }, \
+    { \
+      "translate": "newline_1" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.background.middle", \
+      "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0 \
+    }, \
+    { \
+      "translate": "newline_1" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.options.sprint_and_sneak", \
+      "with": [ \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
+          "color": "white", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0, \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "/trigger bigstone_sandbox_menu set 905" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.options.action", \
+              "color": "gray", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "keybind": "key.sneak" \
+        }, \
+        { \
+          "keybind": "key.sprint" \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
+        { \
+          "translate": "newline_1" \
+        } \
+      ] \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.options.double_sprint", \
+      "with": [ \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
+          "color": "white", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0, \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "/trigger bigstone_sandbox_menu set 906" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.options.action", \
+              "color": "gray", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "keybind": "key.sneak" \
+        }, \
+        { \
+          "keybind": "key.sprint" \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
+        { \
+          "translate": "newline_1" \
+        } \
+      ] \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.options.double_sneak", \
+      "with": [ \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
+          "color": "white", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0, \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "/trigger bigstone_sandbox_menu set 907" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.options.action", \
+              "color": "gray", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "keybind": "key.sneak" \
+        }, \
+        { \
+          "keybind": "key.sprint" \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
+        { \
+          "translate": "newline_1" \
+        } \
+      ] \
+    }, \
+    { \
+      "translate": "newline_2" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.ingame_subtitle", \
@@ -261,12 +383,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.options.placement_highlight_box", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "extra": [ \
-        { \
-          "text": " " \
-        }, \
+      "with": [ \
         { \
           "translate": "bigstone_sandbox.dialog_menu.toggle.off", \
           "color": "white", \
@@ -284,7 +401,11 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
               "font": "bigstone_sandbox:small_caps" \
             } \
           } \
-        }, \
+        } \
+      ], \
+      "color": "dark_gray", \
+      "shadow_color": 0, \
+      "extra": [ \
         { \
           "translate": "newline_1" \
         } \
@@ -318,7 +439,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "trigger bigstone_sandbox_menu set -14" \
+        "command": "function bigstone_sandbox:dialog_action/admin_options" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -327,46 +448,6 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
           "color": "red", \
           "font": "bigstone_sandbox:small_caps" \
         } \
-      } \
-    }, \
-    { \
-      "translate": "newline_2" \
-    }, \
-    { \
-      "translate": "bigstone_sandbox.dialog_menu.credits_line1", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "hover_event": { \
-        "action": "show_text", \
-        "value": { \
-          "translate": "bigstone_sandbox.dialog_menu.click_event_help", \
-          "color": "gray", \
-          "font": "bigstone_sandbox:small_caps" \
-        } \
-      }, \
-      "click_event": { \
-        "action": "open_url", \
-        "url": "https://github.com/bigstonedevelopment" \
-      } \
-    }, \
-    { \
-      "translate": "newline_1" \
-    }, \
-    { \
-      "translate": "bigstone_sandbox.dialog_menu.credits_line2", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "hover_event": { \
-        "action": "show_text", \
-        "value": { \
-          "translate": "bigstone_sandbox.dialog_menu.click_event_help", \
-          "color": "gray", \
-          "font": "bigstone_sandbox:small_caps" \
-        } \
-      }, \
-      "click_event": { \
-        "action": "open_url", \
-        "url": "https://github.com/bigstonedevelopment" \
       } \
     }, \
     { \

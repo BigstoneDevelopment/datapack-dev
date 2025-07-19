@@ -1,2 +1,2 @@
 dialog clear @s
-stopsound @s master
+function bigstone_sandbox:dialog_action/music/stop
