@@ -1,1 +1,1 @@
-$data modify storage bigstone_sandbox:components temp.item_at_index set from storage xolibs:playerdata player.bigstone_sandbox.loaded_list[$(selected_index)]
+$data modify storage bigstone_sandbox:components temp.item_at_index set from storage xolibs:playerdata player.bigstone_sandbox.list.loaded[$(selected_index)]

@@ -424,46 +424,6 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       ] \
     }, \
     { \
-      "translate": "newline_3" \
-    }, \
-    { \
-      "translate": "bigstone_sandbox.dialog_menu.credits_line1", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "hover_event": { \
-        "action": "show_text", \
-        "value": { \
-          "translate": "bigstone_sandbox.dialog_menu.click_event_help", \
-          "color": "gray", \
-          "font": "bigstone_sandbox:small_caps" \
-        } \
-      }, \
-      "click_event": { \
-        "action": "open_url", \
-        "url": "https://github.com/bigstonedevelopment" \
-      } \
-    }, \
-    { \
-      "translate": "newline_1" \
-    }, \
-    { \
-      "translate": "bigstone_sandbox.dialog_menu.credits_line2", \
-      "color": "dark_gray", \
-      "shadow_color": 0, \
-      "hover_event": { \
-        "action": "show_text", \
-        "value": { \
-          "translate": "bigstone_sandbox.dialog_menu.click_event_help", \
-          "color": "gray", \
-          "font": "bigstone_sandbox:small_caps" \
-        } \
-      }, \
-      "click_event": { \
-        "action": "open_url", \
-        "url": "https://github.com/bigstonedevelopment" \
-      } \
-    }, \
-    { \
       "translate": "newline_1" \
     }, \
     { \
