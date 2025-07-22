@@ -1,0 +1,41 @@
+{
+  "criteria": {
+    "active_item_in_hotbar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.offhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "item_use_effect": {
+                    "type": "bigstone"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "item_use_effect": {
+                  "type": "bigstone"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "active_item_in_hotbar"
+    ]
+  ],
+  "rewards": {
+    "function": "bigstone_sandbox:events/input/item_detect_hotbar"
+  }
+}

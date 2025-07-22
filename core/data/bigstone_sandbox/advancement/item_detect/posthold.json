@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "postHoldingBigBlock": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+          "condition": "minecraft:inverted",
+          "term": 
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "predicates": {
+                      "minecraft:custom_data": {
+                        "item_use_effect": {
+                          "type": "bigstone"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "postHoldingBigBlock"
+    ]
+  ],
+  "rewards": {
+    "function": "bigstone_sandbox:events/input/post_hold/item"
+  }
+}

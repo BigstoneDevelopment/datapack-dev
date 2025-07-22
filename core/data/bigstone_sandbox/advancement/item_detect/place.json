@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "item_use_effect": {
+                "type": "bigstone"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bigstone_sandbox:events/input/use/item"
+  }
+}

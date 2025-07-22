@@ -10,8 +10,8 @@
                 "predicates": {
                 "minecraft:custom_data": {
                     "item_use_effect": {
-                    "type": "bigblock",
-                    "effect":"select_bigblock"
+                    "type": "bigstone",
+                    "effect":"select_component"
                     }
                 }
                 }
@@ -28,8 +28,8 @@
                 "predicates": {
                 "minecraft:custom_data": {
                     "item_use_effect": {
-                    "type": "bigblock",
-                    "effect":"select_bigblock"
+                    "type": "bigstone",
+                    "effect":"select_component"
                     }
                 }
                 }

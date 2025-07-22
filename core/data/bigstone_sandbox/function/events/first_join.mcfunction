@@ -27,4 +27,5 @@ scoreboard players set @s bs_catagory_number 0
 scoreboard players enable @s bs_left
 
 #update advancements
-advancement grant @s only bigstone_sandbox:inactive_item_in_hotbar
+advancement grant @s only bigstone_sandbox:item_detect/inactive_in_hotbar
+advancement grant @s only bigstone_sandbox:item_detect/hold
