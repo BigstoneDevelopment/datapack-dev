@@ -122,7 +122,7 @@
   ],
   "can_close_with_escape": true,
   "pause": false,
-  "after_action": "close",
+  "after_action": "none",
   "columns": 2,
   "actions": [
     {

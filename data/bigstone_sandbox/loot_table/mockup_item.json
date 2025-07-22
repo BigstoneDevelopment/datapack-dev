@@ -12,12 +12,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "!minecraft:jukebox_playable": {},
+                "minecraft:tooltip_style": "bigstone_sandbox:bigstone_sandbox",
                 "minecraft:item_name": {
                   "text": "Comparator",
                   "color": "gold",
                   "font": "bigstone_sandbox:small_caps"
                 },
-                "minecraft:item_model": "minecraft:comparator",
+                "minecraft:item_model": "minecraft:repeater",
                 "minecraft:lore": [
                   {
                     "text": "Compares and subtracts",
@@ -90,7 +91,9 @@
                     "italic": false
                   }
                 ],
-                "minecraft:tooltip_style": "bigstone_sandbox:bigstone_sandbox"
+                "minecraft:custom_data": {
+                  "bigstone_sandbox": {}
+                }
               }
             }
           ]
