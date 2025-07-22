@@ -445,11 +445,11 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "translate": "newline_1" \
     }, \
     { \
-      "translate": "bigstone_sandbox.dialog_menu.button.admin", \
+      "translate": "bigstone_sandbox.dialog_menu.button.admin_check", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
-        "command": "function bigstone_sandbox:dialog_action/admin_options" \
+        "command": "/function bigstone_sandbox:dialog_action/admin_check {\"command\": \"function bigstone_sandbox:dialog_action/admin_options\"}" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -469,7 +469,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "function bigstone_sandbox:dialog_action/admin_options" \
+        "command": "/function bigstone_sandbox:dialog_action/admin_check {\"command\": \"function bigstone_sandbox:dialog_action/admin_options\"}" \
       }, \
       "hover_event": { \
         "action": "show_text", \

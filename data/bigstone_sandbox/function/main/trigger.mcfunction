@@ -15,6 +15,8 @@ execute if score @s bigstone_sandbox_menu matches -10 run return run function bi
 execute if score @s bigstone_sandbox_menu matches -11 run return run function bigstone_sandbox:dialog_action/credits
 execute if score @s bigstone_sandbox_menu matches -12 run return run function bigstone_sandbox:dialog_action/components
 execute if score @s bigstone_sandbox_menu matches -13 run return run function bigstone_sandbox:dialog_action/options
+execute if score @s bigstone_sandbox_menu matches -15 run return run function bigstone_sandbox:dialog_action/import/private_from_hand
+execute if score @s bigstone_sandbox_menu matches -16 run return run function bigstone_sandbox:dialog_action/import/public_from_hand
 execute if score @s bigstone_sandbox_menu matches 1000..1999 run return run function bigstone_sandbox:dialog_action/info
 execute if score @s bigstone_sandbox_menu matches 2000..2999 run return run function bigstone_sandbox:dialog_action/give
 
@@ -31,6 +33,7 @@ execute if score @s bigstone_sandbox_menu matches 908 run return run function bi
 execute unless entity @s[tag=bigstone_sandbox.admin] run return run function bigstone_sandbox:dialog_action/open_menu
 
 execute if score @s bigstone_sandbox_menu matches -14 run return run function bigstone_sandbox:dialog_action/admin_options
+execute if score @s bigstone_sandbox_menu matches -17 run return run function bigstone_sandbox:dialog_action/admin_import
 execute if score @s bigstone_sandbox_menu matches 800 run return run function bigstone_sandbox:dialog_action/admin_options/add
 execute if score @s bigstone_sandbox_menu matches 801 run return run function bigstone_sandbox:dialog_action/admin_options/delete
 execute if score @s bigstone_sandbox_menu matches 802 run return run function bigstone_sandbox:dialog_action/admin_options/edit

@@ -17,7 +17,9 @@ function bigstone_sandbox:main/version/game
 data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[0] set from storage bigstone_sandbox:components temp.version.game
 data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[1] set from storage bigstone_sandbox:components temp.version.data
 
-execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"click_event":{"command":"function bigstone_sandbox:dialog_action/admin_options"}}].click_event.command set value "trigger bigstone_sandbox_menu set -14"
+execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"hover_event":{"value":{"translate":"bigstone_sandbox.dialog_menu.admin_options"}}}].click_event.command set value "trigger bigstone_sandbox_menu set -14"
+execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"hover_event":{"value":{"translate":"bigstone_sandbox.dialog_menu.admin_options"}}}].hover_event.value.color set value "green"
+execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.button.admin_check"}].translate set value "bigstone_sandbox.dialog_menu.button.admin_mode"
 
 function bigstone_sandbox:dialog/options/run_dialog with storage bigstone_sandbox:components temp
 
