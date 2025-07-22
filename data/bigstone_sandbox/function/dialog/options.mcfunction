@@ -10,6 +10,7 @@ execute if entity @s[tag=bigstone_sandbox.placement_highlight] run data modify s
 execute if entity @s[tag=bigstone_sandbox.sprint_and_sneak_keybind] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.options.sprint_and_sneak"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 execute if entity @s[tag=bigstone_sandbox.double_sprint_keybind] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.options.double_sprint"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 execute if entity @s[tag=bigstone_sandbox.double_sneak_keybind] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.options.double_sneak"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
+execute if entity @s[tag=bigstone_sandbox.block_shape_highlight] run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.options.block_shape_highlight"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 
 function bigstone_sandbox:main/version/data
 function bigstone_sandbox:main/version/game

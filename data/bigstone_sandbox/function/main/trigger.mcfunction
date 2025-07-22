@@ -26,6 +26,7 @@ execute if score @s bigstone_sandbox_menu matches 904 run return run function bi
 execute if score @s bigstone_sandbox_menu matches 905 run return run function bigstone_sandbox:dialog_action/options/sprint_and_sneak
 execute if score @s bigstone_sandbox_menu matches 906 run return run function bigstone_sandbox:dialog_action/options/double_sprint
 execute if score @s bigstone_sandbox_menu matches 907 run return run function bigstone_sandbox:dialog_action/options/double_sneak
+execute if score @s bigstone_sandbox_menu matches 908 run return run function bigstone_sandbox:dialog_action/options/block_shape_highlight
 
 execute unless entity @s[tag=bigstone_sandbox.admin] run return run function bigstone_sandbox:dialog_action/open_menu
 
@@ -39,6 +40,7 @@ execute if score @s bigstone_sandbox_menu matches 805 run return run function bi
 execute if score @s bigstone_sandbox_menu matches 806 run return run function bigstone_sandbox:dialog_action/admin_options/command_feedback
 execute if score @s bigstone_sandbox_menu matches 807 run return run function bigstone_sandbox:dialog_action/admin_options/placement_highlight
 execute if score @s bigstone_sandbox_menu matches 808 run return run function bigstone_sandbox:dialog_action/admin_options/search
+execute if score @s bigstone_sandbox_menu matches 809 run return run function bigstone_sandbox:dialog_action/admin_options/instant_snap
 
 return run function bigstone_sandbox:dialog_action/open_menu
 
