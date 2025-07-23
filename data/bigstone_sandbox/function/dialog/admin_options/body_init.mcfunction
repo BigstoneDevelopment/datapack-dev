@@ -236,7 +236,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       ] \
     }, \
     { \
-      "translate": "newline_3" \
+      "translate": "newline_2" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.ingame_subtitle", \
@@ -345,7 +345,7 @@ data modify storage bigstone_sandbox:components temp.body prepend value \
       ] \
     }, \
     { \
-      "translate": "newline_3" \
+      "translate": "newline_2" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.performance_subtitle", \

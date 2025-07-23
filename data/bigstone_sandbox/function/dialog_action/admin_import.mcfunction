@@ -1,1 +1,1 @@
-dialog show @s bigstone_sandbox:admin_import
+function bigstone_sandbox:dialog/admin_import

@@ -39,7 +39,7 @@
         "formats": 81
       },
       {
-        "directory": "new",
+        "directory": "versions/1",
         "formats": {
           "min_inclusive": 82,
           "max_inclusive": 10000

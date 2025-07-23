@@ -18,7 +18,7 @@
                   "color": "gold",
                   "font": "bigstone_sandbox:small_caps"
                 },
-                "minecraft:item_model": "minecraft:repeater",
+                "minecraft:item_model": "minecraft:comparator",
                 "minecraft:lore": [
                   {
                     "text": "Compares and subtracts",
@@ -92,7 +92,14 @@
                   }
                 ],
                 "minecraft:custom_data": {
-                  "bigstone_sandbox": {}
+                  "bigstone_sandbox": {
+                    "tags": [
+                      "Vanilla Component Inspired",
+                      "Logic Component",
+                      "Combinational / Togglestateless",
+                      "Has Selectable Modes"
+                    ]
+                  }
                 }
               }
             }
