@@ -1,6 +1,8 @@
+say import public from hand
+
 data remove storage bigstone_sandbox:components import
 
-$data modify storage bigstone_sandbox:components import set value $(item_data)
+data modify storage bigstone_sandbox:components import set from entity @s SelectedItem
 
 function bigstone_sandbox:list/add_public_item
 

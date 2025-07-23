@@ -13,7 +13,7 @@ execute if data storage bigstone_sandbox:components options{import_logs:true} ru
 execute if score bool bigstone_sandbox.temp matches 1 run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.admin_options.command_feedback"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 execute if data storage bigstone_sandbox:components options{placement_highlight:true} run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.admin_options.global_placement_highlight_box"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 execute if data storage bigstone_sandbox:components options{search:true} run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.admin_options.allow_players_to_search"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
-
+execute if data storage bigstone_sandbox:components options{instant_snap:true} run data modify storage bigstone_sandbox:components temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.admin_options.instant_snap"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 
 function bigstone_sandbox:dialog/admin_options/run_dialog with storage bigstone_sandbox:components temp
 

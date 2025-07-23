@@ -1,6 +1,6 @@
 function xolibs:api/playerdata/load
 
-data modify storage xolibs:playerdata player.bigstone_sandbox merge value {filter: {include: {}, exclude: {}}}
+data modify storage xolibs:playerdata storage.bigstone_sandbox merge value {filter: {include: {}, exclude: {}}}
 #tag @s add bigstone_sandbox.default_to_components
 tag @s add bigstone_sandbox.info_on_join
 tag @s add bigstone_sandbox.sound_effects
