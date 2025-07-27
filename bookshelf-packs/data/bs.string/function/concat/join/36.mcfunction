@@ -1,0 +1,17 @@
+# ------------------------------------------------------------------------------------------------------------
+# Copyright (c) 2025 Gunivers
+#
+# This file is part of the Bookshelf project (https://github.com/mcbookshelf/bookshelf).
+#
+# This source code is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# Conditions:
+# - You may use this file in compliance with the MPL v2.0
+# - Any modifications must be documented and disclosed under the same license
+#
+# For more details, refer to the MPL v2.0.
+# ------------------------------------------------------------------------------------------------------------
+
+# This file was automatically generated, do not edit
+$data modify storage bs:ctx _.1 set value "$(37)$(36)$(35)$(34)$(33)$(32)$(31)$(30)$(29)$(28)$(27)$(26)$(25)$(24)$(23)$(22)$(21)$(20)$(19)$(18)$(17)$(16)$(15)$(14)$(13)$(12)$(11)$(10)$(9)$(8)$(7)$(6)$(5)$(4)$(3)$(2)$(1)"

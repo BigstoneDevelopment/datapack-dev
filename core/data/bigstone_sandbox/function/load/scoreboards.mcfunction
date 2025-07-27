@@ -38,6 +38,7 @@ scoreboard players set bs_min_page_number consts 0
 scoreboard players set bs_max_catagory_number consts 0
 
 scoreboard players set #24 consts 24
+scoreboard players set #16 consts 16
 scoreboard players set #1 consts 1
 scoreboard players set #10 consts 10
 scoreboard players set #100 consts 100
