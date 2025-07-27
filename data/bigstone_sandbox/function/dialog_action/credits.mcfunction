@@ -1,0 +1,1 @@
+dialog show @s bigstone_sandbox:credits

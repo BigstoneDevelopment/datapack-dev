@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_creator",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {},
+                "minecraft:tooltip_style": "bigstone_sandbox:bigstone_sandbox",
+                "minecraft:item_name": {
+                  "text": "Comparator",
+                  "color": "gold",
+                  "font": "bigstone_sandbox:small_caps"
+                },
+                "minecraft:item_model": "minecraft:comparator",
+                "minecraft:lore": [
+                  {
+                    "text": "Compares and subtracts",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "translate": "bigstone_sandbox.component.made_by",
+                    "with": [
+                      "Mojang"
+                    ],
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_north",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_south",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "OHEX"
+                        ]
+                      }
+                    ],
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_east",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_west",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_up",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_down",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "bigstone_sandbox": {
+                    "tags": [
+                      "Vanilla Component Inspired",
+                      "Logic Component",
+                      "Combinational / Togglestateless",
+                      "Has Selectable Modes"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

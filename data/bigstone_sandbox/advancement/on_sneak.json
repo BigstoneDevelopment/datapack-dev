@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "sprint": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "input": {
+              "sneak": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bigstone_sandbox:dialog_action/keybind/double_sneak"
+  }
+}
