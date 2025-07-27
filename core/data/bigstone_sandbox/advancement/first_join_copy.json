@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "sprint": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "bigstone_sandbox:main/first_join"
+  }
+}
