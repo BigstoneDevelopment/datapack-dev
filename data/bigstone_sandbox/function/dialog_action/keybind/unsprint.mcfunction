@@ -1,0 +1,1 @@
+advancement revoke @s only bigstone_sandbox:on_sprint
