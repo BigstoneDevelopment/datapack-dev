@@ -242,7 +242,7 @@
           "color": "white",
           "click_event": {
             "action": "open_url",
-            "url": "https://github.com/bigstonedevelopment"
+            "url": "https://bigstonedevelopment.github.io"
           },
           "hover_event": {
             "action": "show_text",
