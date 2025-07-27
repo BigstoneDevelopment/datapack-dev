@@ -13,26 +13,33 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         
         #snap to grid at corner for each of the axes (16x16x16)
         #x axes
-        execute store result storage bigstone_sandbox raycast.Position.x int 16 \
+        execute store result storage bigstone_sandbox raycast.Data.x int 16 \
             run data get storage bs:out raycast.targeted_block[0] 0.0625
         #y axes
-        execute store result storage bigstone_sandbox raycast.Position.y int 16 \
+        execute store result storage bigstone_sandbox raycast.Data.y int 16 \
             run data get storage bs:out raycast.targeted_block[1] 0.0625
         #z axes
-        execute store result storage bigstone_sandbox raycast.Position.z int 16 \
+        execute store result storage bigstone_sandbox raycast.Data.z int 16 \
             run data get storage bs:out raycast.targeted_block[2] 0.0625
 
 
         #offset block placement if holding saveditem
         execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] run function bigstone_sandbox:grid/cast_offset
 
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
+            run data modify storage bigstone_sandbox raycast.Data.ID_0 \
+                set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
+            run data modify storage bigstone_sandbox raycast.Data.ID_1 \
+                set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
+        
         #run functions to display highlight mesh according to item type
         execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
-            run function bigstone_sandbox:events/input/use/paste with storage bigstone_sandbox raycast.Position
+            run function bigstone_sandbox:events/input/use/paste with storage bigstone_sandbox raycast.Data
 
         execute \
             if entity @s[predicate=bigstone_sandbox:item_detect/is_selectitem] \
-            run function bigstone_sandbox:events/input/use/save with storage bigstone_sandbox raycast.Position
+            run function bigstone_sandbox:events/input/use/save with storage bigstone_sandbox raycast.Data
 
 
 #for debugging use

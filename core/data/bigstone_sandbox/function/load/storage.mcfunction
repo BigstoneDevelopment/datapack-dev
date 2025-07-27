@@ -5,7 +5,7 @@ data remove storage bigstone_sandbox:components args
 
 data modify storage bigstone_sandbox:components args set value {}
 
-#data merge storage bigstone_sandbox:data {is_setup: 1b}
+data merge storage bigstone_sandbox:data {is_setup: 1b}
 
 # Set default settings
 data merge storage bigstone:settings {\

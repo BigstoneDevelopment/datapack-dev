@@ -15,13 +15,13 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
     
     #snap to grid at corner for each of the axes (16x16x16)
     #x axes
-    execute store result storage bigstone_sandbox raycast.Position.x int 16 \
+    execute store result storage bigstone_sandbox raycast.Data.x int 16 \
         run data get storage bs:out raycast.targeted_block[0] 0.0625
     #y axes
-    execute store result storage bigstone_sandbox raycast.Position.y int 16 \
+    execute store result storage bigstone_sandbox raycast.Data.y int 16 \
         run data get storage bs:out raycast.targeted_block[1] 0.0625
     #z axes
-    execute store result storage bigstone_sandbox raycast.Position.z int 16 \
+    execute store result storage bigstone_sandbox raycast.Data.z int 16 \
         run data get storage bs:out raycast.targeted_block[2] 0.0625
 
     #offset block placement if holding saveditem
@@ -29,11 +29,11 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
 
     #run to test if there are any changes
     execute store success score #raycast.Changed.x bigstone_sandbox \
-        run data modify storage bigstone_sandbox raycast.temp.Position.x set from storage bigstone_sandbox raycast.Position.x
+        run data modify storage bigstone_sandbox raycast.temp.Data.x set from storage bigstone_sandbox raycast.Data.x
     execute store success score #raycast.Changed.y bigstone_sandbox \
-        run data modify storage bigstone_sandbox raycast.temp.Position.y set from storage bigstone_sandbox raycast.Position.y
+        run data modify storage bigstone_sandbox raycast.temp.Data.y set from storage bigstone_sandbox raycast.Data.y
     execute store success score #raycast.Changed.z bigstone_sandbox \
-        run data modify storage bigstone_sandbox raycast.temp.Position.z set from storage bigstone_sandbox raycast.Position.z
+        run data modify storage bigstone_sandbox raycast.temp.Data.z set from storage bigstone_sandbox raycast.Data.z
 
     #cancel operation if no change detected
     execute \
@@ -44,11 +44,11 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
             #run functions to display highlight mesh according to item type
             tag @s add highlightMode
             execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
-                run function bigstone_sandbox:events/input/hold/paste with storage bigstone_sandbox raycast.Position
+                run function bigstone_sandbox:events/input/hold/paste with storage bigstone_sandbox raycast.Data
 
             execute \
                 if entity @s[predicate=bigstone_sandbox:item_detect/is_selectitem] \
-                run function bigstone_sandbox:events/input/hold/select with storage bigstone_sandbox raycast.Position
+                run function bigstone_sandbox:events/input/hold/select with storage bigstone_sandbox raycast.Data
 
 
 #for debugging use
