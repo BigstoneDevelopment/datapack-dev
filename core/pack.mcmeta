@@ -1,19 +1,43 @@
 {
-    "pack": {
-        "description": [
-            {
-                "text": "ᴀ ꜱɪᴍᴘʟᴇ ʙɪɢꜱᴛᴏɴᴇ ᴇᴅɪᴛᴏʀ",
-                "color": "yellow"
-            },
-            {
-                "text": "\n"
-            },
-            {
-                "text": "@BigstoneDevelopment                   ",
-                "italic": true,
-                "color": "gray"
-            }
-        ],
-        "pack_format": 80
+  "pack": {
+    "pack_format": 80,
+    "description": [
+      {
+        "text": "ᴀ ꜱᴀɴᴅʙᴏx ꜰᴏʀ ʙɪɢꜱᴛᴏɴᴇ",
+        "color": "yellow"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "@BigstoneDevelopment                   ",
+        "italic": true,
+        "color": "gray"
+      }
+    ],
+    "supported_formats": {
+      "min_inclusive": 80,
+      "max_inclusive": 81
     }
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "1.21.5-",
+        "formats": {
+          "min_inclusive": 0,
+          "max_inclusive": 79
+        }
+      },
+      {
+        "directory": "1.21.6",
+        "formats": 80
+        
+      },
+      {
+        "directory": "1.21.7",
+        "formats": 81
+      }
+    ]
+  }
 }

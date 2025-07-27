@@ -1,5 +1,6 @@
 {
     "values": [
-        "bigstone_sandbox:load"
+        "bigstone_sandbox:load",
+        "bigstone_sandbox:main/load"
     ]
 }
