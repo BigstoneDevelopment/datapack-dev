@@ -5,7 +5,7 @@ execute unless function bigstone_sandbox:list/component_list/component_validatio
 
 function bigstone_sandbox:list/component_list/format_data
 data modify storage bigstone_sandbox:components temp.list set from storage bigstone_sandbox:components list.components
-#execute if data storage bigstone_sandbox:components list.components[] unless function bigstone_sandbox:list/component_list/test_is_item_in_list run return fail
+execute if data storage bigstone_sandbox:components list.components[] unless function bigstone_sandbox:list/component_list/test_is_item_in_list run return fail
 data modify storage bigstone_sandbox:components list.components prepend from storage bigstone_sandbox:components temp.component
 
 data remove storage bigstone_sandbox:components temp
