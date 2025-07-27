@@ -1,5 +1,3 @@
-say import public from hand
-
 data remove storage bigstone_sandbox:components import
 
 data modify storage bigstone_sandbox:components import set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox
