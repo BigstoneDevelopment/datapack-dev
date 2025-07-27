@@ -14,5 +14,7 @@ scoreboard players set @s bigstone_sandbox.sprint_cooldown 0
 scoreboard players set @s bigstone_sandbox.sneak_cooldown 0
 
 execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.components run data modify storage xolibs:playerdata storage.bigstone_sandbox.list.components set value []
+execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.filtered run data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filtered set value []
+execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.loaded run data modify storage xolibs:playerdata storage.bigstone_sandbox.list.loaded set value []
 
 function bigstone_sandbox:main/on_join

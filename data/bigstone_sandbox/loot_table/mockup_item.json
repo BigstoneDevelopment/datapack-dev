@@ -33,7 +33,9 @@
                     "color": "dark_gray",
                     "italic": false
                   },
-                  "",
+                  {
+                    "text": ""
+                  },
                   {
                     "translate": "bigstone_sandbox.dialog_menu.port_north",
                     "with": [
@@ -88,6 +90,35 @@
                       }
                     ],
                     "color": "yellow",
+                    "italic": false
+                  },
+                  
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_up",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "translate": "bigstone_sandbox.dialog_menu.port_down",
+                    "with": [
+                      {
+                        "text": "",
+                        "color": "dark_gray",
+                        "extra": [
+                          "IHEX"
+                        ]
+                      }
+                    ],
+                    "color": "light_purple",
                     "italic": false
                   }
                 ],
