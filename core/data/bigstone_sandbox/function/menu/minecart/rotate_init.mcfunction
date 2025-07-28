@@ -1,1 +1,0 @@
-execute at @p[tag=bs_has_menu_item] as @e[distance=..1,tag=bs_menu_container] run rotate @s ~90 0

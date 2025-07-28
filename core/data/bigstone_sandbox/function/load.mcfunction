@@ -1,9 +1,0 @@
-# Loaded message
-tellraw @a ["",{"text":"\n\n\n"},{"text":"[","color":"dark_gray"},{"text":"\u0299\u026a\u0262\ua731\u1d1b\u1d0f\u0274\u1d07 \ua731\u1d00\u0274\u1d05\u0299\u1d0fx","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"Bigstone Sandbox","color":"yellow",click_event:{"action":"open_url","url":"https://github.com/CrazyH2/Bigstone"}},{"text":"\n"},{"text":"[","color":"dark_gray"},{"text":"\u0299\u026a\u0262\ua731\u1d1b\u1d0f\u0274\u1d07 \ua731\u1d00\u0274\u1d05\u0299\u1d0fx","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"A simple Bigstone editor","color":"gray"},{"text":"\n"},{"text":"[","color":"dark_gray"},{"text":"\u0299\u026a\u0262\ua731\u1d1b\u1d0f\u0274\u1d07 \ua731\u1d00\u0274\u1d05\u0299\u1d0fx","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"@CrazyH2 - ","italic":true,"color":"gray"},{"text":"Click for github","italic":true,"color":"yellow","click_event":{"action":"open_url","url":"https://github.com/CrazyH2"}},{"text":"\n\n"},{"text":"[","color":"dark_gray"},{"text":"\u0299\u026a\u0262\ua731\u1d1b\u1d0f\u0274\u1d07 \ua731\u1d00\u0274\u1d05\u0299\u1d0fx","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"Use ","color":"gray"},{"text":"/trigger bs","color":"yellow"},{"text":" to get started!","color":"gray"},{"text":"\n\n "}]
-
-# Modules
-function bigstone_sandbox:load/scoreboards
-function bigstone_sandbox:load/initial_setup
-function bigstone_sandbox:load/storage
-function bigstone_sandbox:load/menu
-function bigstone_sandbox:load/reset_entities
