@@ -1,1 +1,1 @@
-advancement revoke @s only bigstone_sandbox:on_sneak
+advancement revoke @s only bigstone_sandbox:keybind/on_sneak

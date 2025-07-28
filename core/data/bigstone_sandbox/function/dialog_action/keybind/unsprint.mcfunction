@@ -1,1 +1,1 @@
-advancement revoke @s only bigstone_sandbox:on_sprint
+advancement revoke @s only bigstone_sandbox:keybind/on_sprint
