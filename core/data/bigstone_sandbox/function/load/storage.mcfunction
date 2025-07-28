@@ -1,9 +1,4 @@
-# Storage manipulation
-data remove storage bigstone_sandbox:components structures
-data remove storage bigstone_sandbox:components loaded
-data remove storage bigstone_sandbox:components args
-
-data modify storage bigstone_sandbox:components args set value {}
+# Storage set setup state
 
 data merge storage bigstone_sandbox:data {is_setup: 1b}
 

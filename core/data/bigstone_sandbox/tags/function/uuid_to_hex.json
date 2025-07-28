@@ -1,6 +1,0 @@
-{
-  "replace": true,
-  "values": [
-    "bigstone_sandbox:util/uuid_to_hex/uuid_to_hex"
-  ]
-}
