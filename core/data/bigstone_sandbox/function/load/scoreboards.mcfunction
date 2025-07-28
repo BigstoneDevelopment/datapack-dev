@@ -1,4 +1,9 @@
 # Consts
+scoreboard objectives add bigstone_sandbox dummy
+scoreboard objectives add bigstone_sandbox.last_pos.x dummy
+scoreboard objectives add bigstone_sandbox.last_pos.y dummy
+scoreboard objectives add bigstone_sandbox.last_pos.z dummy
+
 scoreboard objectives add consts dummy
 
 scoreboard players set #24 consts 24

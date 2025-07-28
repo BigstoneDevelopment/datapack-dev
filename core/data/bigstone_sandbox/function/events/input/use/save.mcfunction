@@ -1,6 +1,5 @@
 #make sound wow it makes sound aaaaaa
 $execute positioned $(x) $(y) $(z) run playsound minecraft:block.stone.break block @a ~8 ~8 ~8 10.0
-
 #store count into component ID
 execute store result storage bigstone_sandbox component.ID_0 int 1 \
     run scoreboard players get #component_ID_count_0 bigstone_sandbox

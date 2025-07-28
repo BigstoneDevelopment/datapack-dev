@@ -27,6 +27,10 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
     #offset block placement if holding saveditem
     execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] run function bigstone_sandbox:grid/cast_offset
 
+    #get last location of cast Position
+    execute store result storage bigstone_sandbox raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x
+    execute store result storage bigstone_sandbox raycast.temp.Data.y int 1 run scoreboard players get @s bigstone_sandbox.last_pos.y
+    execute store result storage bigstone_sandbox raycast.temp.Data.z int 1 run scoreboard players get @s bigstone_sandbox.last_pos.z
     #run to test if there are any changes
     execute store success score #raycast.Changed.x bigstone_sandbox \
         run data modify storage bigstone_sandbox raycast.temp.Data.x set from storage bigstone_sandbox raycast.Data.x
@@ -34,6 +38,11 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         run data modify storage bigstone_sandbox raycast.temp.Data.y set from storage bigstone_sandbox raycast.Data.y
     execute store success score #raycast.Changed.z bigstone_sandbox \
         run data modify storage bigstone_sandbox raycast.temp.Data.z set from storage bigstone_sandbox raycast.Data.z
+
+    #update last location of cast Position
+    execute store result score @s bigstone_sandbox.last_pos.x run data get storage bigstone_sandbox raycast.temp.Data.x
+    execute store result score @s bigstone_sandbox.last_pos.y run data get storage bigstone_sandbox raycast.temp.Data.y
+    execute store result score @s bigstone_sandbox.last_pos.z run data get storage bigstone_sandbox raycast.temp.Data.z
 
     #cancel operation if no change detected
     execute \
