@@ -8,6 +8,8 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     advancement revoke @s only bigstone_sandbox:item_detect/hold
     advancement revoke @s only bigstone_sandbox:item_detect/active_in_offhand
 
+    advancement revoke @s only bigstone_sandbox:item_detect/place
+
     #raycast
     execute anchored eyes positioned ^ ^ ^ \
         run function #bs.raycast:run {with:{max_distance:72}}

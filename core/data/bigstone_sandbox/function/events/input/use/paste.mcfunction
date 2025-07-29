@@ -8,6 +8,7 @@ $execute if score #command_success bigstone_sandbox matches 1 \
     run execute positioned $(x) $(y) $(z) \
         run playsound minecraft:block.stone.place block @a ~8 ~8 ~8 10.0
 
+#add translation here
 execute if score #command_success bigstone_sandbox matches 0 \
     run return \
         run tellraw @s {\
@@ -17,9 +18,9 @@ execute if score #command_success bigstone_sandbox matches 0 \
                 "action":"show_text",\
                 "value":[\
                     {\
-                    "text":"This warning appears if the referenced structure for this item isn't stored in this world. Please import your structure through the proper method through the bigstone dialog menu"\
+                    "text":"This warning can appears if the referenced structure for this item isn't stored in this world. Please import your structure through the proper method through the bigstone dialog menu"\
                     }\
                 ]\
             },\
-        "text":"[Structure reference is Invalid]"\
+        "text":"[Structure Placement is Invalid]"\
     }

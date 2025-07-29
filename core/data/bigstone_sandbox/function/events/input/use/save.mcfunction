@@ -19,6 +19,5 @@ $execute positioned $(x) $(y) $(z) run fill ~ ~ ~ ~15 ~15 ~15 air strict
 #block update save
 #$execute positioned $(x) $(y) $(z) run fill ~ ~ ~ ~15 ~15 ~15 stone strict
 #$execute positioned $(x) $(y) $(z) run fill ~ ~ ~ ~15 ~15 ~15 air replace
-say test!
 execute if predicate bigstone_sandbox:item_detect/mainhand/is_selectitem run return run function bigstone_sandbox:structures/item/mainhand with storage bigstone_sandbox component
 execute if predicate bigstone_sandbox:item_detect/offhand/is_selectitem run function bigstone_sandbox:structures/item/offhand with storage bigstone_sandbox component
