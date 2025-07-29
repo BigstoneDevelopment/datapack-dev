@@ -34,6 +34,13 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
                 predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,\
             ] run function bigstone_sandbox:grid/cast_offset
         
+        function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+            execute \
+                if score #isEmptyChunk bigstone_sandbox matches 0 \
+                unless predicate bigstone_sandbox:item_detect/mainhand/is_selectitem \
+                unless entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_selectitem] \
+                run return fail
+
         #prepare data from item
         execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \
             run data modify storage bigstone_sandbox raycast.Data.ID_0 \
