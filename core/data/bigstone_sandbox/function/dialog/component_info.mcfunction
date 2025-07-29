@@ -28,4 +28,4 @@ function bigstone_sandbox:dialog/component_info/tags_loop
 
 function bigstone_sandbox:dialog/component_info/run_dialog with storage bigstone_sandbox:components temp
 
-#data remove storage bigstone_sandbox:components temp
+data remove storage bigstone_sandbox:components temp
