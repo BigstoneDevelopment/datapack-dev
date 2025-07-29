@@ -3,6 +3,7 @@ scoreboard objectives add bigstone_sandbox_menu trigger
 scoreboard objectives add bigstone_sandbox.loaded_index dummy
 scoreboard objectives add bigstone_sandbox.selected_index dummy
 scoreboard objectives add bigstone_sandbox.temp dummy
+scoreboard objectives add bigstone_sandbox.raycast dummy
 scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy
 scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
 scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
@@ -15,6 +16,7 @@ scoreboard players set #16 consts 16
 scoreboard players set #1 consts 1
 scoreboard players set #10 consts 10
 scoreboard players set #100 consts 100
+scoreboard players set #256 consts 256
 scoreboard players set #1000 consts 1000
 
 # load storage
