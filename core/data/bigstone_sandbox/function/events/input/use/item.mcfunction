@@ -45,10 +45,10 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
 
         execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,predicate=!bigstone_sandbox:item_detect/mainhand/is_saveditem] \
             run data modify storage bigstone_sandbox raycast.Data.ID_0 \
-                set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
+                set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
         execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,predicate=!bigstone_sandbox:item_detect/mainhand/is_saveditem] \
             run data modify storage bigstone_sandbox raycast.Data.ID_1 \
-                set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
+                set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
         
         #run functions to execute placement/save
         execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \

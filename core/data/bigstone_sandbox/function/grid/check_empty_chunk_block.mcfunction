@@ -1,0 +1,2 @@
+$execute positioned $(x) $(y) $(z) store success score #isEmptyChunk bigstone_sandbox if predicate bigstone_sandbox:chunk_is_empty
+#tellraw @a {"score":{"name":"#isEmptyChunk","objective":"bigstone_sandbox"}}

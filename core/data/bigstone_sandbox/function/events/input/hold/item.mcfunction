@@ -8,6 +8,8 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     advancement revoke @s only bigstone_sandbox:item_detect/hold
     advancement revoke @s only bigstone_sandbox:item_detect/active_in_offhand
 
+    advancement revoke @s only bigstone_sandbox:item_detect/place
+
     #raycast
     execute anchored eyes positioned ^ ^ ^ \
         run function #bs.raycast:run {with:{max_distance:72}}
@@ -58,7 +60,17 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
         if score #raycast.Changed.x bigstone_sandbox matches 0 \
         if score #raycast.Changed.y bigstone_sandbox matches 0 \
         if score #raycast.Changed.z bigstone_sandbox matches 0 \
-            run return fail
+        run return fail
+
+            tag @s add highlightMode
+            function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+            execute \
+                if score #isEmptyChunk bigstone_sandbox matches 0 \
+                unless predicate bigstone_sandbox:item_detect/mainhand/is_selectitem \
+                unless entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_selectitem] \
+                run return \
+                    run function bigstone_sandbox:events/input/hold/invalid with storage bigstone_sandbox raycast.Data
+        
             #run functions to display highlight mesh according to item type
             tag @s add highlightMode
             execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \
