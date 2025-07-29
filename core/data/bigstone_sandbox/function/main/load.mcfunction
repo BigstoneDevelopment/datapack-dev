@@ -47,7 +47,13 @@ data merge storage bigstone:settings { \
             colour2: 627826023, \
             colour3: 626045773, \
             colour4: 630781844 \
-        } \
+        }, \
+        invalid:{ \
+            colour1: 520028160, \
+            colour2: 520028160, \
+            colour3: 520028160, \
+            colour4: 520028160 \
+        }\
     } \
 }
 
