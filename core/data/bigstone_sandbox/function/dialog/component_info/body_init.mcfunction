@@ -136,80 +136,108 @@ data modify storage bigstone_sandbox:components temp.body set value \
         "with": [ \
           { \
             "text": "", \
-            "extra": [ \
-              [ \
-                "IHEX" \
-              ] \
-            ], \
+            "extra": [""], \
             "color": "dark_gray", \
             "font": "minecraft:default" \
+          }, \
+        ], \
+        "extra": [ \
+          { \
+          "translate": "newline_1" \
           } \
         ], \
         "font": "bigstone_sandbox:small_caps", \
-        "color": "blue" \
-      }, \
-      { \
-        "translate": "newline_1" \
+        "color": "blue", \
       }, \
       { \
         "translate": "bigstone_sandbox.dialog_menu.port_south", \
         "with": [ \
           { \
             "text": "", \
-            "extra": [ \
-              [ \
-                "OHEX" \
-              ] \
-            ], \
+            "extra": [""], \
             "color": "dark_gray", \
             "font": "minecraft:default" \
+          } \
+        ], \
+        "extra": [ \
+          { \
+          "translate": "newline_1" \
           } \
         ], \
         "font": "bigstone_sandbox:small_caps", \
         "color": "red" \
       }, \
       { \
-        "translate": "newline_1" \
-      }, \
-      { \
         "translate": "bigstone_sandbox.dialog_menu.port_east", \
         "with": [ \
           { \
             "text": "", \
-            "extra": [ \
-              [ \
-                "IHEX" \
-              ] \
-            ], \
+            "extra": [""], \
             "color": "dark_gray", \
             "font": "minecraft:default" \
+          } \
+        ], \
+        "extra": [ \
+          { \
+          "translate": "newline_1" \
           } \
         ], \
         "font": "bigstone_sandbox:small_caps", \
         "color": "green" \
       }, \
       { \
-        "translate": "newline_1" \
-      }, \
-      { \
         "translate": "bigstone_sandbox.dialog_menu.port_west", \
         "with": [ \
           { \
             "text": "", \
-            "extra": [ \
-              [ \
-                "IHEX" \
-              ] \
-            ], \
+            "extra": [""], \
             "color": "dark_gray", \
             "font": "minecraft:default" \
+          } \
+        ], \
+        "extra": [ \
+          { \
+          "translate": "newline_1" \
           } \
         ], \
         "font": "bigstone_sandbox:small_caps", \
         "color": "yellow" \
       }, \
       { \
-        "translate": "newline_1" \
+        "translate": "bigstone_sandbox.dialog_menu.port_top", \
+        "with": [ \
+          { \
+            "text": "", \
+            "extra": [""], \
+            "color": "dark_gray", \
+            "font": "minecraft:default" \
+          } \
+        ], \
+        "extra": [ \
+          { \
+          "translate": "newline_1" \
+          } \
+        ], \
+        "font": "bigstone_sandbox:small_caps", \
+        "color": "gold" \
+      }, \
+      { \
+        "translate": "bigstone_sandbox.dialog_menu.port_bottom", \
+        "with": [ \
+          { \
+            "text": "", \
+            "extra": [""], \
+            "color": "dark_gray", \
+            "font": "minecraft:default" \
+          } \
+        ], \
+        "extra": [ \
+          { \
+          "translate": "newline_1" \
+          } \
+        ], \
+        "font": "bigstone_sandbox:small_caps", \
+        "color": "light_purple" \
       }, \
       { \
         "translate": "bigstone_sandbox.dialog_menu.background.middle", \
@@ -225,10 +253,10 @@ data modify storage bigstone_sandbox:components temp.body set value \
           { \
             "text": "", \
             "extra": [ \
-              [ \
-                "Vanilla Redstone Component Inspired" \
-              ] \
-            ], \
+                { \
+                  "translate": "newline_1" \
+                }, \
+             ], \
             "color": "dark_gray", \
             "font": "minecraft:default" \
           } \
