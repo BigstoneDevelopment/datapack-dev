@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "active_item_in_hotbar": {
+    "active_item_in_offhand": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
@@ -15,27 +15,16 @@
               }
             }
           }
-        },
-        "items": [
-          {
-            "predicates": {
-              "minecraft:custom_data": {
-                "item_use_effect": {
-                  "type": "bigstone"
-                }
-              }
-            }
-          }
-        ]
+        }
       }
     }
   },
   "requirements": [
     [
-      "active_item_in_hotbar"
+      "active_item_in_offhand"
     ]
   ],
   "rewards": {
-    "function": "bigstone_sandbox:events/input/item_detect_hotbar"
+    "function": "bigstone_sandbox:events/input/hold/item"
   }
 }

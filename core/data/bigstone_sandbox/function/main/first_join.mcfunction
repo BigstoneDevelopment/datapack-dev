@@ -18,3 +18,6 @@ execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.filt
 execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.loaded run data modify storage xolibs:playerdata storage.bigstone_sandbox.list.loaded set value []
 
 function bigstone_sandbox:main/on_join
+
+advancement revoke @s only bigstone_sandbox:item_detect/inactive_in_offhand
+advancement revoke @s only bigstone_sandbox:item_detect/inactive_in_hotbar
