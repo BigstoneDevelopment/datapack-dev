@@ -7,6 +7,7 @@ execute as @s[predicate=!bs.id:has_suid] run function #bs.id:give_suid
 execute store result storage bigstone_sandbox highlight.SUID int 1 run scoreboard players get @s bs.id
 #detect if was in other mode
 tag @s add highlightModeSelect
+say cleared4
 execute if entity @s[tag=highlightModePaste] run function bigstone_sandbox:grid/clear_highlight with storage bigstone_sandbox highlight
 tag @s remove highlightModePaste
 $execute positioned $(x) $(y) $(z) align xyz run function bigstone_sandbox:grid/create_boxhighlight with storage bigstone_sandbox highlight
