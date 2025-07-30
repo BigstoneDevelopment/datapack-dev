@@ -9,6 +9,11 @@ scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
 scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
 scoreboard objectives add bigstone_sandbox dummy
 
+scoreboard objectives add bigstone_sandbox dummy
+scoreboard objectives add bigstone_sandbox.last_pos.x dummy
+scoreboard objectives add bigstone_sandbox.last_pos.y dummy
+scoreboard objectives add bigstone_sandbox.last_pos.z dummy
+
 scoreboard objectives add consts dummy
 
 scoreboard players set #24 consts 24
