@@ -1,0 +1,375 @@
+{
+  "name": "bigstone_sandbox:grid",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_west/borders/north"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_west/borders/south"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_west/borders/east"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_west/borders/west"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_east/borders/north"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_east/borders/south"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_east/borders/east"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_east/borders/west"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/1"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/2"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/3"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/4"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/5"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/6"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/7"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/8"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/9"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/10"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/11"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/12"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/13"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/south/14"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/1"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/2"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/3"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/4"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/5"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/6"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/7"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/8"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/9"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/10"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/11"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/12"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/13"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/east/14"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/1"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/2"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/3"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/4"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/5"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/6"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/7"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/8"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/9"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/10"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/11"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/12"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/13"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/south/14"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/1"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/2"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/3"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/4"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/5"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/6"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/7"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/8"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/9"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/10"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/11"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/12"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/13"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/east/14"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/borders/north"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/borders/south"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/borders/east"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/north_west/borders/west"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/borders/north"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/borders/south"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/borders/east"
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": "bigstone_sandbox:bigstone_ready/south_east/borders/west"
+          }
+        ]
+      }
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

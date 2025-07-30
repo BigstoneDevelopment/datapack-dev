@@ -1,0 +1,24 @@
+{
+  "name": "bigstone_sandbox:grid",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+        "element_type": "minecraft:feature_pool_element",
+        "projection": "rigid",
+        "feature": "bigstone_sandbox:bigstone_ready/0_0"
+      },{
+        "element_type": "minecraft:feature_pool_element",
+        "projection": "rigid",
+        "feature": "bigstone_sandbox:bigstone_ready/1_1"
+      }
+        ]
+      }
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

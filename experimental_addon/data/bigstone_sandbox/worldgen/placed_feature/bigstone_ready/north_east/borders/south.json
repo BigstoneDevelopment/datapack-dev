@@ -1,0 +1,37 @@
+{
+  "feature": {
+    "config": {
+      "direction": "west",
+      "allowed_placement": {
+        "type": "minecraft:matching_blocks",
+
+        "blocks": "#bigstone_sandbox:grid_replaceable"
+      },
+      "prioritize_tip": true,
+      "layers": [
+        {
+          "height": 32,
+          "provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:polished_blackstone"
+            }
+          }
+        }
+      ]
+    },
+    "type": "minecraft:block_column"
+  },
+  "placement": [
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 15,
+      "y_spread": 0
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 16,
+      "y_spread": 0
+    }
+  ]
+}
