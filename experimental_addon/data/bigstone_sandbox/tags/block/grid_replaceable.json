@@ -1,8 +1,8 @@
 {
   "values": [
-    "minecraft:smooth_basalt",
-    "minecraft:calcite",
-    "minecraft:smooth_stone",
-    "minecraft:polished_blackstone"
+    "minecraft:quartz_block",
+    "minecraft:polished_deepslate",
+    "minecraft:netherite_block",
+    "minecraft:polished_diorite"
   ]
 }

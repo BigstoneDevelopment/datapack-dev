@@ -14,7 +14,7 @@
           "provider": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:calcite"
+              "Name": "minecraft:polished_deepslate"
             }
           }
         }

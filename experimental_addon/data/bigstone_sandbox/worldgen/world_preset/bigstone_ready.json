@@ -15,7 +15,7 @@
             },
             {
               "height": 1,
-              "block": "minecraft:smooth_basalt"
+              "block": "minecraft:quartz_block"
             }
           ],
           "structure_overrides": [
@@ -39,7 +39,7 @@
             },
             {
               "height": 1,
-              "block": "minecraft:smooth_basalt"
+              "block": "minecraft:quartz_block"
             }
           ],
           "structure_overrides": [
@@ -63,7 +63,7 @@
             },
             {
               "height": 1,
-              "block": "minecraft:smooth_basalt"
+              "block": "minecraft:quartz_block"
             }
           ],
           "structure_overrides": [
