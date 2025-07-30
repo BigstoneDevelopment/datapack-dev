@@ -24,22 +24,53 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
 
 
         #offset block placement if holding saveditem
-        execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] run function bigstone_sandbox:grid/cast_offset
+        execute if predicate bigstone_sandbox:item_detect/mainhand/is_saveditem run function bigstone_sandbox:grid/cast_offset
+        #offset if only offhand saved item
+        execute \
+            if entity @s[\
+                predicate=!bigstone_sandbox:item_detect/mainhand/is_saveditem,\
+                predicate=!bigstone_sandbox:item_detect/mainhand/is_selectitem,\
+                predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,\
+            ] run function bigstone_sandbox:grid/cast_offset
+        
+        function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+            execute \
+                if score #isEmptyChunk bigstone_sandbox matches 0 \
+                unless predicate bigstone_sandbox:item_detect/mainhand/is_selectitem \
+                unless entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_selectitem] \
+                run return fail
 
-        execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
+        #prepare data from item
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \
             run data modify storage bigstone_sandbox raycast.Data.ID_0 \
                 set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
-        execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
+
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \
             run data modify storage bigstone_sandbox raycast.Data.ID_1 \
                 set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
+
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,predicate=!bigstone_sandbox:item_detect/mainhand/is_saveditem] \
+            run data modify storage bigstone_sandbox raycast.Data.ID_0 \
+                set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,predicate=!bigstone_sandbox:item_detect/mainhand/is_saveditem] \
+            run data modify storage bigstone_sandbox raycast.Data.ID_1 \
+                set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
         
-        #run functions to display highlight mesh according to item type
-        execute if entity @s[predicate=bigstone_sandbox:item_detect/is_saveditem] \
-            run function bigstone_sandbox:events/input/use/paste with storage bigstone_sandbox raycast.Data
+        #run functions to execute placement/save
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \
+            run return run function bigstone_sandbox:events/input/use/paste with storage bigstone_sandbox raycast.Data
 
         execute \
-            if entity @s[predicate=bigstone_sandbox:item_detect/is_selectitem] \
-            run function bigstone_sandbox:events/input/use/save with storage bigstone_sandbox raycast.Data
+            if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_selectitem] \
+            run return run function bigstone_sandbox:events/input/use/save with storage bigstone_sandbox raycast.Data
+
+        #run functions to execute placement/save (offhand)
+        execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_saveditem] \
+            run return run function bigstone_sandbox:events/input/use/paste with storage bigstone_sandbox raycast.Data
+
+        execute \
+            if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem] \
+            run return run function bigstone_sandbox:events/input/use/save with storage bigstone_sandbox raycast.Data
 
 
 #for debugging use

@@ -7,7 +7,8 @@ data modify storage bigstone_sandbox:components temp.add_item.description.conten
     "action": "show_text", \
     "value": { \
       "translate": "bigstone_sandbox.dialog_menu.private", \
-      "color": "yellow" \
+      "color": "yellow", \
+      "font": "bigstone_sandbox:small_caps" \
     } \
   } \
 }

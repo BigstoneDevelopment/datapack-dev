@@ -3,10 +3,16 @@ scoreboard objectives add bigstone_sandbox_menu trigger
 scoreboard objectives add bigstone_sandbox.loaded_index dummy
 scoreboard objectives add bigstone_sandbox.selected_index dummy
 scoreboard objectives add bigstone_sandbox.temp dummy
+scoreboard objectives add bigstone_sandbox.raycast dummy
 scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy
 scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
 scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
 scoreboard objectives add bigstone_sandbox dummy
+
+scoreboard objectives add bigstone_sandbox dummy
+scoreboard objectives add bigstone_sandbox.last_pos.x dummy
+scoreboard objectives add bigstone_sandbox.last_pos.y dummy
+scoreboard objectives add bigstone_sandbox.last_pos.z dummy
 
 scoreboard objectives add consts dummy
 
@@ -15,6 +21,7 @@ scoreboard players set #16 consts 16
 scoreboard players set #1 consts 1
 scoreboard players set #10 consts 10
 scoreboard players set #100 consts 100
+scoreboard players set #256 consts 256
 scoreboard players set #1000 consts 1000
 
 # load storage
@@ -32,7 +39,6 @@ execute unless data storage bigstone_sandbox:components list.components run data
 data merge storage bigstone_sandbox:data {is_setup: 1b}
 
 data merge storage bigstone:settings { \
-    instantSnap:1b, \
     highlightColour:{ \
         paste:{ \
             colour1: 626778336, \
@@ -45,7 +51,13 @@ data merge storage bigstone:settings { \
             colour2: 627826023, \
             colour3: 626045773, \
             colour4: 630781844 \
-        } \
+        }, \
+        invalid:{ \
+            colour1: 520028160, \
+            colour2: 520028160, \
+            colour3: 520028160, \
+            colour4: 520028160 \
+        }\
     } \
 }
 

@@ -1,1 +1,1 @@
-dialog show @s bigstone_sandbox:search
+function bigstone_sandbox:dialog/search

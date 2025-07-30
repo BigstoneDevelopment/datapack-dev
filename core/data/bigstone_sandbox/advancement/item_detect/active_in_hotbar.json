@@ -16,17 +16,7 @@
             }
           }
         },
-        "items": [
-          {
-            "predicates": {
-              "minecraft:custom_data": {
-                "item_use_effect": {
-                  "type": "bigstone"
-                }
-              }
-            }
-          }
-        ]
+        "items": []
       }
     }
   },
