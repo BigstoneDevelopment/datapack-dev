@@ -2,6 +2,7 @@
 tag @s remove highlightMode
 tag @s remove highlightModePaste
 tag @s remove highlightModeSelect
+tag @s remove highlightModeInvalid
 execute store result storage bigstone_sandbox highlight.SUID int 1 run scoreboard players get @s bs.id
 #reset position data for change detection
 data remove storage bigstone_sandbox raycast.temp.Data

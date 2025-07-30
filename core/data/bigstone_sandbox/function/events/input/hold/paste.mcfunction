@@ -8,5 +8,7 @@ execute store result storage bigstone_sandbox highlight.SUID int 1 run scoreboar
 #detect if was in other mode
 tag @s add highlightModePaste
 execute if entity @s[tag=highlightModeSelect] run function bigstone_sandbox:grid/clear_highlight with storage bigstone_sandbox highlight
+execute if entity @s[tag=highlightModeInvalid] run function bigstone_sandbox:grid/clear_highlight with storage bigstone_sandbox highlight
+tag @s remove highlightModeInvalid
 tag @s remove highlightModeSelect
 $execute positioned $(x) $(y) $(z) align xyz run function bigstone_sandbox:grid/create_boxhighlight with storage bigstone_sandbox highlight
