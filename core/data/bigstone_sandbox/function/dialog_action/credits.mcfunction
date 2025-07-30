@@ -1,1 +1,1 @@
-dialog show @s bigstone_sandbox:credits
+function bigstone_sandbox:dialog/credits

@@ -1,0 +1,261 @@
+dialog show @s \
+{ \
+  "type": "minecraft:server_links", \
+  "title": { \
+    "translate": "bigstone_sandbox.dialog_menu.credits_menu", \
+    "color": "gold", \
+    "font": "bigstone_sandbox:small_caps" \
+  }, \
+  "body": [ \
+    { \
+      "type": "minecraft:plain_message", \
+      "contents": [ \
+        "", \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.background.top", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_2" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.button.home", \
+          "font": "bigstone_sandbox:menu", \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "trigger bigstone_sandbox_menu set -10" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.home", \
+              "color": "white", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "translate": "space.193", \
+          "font": "space:default" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.button.close_menu", \
+          "font": "bigstone_sandbox:menu", \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "trigger bigstone_sandbox_menu set -1" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.close_menu", \
+              "color": "dark_red", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0, \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "trigger bigstone_sandbox_menu set -10" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.home", \
+              "color": "white", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "translate": "space.193", \
+          "font": "space:default" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+          "shadow_color": 0, \
+          "font": "bigstone_sandbox:menu", \
+          "click_event": { \
+            "action": "run_command", \
+            "command": "trigger bigstone_sandbox_menu set -1" \
+          }, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.close_menu", \
+              "color": "dark_red", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          } \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits", \
+          "font": "bigstone_sandbox:small_caps", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_2" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.devs_subtitle", \
+          "color": "gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.background.middle", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits.devs", \
+          "color": "dark_gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_3" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.uiux_artists_subtitle", \
+          "color": "gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.background.middle", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits.uiux_artists", \
+          "color": "dark_gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_3" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.wiki_maintainers_subtitle", \
+          "color": "gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.background.middle", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits.wiki_maintainers", \
+          "color": "dark_gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_3" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.attributions_subtitle", \
+          "color": "gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.background.middle", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits.attributions", \
+          "color": "dark_gray", \
+          "shadow_color": 0 \
+        }, \
+        { \
+          "translate": "newline_3" \
+        }, \
+        { \
+          "translate": "newline_2" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits_line1", \
+          "color": "dark_gray", \
+          "shadow_color": 0, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.click_event_help", \
+              "color": "gray", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          }, \
+          "click_event": { \
+            "action": "open_url", \
+            "url": "https://github.com/bigstonedevelopment" \
+          } \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.credits_line2", \
+          "color": "dark_gray", \
+          "shadow_color": 0, \
+          "hover_event": { \
+            "action": "show_text", \
+            "value": { \
+              "translate": "bigstone_sandbox.dialog_menu.click_event_help", \
+              "color": "gray", \
+              "font": "bigstone_sandbox:small_caps" \
+            } \
+          }, \
+          "click_event": { \
+            "action": "open_url", \
+            "url": "https://github.com/bigstonedevelopment" \
+          } \
+        }, \
+        { \
+          "translate": "newline_1" \
+        }, \
+        { \
+          "translate": "bigstone_sandbox.dialog_menu.background.bottom", \
+          "font": "bigstone_sandbox:menu", \
+          "shadow_color": 0 \
+        } \
+      ], \
+      "width": 256 \
+    } \
+  ], \
+  "can_close_with_escape": true, \
+  "pause": false, \
+  "after_action": "none" \
+}
