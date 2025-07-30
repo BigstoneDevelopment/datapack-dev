@@ -1,1 +1,1 @@
-dialog show @s bigstone_sandbox:home
+function bigstone_sandbox:dialog/home
