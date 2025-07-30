@@ -39,7 +39,6 @@ execute unless data storage bigstone_sandbox:components list.components run data
 data merge storage bigstone_sandbox:data {is_setup: 1b}
 
 data merge storage bigstone:settings { \
-    instantSnap:1b, \
     highlightColour:{ \
         paste:{ \
             colour1: 626778336, \

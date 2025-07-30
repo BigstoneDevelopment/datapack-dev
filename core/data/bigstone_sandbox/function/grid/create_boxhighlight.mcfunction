@@ -1,7 +1,6 @@
-execute store result score #instantSnap bigstone_sandbox run data get storage bigstone:settings instantSnap
 #say paste
 #tp cube hull if exist
-$execute unless score #instantSnap bigstone_sandbox matches 1 as @n[type=text_display,tag=highlightID_$(SUID)] run return run tp @s ~ ~ ~
+$execute unless data storage bigstone_sandbox:components options{"instant_snap":true} as @n[type=text_display,tag=highlightID_$(SUID)] run return run tp @s ~ ~ ~
 $execute as @n[type=text_display,tag=highlightID_$(SUID)] on passengers run kill @s
 $execute as @n[type=text_display,tag=highlightID_$(SUID)] run kill @s
 #render cube hull
