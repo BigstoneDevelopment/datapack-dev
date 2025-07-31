@@ -48,12 +48,18 @@ execute if data storage bigstone_sandbox:data {is_setup:1b} run return fail
                 colour3: 626045773, \
                 colour4: 630781844 \
             }, \
+            delete:{ \
+                colour1: 520060163, \
+                colour2: 520060163, \
+                colour3: 520060163, \
+                colour4: 520060163 \
+            },\
             invalid:{ \
                 colour1: 520028160, \
                 colour2: 520028160, \
                 colour3: 520028160, \
                 colour4: 520028160 \
-            }\
+            },\
         } \
     }
 

@@ -19,7 +19,7 @@
                       "predicates": {
                         "minecraft:custom_data": {
                           "item_use_effect": {
-                            "type": "bigstone"
+                            "type": "bigstone_sandbox"
                         }
                       }
                       }
@@ -36,7 +36,7 @@
                       "predicates": {
                         "minecraft:custom_data": {
                           "item_use_effect": {
-                            "type": "bigstone"
+                            "type": "bigstone_sandbox"
                           }
                         }
                       }

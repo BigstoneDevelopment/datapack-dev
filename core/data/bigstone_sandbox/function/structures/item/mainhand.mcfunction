@@ -4,7 +4,7 @@ $execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_storeit
             run item replace entity @s weapon.mainhand with minecraft:music_disc_creator[\
             minecraft:custom_data={\
                     item_use_effect:{\
-                        type:"bigstone",\
+                        type:"bigstone_sandbox",\
                         effects:["place_component"]\
                     },\
                     bigstone_sandbox:{\
@@ -40,7 +40,7 @@ $loot give @s loot {\
                             components:{\
                                 "minecraft:custom_data":{\
                                     item_use_effect:{\
-                                        type:"bigstone",\
+                                        type:"bigstone_sandbox",\
                                         effects:["place_component"]\
                                     },\
                                     bigstone_sandbox:{"struc":{"ID_0":$(ID_0),"ID_1":$(ID_1)}}\
