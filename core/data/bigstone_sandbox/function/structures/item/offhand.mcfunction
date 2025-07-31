@@ -1,11 +1,11 @@
 #if last lad left, kick him out and shove the loot in thee hand
-$execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem,predicate=bigstone_sandbox:item_detect/is_one,gamemode=!creative] \
+$execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_storeitem,predicate=bigstone_sandbox:item_detect/is_one,gamemode=!creative] \
     run return \
             run item replace entity @s weapon.mainhand with minecraft:music_disc_creator[\
             minecraft:custom_data={\
                     item_use_effect:{\
                         type:"bigstone",\
-                        effect:"place_component"\
+                        effects:["place_component"]\
                     },\
                     bigstone_sandbox:{\
                         struc:{\
@@ -41,7 +41,7 @@ $loot give @s loot {\
                                 "minecraft:custom_data":{\
                                     item_use_effect:{\
                                         type:"bigstone",\
-                                        effect:"place_component"\
+                                        effects:["place_component"]\
                                     },\
                                     bigstone_sandbox:{"struc":{"ID_0":$(ID_0),"ID_1":$(ID_1)}}\
                                 },\

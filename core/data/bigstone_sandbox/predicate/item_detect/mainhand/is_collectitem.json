@@ -2,17 +2,17 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-    "slots": {
-        "weapon.offhand": {
-        "predicates": {
+        "equipment": {
+        "mainhand": {
+            "predicates": {
             "minecraft:custom_data": {
-            "item_use_effect": {
+                "item_use_effect": {
                 "type": "bigstone",
-                "effects": ["delete_component"]
+                "effects":["collect_component"]
+                }
             }
             }
         }
         }
-    }
     }
 }

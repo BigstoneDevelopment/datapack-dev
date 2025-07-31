@@ -8,7 +8,7 @@
             "minecraft:custom_data": {
                 "item_use_effect": {
                 "type": "bigstone",
-                "effect":"delete_component"
+                "effects":["delete_component"]
                 }
             }
             }

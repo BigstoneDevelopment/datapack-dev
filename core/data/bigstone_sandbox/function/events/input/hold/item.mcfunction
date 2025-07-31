@@ -30,14 +30,12 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
         run data get storage bs:out raycast.targeted_block[2] 0.0625
 
     #offset block placement if holding saveditem
-    execute if predicate bigstone_sandbox:item_detect/mainhand/is_saveditem run function bigstone_sandbox:grid/cast_offset
+    execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/cast_offset
     #offset if only offhand saved item
     execute \
-        if entity @s[\
-            predicate=!bigstone_sandbox:item_detect/mainhand/is_saveditem,\
-            predicate=!bigstone_sandbox:item_detect/mainhand/is_selectitem,\
-            predicate=bigstone_sandbox:item_detect/offhand/is_saveditem,\
-        ] run function bigstone_sandbox:grid/cast_offset
+        if predicate bigstone_sandbox:item_detect/mainhand/is_item \
+        if predicate bigstone_sandbox:item_detect/offhand/is_placeitem \
+            run function bigstone_sandbox:grid/cast_offset
 
     #get last location of cast Position
     execute store result storage bigstone_sandbox raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x
@@ -56,37 +54,28 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     execute store result score @s bigstone_sandbox.last_pos.y run data get storage bigstone_sandbox raycast.temp.Data.y
     execute store result score @s bigstone_sandbox.last_pos.z run data get storage bigstone_sandbox raycast.temp.Data.z
 
+    #update selection mode id
+    function bigstone_sandbox:events/input/hold/sub/highlight_hand
     #cancel operation if no change detected
     execute \
         if score #raycast.Changed.x bigstone_sandbox matches 0 \
         if score #raycast.Changed.y bigstone_sandbox matches 0 \
         if score #raycast.Changed.z bigstone_sandbox matches 0 \
-        run return fail
+        if score @s bigstone_sandbox.cast_mode = #cast_mode bigstone_sandbox run return fail
 
             tag @s add highlightMode
-            function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+
+            scoreboard players set #isEmptyChunk bigstone_sandbox 1
+            execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+            execute if predicate bigstone_sandbox:item_detect/offhand/is_placeitem unless predicate bigstone_sandbox:item_detect/offhand/is_item run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+            #render error highlight
             execute \
                 if score #isEmptyChunk bigstone_sandbox matches 0 \
-                unless predicate bigstone_sandbox:item_detect/mainhand/is_selectitem \
-                unless entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_selectitem] \
-                run return \
-                    run function bigstone_sandbox:events/input/hold/invalid with storage bigstone_sandbox raycast.Data
-        
-            #run functions to display highlight mesh according to item type
-            tag @s add highlightMode
-            execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_saveditem] \
-                run return run function bigstone_sandbox:events/input/hold/paste with storage bigstone_sandbox raycast.Data
-
-            execute \
-                if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_selectitem] \
-                run return run function bigstone_sandbox:events/input/hold/select with storage bigstone_sandbox raycast.Data
+                    run scoreboard players set #cast_mode bigstone_sandbox 2
             
-            #offhand
-            execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_saveditem] \
-                run return run function bigstone_sandbox:events/input/hold/paste with storage bigstone_sandbox raycast.Data
-            execute \
-                if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_selectitem] \
-                run return run function bigstone_sandbox:events/input/hold/select with storage bigstone_sandbox raycast.Data
+            #run function to display highlight mesh according to item type
+            function bigstone_sandbox:events/input/hold/update_highlight with storage bigstone_sandbox raycast.Data
+
 
 
 

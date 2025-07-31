@@ -6,8 +6,8 @@ execute if data storage bigstone_sandbox:components temp.version{"game":"1.21.5-
 
 # initial setup (only run on first load)
 
-execute if data storage bigstone_sandbox:data {is_setup:1b} run return run data merge storage bigstone_sandbox:data {is_setup: 1b}
-
+execute if data storage bigstone_sandbox:data {is_setup:1b} run return fail
+    data merge storage bigstone_sandbox:data {is_setup: 1b}
     scoreboard players set #component_ID_count_0 bigstone_sandbox 0
     scoreboard players set #component_ID_count_1 bigstone_sandbox 0
     forceload add 29999984 29999984 29999999 29999999
@@ -26,6 +26,7 @@ execute if data storage bigstone_sandbox:data {is_setup:1b} run return run data 
     scoreboard objectives add bigstone_sandbox.last_pos.x dummy
     scoreboard objectives add bigstone_sandbox.last_pos.y dummy
     scoreboard objectives add bigstone_sandbox.last_pos.z dummy
+    scoreboard objectives add bigstone_sandbox.cast_mode dummy
 
     #constants
     scoreboard objectives add consts dummy
