@@ -1,4 +1,4 @@
-data modify storage bigstone_sandbox:components temp.component set value \
+data modify storage bigstone_sandbox:data temp.component set value \
 { \
   "item": { \
     "components": { \

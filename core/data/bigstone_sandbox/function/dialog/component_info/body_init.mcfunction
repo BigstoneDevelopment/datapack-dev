@@ -1,4 +1,4 @@
-data modify storage bigstone_sandbox:components temp.body set value \
+data modify storage bigstone_sandbox:data temp.body set value \
 [ \
   { \
     "type": "minecraft:plain_message", \

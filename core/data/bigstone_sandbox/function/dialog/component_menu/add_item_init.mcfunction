@@ -1,4 +1,4 @@
-data modify storage bigstone_sandbox:components temp.add_item set value \
+data modify storage bigstone_sandbox:data temp.add_item set value \
 { \
   "type": "minecraft:item", \
   "description": { \

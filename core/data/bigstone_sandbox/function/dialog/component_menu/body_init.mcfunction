@@ -1,4 +1,4 @@
-data modify storage bigstone_sandbox:components temp.body prepend value \
+data modify storage bigstone_sandbox:data temp.body prepend value \
 { \
   "type": "minecraft:plain_message", \
   "contents": [ \

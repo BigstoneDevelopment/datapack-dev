@@ -1,10 +1,10 @@
-execute unless data storage bigstone_sandbox:components temp.component.data.tags[0] run return fail
+execute unless data storage bigstone_sandbox:data temp.component.data.tags[0] run return fail
 
-data remove storage bigstone_sandbox:components temp.tags
+data remove storage bigstone_sandbox:data temp.tags
 
-data modify storage bigstone_sandbox:components temp.tags.text set from storage bigstone_sandbox:components temp.component.data.tags[0]
-data remove storage bigstone_sandbox:components temp.component.data.tags[0]
-execute if data storage bigstone_sandbox:components temp.component.data.tags[0] run data modify storage bigstone_sandbox:components temp.tags merge value \
+data modify storage bigstone_sandbox:data temp.tags.text set from storage bigstone_sandbox:data temp.component.data.tags[0]
+data remove storage bigstone_sandbox:data temp.component.data.tags[0]
+execute if data storage bigstone_sandbox:data temp.component.data.tags[0] run data modify storage bigstone_sandbox:data temp.tags merge value \
 { \
   "extra": [ \
     { \
@@ -12,6 +12,6 @@ execute if data storage bigstone_sandbox:components temp.component.data.tags[0] 
     } \
   ] \
 }
-data modify storage bigstone_sandbox:components temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.tags"}].with[0].extra append from storage bigstone_sandbox:components temp.tags
+data modify storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.tags"}].with[0].extra append from storage bigstone_sandbox:data temp.tags
 
 function bigstone_sandbox:dialog/component_info/tags_loop

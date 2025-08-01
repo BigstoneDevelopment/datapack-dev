@@ -1,4 +1,4 @@
-data modify storage bigstone_sandbox:components temp.add_item.description.contents[1] set value \
+data modify storage bigstone_sandbox:data temp.add_item.description.contents[1] set value \
 { \
   "translate": "bigstone_sandbox.dialog_menu.icon.private", \
   "font": "bigstone_sandbox:menu", \

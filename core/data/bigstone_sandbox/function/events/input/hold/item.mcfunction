@@ -20,13 +20,13 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     
     #snap to grid at corner for each of the axes (16x16x16)
     #x axes
-    execute store result storage bigstone_sandbox raycast.Data.x int 16 \
+    execute store result storage bigstone_sandbox:data raycast.Data.x int 16 \
         run data get storage bs:out raycast.targeted_block[0] 0.0625
     #y axes
-    execute store result storage bigstone_sandbox raycast.Data.y int 16 \
+    execute store result storage bigstone_sandbox:data raycast.Data.y int 16 \
         run data get storage bs:out raycast.targeted_block[1] 0.0625
     #z axes
-    execute store result storage bigstone_sandbox raycast.Data.z int 16 \
+    execute store result storage bigstone_sandbox:data raycast.Data.z int 16 \
         run data get storage bs:out raycast.targeted_block[2] 0.0625
 
     #offset block placement if holding saveditem
@@ -38,21 +38,21 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
             run function bigstone_sandbox:grid/cast_offset
 
     #get last location of cast Position
-    execute store result storage bigstone_sandbox raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x
-    execute store result storage bigstone_sandbox raycast.temp.Data.y int 1 run scoreboard players get @s bigstone_sandbox.last_pos.y
-    execute store result storage bigstone_sandbox raycast.temp.Data.z int 1 run scoreboard players get @s bigstone_sandbox.last_pos.z
+    execute store result storage bigstone_sandbox:data raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x
+    execute store result storage bigstone_sandbox:data raycast.temp.Data.y int 1 run scoreboard players get @s bigstone_sandbox.last_pos.y
+    execute store result storage bigstone_sandbox:data raycast.temp.Data.z int 1 run scoreboard players get @s bigstone_sandbox.last_pos.z
     #run to test if there are any changes
     execute store success score #raycast.Changed.x bigstone_sandbox \
-        run data modify storage bigstone_sandbox raycast.temp.Data.x set from storage bigstone_sandbox raycast.Data.x
+        run data modify storage bigstone_sandbox:data raycast.temp.Data.x set from storage bigstone_sandbox:data raycast.Data.x
     execute store success score #raycast.Changed.y bigstone_sandbox \
-        run data modify storage bigstone_sandbox raycast.temp.Data.y set from storage bigstone_sandbox raycast.Data.y
+        run data modify storage bigstone_sandbox:data raycast.temp.Data.y set from storage bigstone_sandbox:data raycast.Data.y
     execute store success score #raycast.Changed.z bigstone_sandbox \
-        run data modify storage bigstone_sandbox raycast.temp.Data.z set from storage bigstone_sandbox raycast.Data.z
+        run data modify storage bigstone_sandbox:data raycast.temp.Data.z set from storage bigstone_sandbox:data raycast.Data.z
 
     #update last location of cast Position
-    execute store result score @s bigstone_sandbox.last_pos.x run data get storage bigstone_sandbox raycast.temp.Data.x
-    execute store result score @s bigstone_sandbox.last_pos.y run data get storage bigstone_sandbox raycast.temp.Data.y
-    execute store result score @s bigstone_sandbox.last_pos.z run data get storage bigstone_sandbox raycast.temp.Data.z
+    execute store result score @s bigstone_sandbox.last_pos.x run data get storage bigstone_sandbox:data raycast.temp.Data.x
+    execute store result score @s bigstone_sandbox.last_pos.y run data get storage bigstone_sandbox:data raycast.temp.Data.y
+    execute store result score @s bigstone_sandbox.last_pos.z run data get storage bigstone_sandbox:data raycast.temp.Data.z
 
     #update selection mode id
     function bigstone_sandbox:events/input/hold/sub/highlight_hand
@@ -66,8 +66,8 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
             tag @s add highlightMode
 
             scoreboard players set #isEmptyChunk bigstone_sandbox 1
-            execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
-            execute if predicate bigstone_sandbox:item_detect/offhand/is_placeitem unless predicate bigstone_sandbox:item_detect/offhand/is_item run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+            execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
+            execute if predicate bigstone_sandbox:item_detect/offhand/is_placeitem unless predicate bigstone_sandbox:item_detect/offhand/is_item run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
             #render error highlight
             scoreboard players set #cast_set bigstone_sandbox 0
             execute \
@@ -75,7 +75,7 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
                     run scoreboard players set #cast_set bigstone_sandbox 1
             
             #run function to display highlight mesh according to item type
-            function bigstone_sandbox:events/input/hold/update_highlight with storage bigstone_sandbox raycast.Data
+            function bigstone_sandbox:events/input/hold/update_highlight with storage bigstone_sandbox:data raycast.Data
 
 
 

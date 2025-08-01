@@ -13,13 +13,13 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         
         #snap to grid at corner for each of the axes (16x16x16)
         #x axes
-        execute store result storage bigstone_sandbox raycast.Data.x int 16 \
+        execute store result storage bigstone_sandbox:data raycast.Data.x int 16 \
             run data get storage bs:out raycast.targeted_block[0] 0.0625
         #y axes
-        execute store result storage bigstone_sandbox raycast.Data.y int 16 \
+        execute store result storage bigstone_sandbox:data raycast.Data.y int 16 \
             run data get storage bs:out raycast.targeted_block[1] 0.0625
         #z axes
-        execute store result storage bigstone_sandbox raycast.Data.z int 16 \
+        execute store result storage bigstone_sandbox:data raycast.Data.z int 16 \
             run data get storage bs:out raycast.targeted_block[2] 0.0625
 
 
@@ -32,7 +32,7 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
                 run function bigstone_sandbox:grid/cast_offset
             
         #check empty chunk
-        function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox raycast.Data
+        function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
             execute \
                 if score #isEmptyChunk bigstone_sandbox matches 0 \
                 unless predicate bigstone_sandbox:item_detect/mainhand/is_storeitem \
@@ -43,18 +43,18 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
 
         #prepare data from item
         execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
-            run data modify storage bigstone_sandbox raycast.Data.ID_0 \
+            run data modify storage bigstone_sandbox:data raycast.Data.ID_0 \
                 set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
 
         execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
-            run data modify storage bigstone_sandbox raycast.Data.ID_1 \
+            run data modify storage bigstone_sandbox:data raycast.Data.ID_1 \
                 set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
 
         execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
-            run data modify storage bigstone_sandbox raycast.Data.ID_0 \
+            run data modify storage bigstone_sandbox:data raycast.Data.ID_0 \
                 set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_0
         execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
-            run data modify storage bigstone_sandbox raycast.Data.ID_1 \
+            run data modify storage bigstone_sandbox:data raycast.Data.ID_1 \
                 set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
         
         #run functions to execute placement/save

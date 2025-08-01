@@ -1,1 +1,1 @@
-$data modify storage bigstone_sandbox:components temp.component merge from storage xolibs:playerdata storage.bigstone_sandbox.list.loaded[$(selected_index)]
+$data modify storage bigstone_sandbox:data temp.component merge from storage xolibs:playerdata storage.bigstone_sandbox.list.loaded[$(selected_index)]

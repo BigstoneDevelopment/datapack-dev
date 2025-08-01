@@ -1,2 +1,2 @@
-data modify storage bigstone_sandbox:components temp.version.game set value \
+data modify storage bigstone_sandbox:data temp.version.game set value \
 "New"
