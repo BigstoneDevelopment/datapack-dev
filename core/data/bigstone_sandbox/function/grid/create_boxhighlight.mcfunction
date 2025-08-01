@@ -1,5 +1,5 @@
 #tp cube hull if exist
-$execute unless data storage bigstone_sandbox:data options{"instant_snap":true} as @n[type=text_display,tag=highlightID_$(SUID)] run return run tp @s ~ ~ ~
+$execute unless data storage bigstone_sandbox:data settings{"instant_snap":true} as @n[type=text_display,tag=highlightID_$(SUID)] run return run tp @s ~ ~ ~
 $execute as @n[type=text_display,tag=highlightID_$(SUID)] on passengers run kill @s
 $execute as @n[type=text_display,tag=highlightID_$(SUID)] run kill @s
 #render cube hull
