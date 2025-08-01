@@ -1,7 +1,8 @@
 function bigstone_sandbox:list/component_list/data_init
 
-data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:custom_data".bigstone_sandbox merge from storage bigstone_sandbox:data import
-data modify storage bigstone_sandbox:data temp.component.data merge from storage bigstone_sandbox:data import
+data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:custom_data".bigstone_sandbox.source merge from storage bigstone_sandbox:data import
+data modify storage bigstone_sandbox:data temp.component.source merge from storage bigstone_sandbox:data import
+execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.owner set from entity @s UUID
 
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:item_name".text set from storage bigstone_sandbox:data import.component_name
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[0].text set from storage bigstone_sandbox:data import.description

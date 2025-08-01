@@ -1,10 +1,10 @@
-execute unless data storage bigstone_sandbox:data temp.component.data.tags[0] run return fail
+execute unless data storage bigstone_sandbox:data temp.component.source.tags[0] run return fail
 
 data remove storage bigstone_sandbox:data temp.tags
 
-data modify storage bigstone_sandbox:data temp.tags.text set from storage bigstone_sandbox:data temp.component.data.tags[0]
-data remove storage bigstone_sandbox:data temp.component.data.tags[0]
-execute if data storage bigstone_sandbox:data temp.component.data.tags[0] run data modify storage bigstone_sandbox:data temp.tags merge value \
+data modify storage bigstone_sandbox:data temp.tags.text set from storage bigstone_sandbox:data temp.component.source.tags[0]
+data remove storage bigstone_sandbox:data temp.component.source.tags[0]
+execute if data storage bigstone_sandbox:data temp.component.source.tags[0] run data modify storage bigstone_sandbox:data temp.tags merge value \
 { \
   "extra": [ \
     { \
