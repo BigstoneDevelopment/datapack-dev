@@ -34,7 +34,7 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         #check empty chunk
         function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
             execute \
-                if score #isEmptyChunk bigstone_sandbox matches 0 \
+                if score #chunk_contain_blocks bigstone_sandbox matches 0 \
                 unless predicate bigstone_sandbox:item_detect/mainhand/is_storeitem \
                 unless entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_storeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_item] \
                 unless predicate bigstone_sandbox:item_detect/mainhand/is_deleteitem \

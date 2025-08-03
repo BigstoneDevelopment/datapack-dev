@@ -57,23 +57,12 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     #update selection mode id
     function bigstone_sandbox:events/input/hold/sub/highlight_hand
     #cancel operation if no change detected
+    #this test doesn't test if blocks changed only if selection type changed or placement changed
     execute \
         if score #raycast.Changed.x bigstone_sandbox matches 0 \
         if score #raycast.Changed.y bigstone_sandbox matches 0 \
         if score #raycast.Changed.z bigstone_sandbox matches 0 \
         if score @s bigstone_sandbox.cast_mode = #cast_mode bigstone_sandbox run return fail
-            
-            tag @s add highlightMode
-
-            scoreboard players set #isEmptyChunk bigstone_sandbox 1
-            execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
-            execute if predicate bigstone_sandbox:item_detect/offhand/is_placeitem unless predicate bigstone_sandbox:item_detect/offhand/is_item run function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
-            #render error highlight
-            scoreboard players set #cast_set bigstone_sandbox 0
-            execute \
-                if score #isEmptyChunk bigstone_sandbox matches 0 \
-                    run scoreboard players set #cast_set bigstone_sandbox 1
-            
             #run function to display highlight mesh according to item type
             function bigstone_sandbox:events/input/hold/update_highlight with storage bigstone_sandbox:data raycast.Data
 

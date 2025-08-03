@@ -27,6 +27,7 @@ execute if data storage bigstone_sandbox:data {is_setup:1b} run return fail
     scoreboard objectives add bigstone_sandbox.last_pos.y dummy
     scoreboard objectives add bigstone_sandbox.last_pos.z dummy
     scoreboard objectives add bigstone_sandbox.cast_mode dummy
+    scoreboard objectives add bigstone_sandbox.invalid_highlight dummy
 
     #constants
     scoreboard objectives add consts dummy
