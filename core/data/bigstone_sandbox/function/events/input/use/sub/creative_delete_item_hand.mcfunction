@@ -1,5 +1,5 @@
 execute \
-    if entity @s[gamemode=creative] \
+    unless entity @s[gamemode=creative] \
         run return fail
 execute \
     unless data storage bigstone_sandbox:data {temp:{effects:["creative_self_delete_component"]}} \
