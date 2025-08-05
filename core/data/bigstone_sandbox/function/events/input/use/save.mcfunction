@@ -11,7 +11,4 @@ execute if score #component_ID_count_0 bigstone_sandbox matches -1 \
 scoreboard players add #component_ID_count_0 bigstone_sandbox 1
 
 #run save structure function
-$execute positioned $(x) $(y) $(z) run function bigstone_sandbox:structures/save_structure with storage bigstone_sandbox:data component
-
-execute if predicate bigstone_sandbox:item_detect/mainhand/is_storeitem run return run function bigstone_sandbox:structures/item/mainhand with storage bigstone_sandbox:data component
-execute if predicate bigstone_sandbox:item_detect/offhand/is_storeitem run function bigstone_sandbox:structures/item/offhand with storage bigstone_sandbox:data component
+$execute positioned $(x) $(y) $(z) run function bigstone_sandbox:events/input/use/structures/save_structure with storage bigstone_sandbox:data component

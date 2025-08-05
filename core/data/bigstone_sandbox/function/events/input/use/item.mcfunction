@@ -27,7 +27,7 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/cast_offset
         #offset if only offhand saved item
         execute \
-            if predicate bigstone_sandbox:item_detect/mainhand/is_item \
+            unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
             if predicate bigstone_sandbox:item_detect/offhand/is_placeitem \
                 run function bigstone_sandbox:grid/cast_offset
             
@@ -56,11 +56,28 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
             run data modify storage bigstone_sandbox:data raycast.Data.ID_1 \
                 set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
-        
+
+        scoreboard players set #weapon_slot_id bigstone_sandbox 0
+        #store component data in a temporary read only location
+        execute if predicate bigstone_sandbox:item_detect/mainhand/is_item \
+            run data modify storage bigstone_sandbox:data temp set from entity @s SelectedItem.components."minecraft:custom_data".item_use_effect
+        execute if predicate bigstone_sandbox:item_detect/mainhand/is_item \
+            run scoreboard players set #weapon_slot_id bigstone_sandbox 1
+
+        execute unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
+            if predicate bigstone_sandbox:item_detect/offhand/is_item \
+            run data modify storage bigstone_sandbox:data temp set from entity @s equipment.offhand.components."minecraft:custom_data".item_use_effect
+        execute unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
+            if predicate bigstone_sandbox:item_detect/offhand/is_item \
+            run scoreboard players set #weapon_slot_id bigstone_sandbox 2
+
         #run functions to execute placement/save
-        function bigstone_sandbox:events/input/use/sub/place_or_store_hand
-        
+        function bigstone_sandbox:events/input/use/sub/store_hand
+        function bigstone_sandbox:events/input/use/sub/place_hand
         function bigstone_sandbox:events/input/use/sub/delete_hand
+        function bigstone_sandbox:events/input/use/sub/creative_delete_item_hand
+        function bigstone_sandbox:events/input/use/sub/collect_hand
+        
 
 #for debugging use
 #tellraw @a {"storage":"bigstone_sandbox","nbt":"raycast"}

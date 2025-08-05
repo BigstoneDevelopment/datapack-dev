@@ -1,5 +1,5 @@
 #if last lad left, kick him out and shove the loot in thee hand
-$execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_storeitem,predicate=bigstone_sandbox:item_detect/mainhand/is_one,gamemode=!creative] \
+$execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_one,gamemode=!creative] \
     run return \
             run item replace entity @s weapon.mainhand with minecraft:music_disc_creator[\
             minecraft:custom_data={\
