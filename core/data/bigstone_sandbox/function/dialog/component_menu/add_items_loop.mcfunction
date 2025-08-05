@@ -13,7 +13,7 @@ function bigstone_sandbox:dialog/component_menu/add_item_macros with storage big
 scoreboard players remove item_index bigstone_sandbox.temp 2000
 
 data modify storage bigstone_sandbox:data temp.add_item.item set from storage bigstone_sandbox:data temp.menu_items[0].item
-data modify storage bigstone_sandbox:data temp.add_item.description.contents[6] set from storage bigstone_sandbox:data temp.menu_items[0].data.component_name
+data modify storage bigstone_sandbox:data temp.add_item.description.contents[6] set from storage bigstone_sandbox:data temp.menu_items[0].source.component_name
 
 data modify storage bigstone_sandbox:data temp.body append from storage bigstone_sandbox:data temp.add_item
 execute store result storage bigstone_sandbox:data temp.macros.item_index int 1 run scoreboard players add item_index bigstone_sandbox.temp 1
