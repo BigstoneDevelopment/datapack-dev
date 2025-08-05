@@ -7,9 +7,9 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
     #raycast
     execute anchored eyes positioned ^ ^ ^ \
         run function #bs.raycast:run {with:{max_distance:72}}
-    execute store result score #rayhit bigstone_sandbox run data get storage bs:out raycast.hit_point
+    execute store result score #rayhit bigstone_sandbox.temp run data get storage bs:out raycast.hit_point
     #exit if cast failed
-    execute if score #rayhit bigstone_sandbox matches 0 run return fail
+    execute if score #rayhit bigstone_sandbox.temp matches 0 run return fail
         
         #snap to grid at corner for each of the axes (16x16x16)
         #x axes
@@ -34,7 +34,7 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
         #check empty chunk
         function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
             execute \
-                if score #chunk_contain_blocks bigstone_sandbox matches 0 \
+                if score #chunk_contain_blocks bigstone_sandbox.temp matches 0 \
                 unless predicate bigstone_sandbox:item_detect/mainhand/is_storeitem \
                 unless entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_storeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_item] \
                 unless predicate bigstone_sandbox:item_detect/mainhand/is_deleteitem \
@@ -57,19 +57,19 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
             run data modify storage bigstone_sandbox:data raycast.Data.ID_1 \
                 set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID_1
 
-        scoreboard players set #weapon_slot_id bigstone_sandbox 0
+        scoreboard players set #weapon_slot_id bigstone_sandbox.temp 0
         #store component data in a temporary read only location
         execute if predicate bigstone_sandbox:item_detect/mainhand/is_item \
             run data modify storage bigstone_sandbox:data temp set from entity @s SelectedItem.components."minecraft:custom_data".item_use_effect
         execute if predicate bigstone_sandbox:item_detect/mainhand/is_item \
-            run scoreboard players set #weapon_slot_id bigstone_sandbox 1
+            run scoreboard players set #weapon_slot_id bigstone_sandbox.temp 1
 
         execute unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
             if predicate bigstone_sandbox:item_detect/offhand/is_item \
             run data modify storage bigstone_sandbox:data temp set from entity @s equipment.offhand.components."minecraft:custom_data".item_use_effect
         execute unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
             if predicate bigstone_sandbox:item_detect/offhand/is_item \
-            run scoreboard players set #weapon_slot_id bigstone_sandbox 2
+            run scoreboard players set #weapon_slot_id bigstone_sandbox.temp 2
 
         #run functions to execute placement/save
         function bigstone_sandbox:events/input/use/sub/store_hand

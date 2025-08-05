@@ -1,4 +1,4 @@
-scoreboard players set #command_success bigstone_sandbox 0
+scoreboard players set #command_success bigstone_sandbox.temp 0
 #place block with feature place and test if the placement was successful
 $execute \
     store success score #command_success bigstone_sandbox \
@@ -9,7 +9,7 @@ $execute if score #command_success bigstone_sandbox matches 1 \
         run playsound minecraft:block.stone.place block @a ~8 ~8 ~8 10.0
 
 #add translation here
-execute if score #command_success bigstone_sandbox matches 0 \
+execute if score #command_success bigstone_sandbox.temp matches 0 \
     run return \
         run tellraw @s {\
             "bold":true,\

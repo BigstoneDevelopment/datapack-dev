@@ -21,7 +21,6 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy
     scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
     scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
-    scoreboard objectives add bigstone_sandbox dummy
 
     scoreboard objectives add bigstone_sandbox.last_pos.x dummy
     scoreboard objectives add bigstone_sandbox.last_pos.y dummy

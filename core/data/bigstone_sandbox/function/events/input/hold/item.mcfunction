@@ -14,9 +14,9 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     #raycast
     execute anchored eyes positioned ^ ^ ^ \
         run function #bs.raycast:run {with:{max_distance:72}}
-    execute store result score #rayhit bigstone_sandbox run data get storage bs:out raycast.hit_point
+    execute store result score #rayhit bigstone_sandbox.temp run data get storage bs:out raycast.hit_point
     #exit if cast failed and kill highlight
-    execute if score #rayhit bigstone_sandbox matches 0 run return run execute if entity @s[tag=highlightMode] run function bigstone_sandbox:events/input/post_hold/item
+    execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute if entity @s[tag=highlightMode] run function bigstone_sandbox:events/input/post_hold/item
     
     #snap to grid at corner for each of the axes (16x16x16)
     #x axes
@@ -42,11 +42,11 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     execute store result storage bigstone_sandbox:data raycast.temp.Data.y int 1 run scoreboard players get @s bigstone_sandbox.last_pos.y
     execute store result storage bigstone_sandbox:data raycast.temp.Data.z int 1 run scoreboard players get @s bigstone_sandbox.last_pos.z
     #run to test if there are any changes
-    execute store success score #raycast.Changed.x bigstone_sandbox \
+    execute store success score #raycast.Changed.x bigstone_sandbox.temp \
         run data modify storage bigstone_sandbox:data raycast.temp.Data.x set from storage bigstone_sandbox:data raycast.Data.x
-    execute store success score #raycast.Changed.y bigstone_sandbox \
+    execute store success score #raycast.Changed.y bigstone_sandbox.temp \
         run data modify storage bigstone_sandbox:data raycast.temp.Data.y set from storage bigstone_sandbox:data raycast.Data.y
-    execute store success score #raycast.Changed.z bigstone_sandbox \
+    execute store success score #raycast.Changed.z bigstone_sandbox.temp \
         run data modify storage bigstone_sandbox:data raycast.temp.Data.z set from storage bigstone_sandbox:data raycast.Data.z
 
     #update last location of cast Position
@@ -59,10 +59,10 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     #cancel operation if no change detected
     #this test doesn't test if blocks changed only if selection type changed or placement changed
     execute \
-        if score #raycast.Changed.x bigstone_sandbox matches 0 \
-        if score #raycast.Changed.y bigstone_sandbox matches 0 \
-        if score #raycast.Changed.z bigstone_sandbox matches 0 \
-        if score @s bigstone_sandbox.cast_mode = #cast_mode bigstone_sandbox run return fail
+        if score #raycast.Changed.x bigstone_sandbox.temp matches 0 \
+        if score #raycast.Changed.y bigstone_sandbox.temp matches 0 \
+        if score #raycast.Changed.z bigstone_sandbox.temp matches 0 \
+        if score @s bigstone_sandbox.cast_mode = #cast_mode bigstone_sandbox.temp run return fail
             #run function to display highlight mesh according to item type
             function bigstone_sandbox:events/input/hold/update_highlight with storage bigstone_sandbox:data raycast.Data
 
