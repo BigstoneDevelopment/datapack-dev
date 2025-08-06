@@ -10,5 +10,3 @@ data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filtered set
 
 data remove storage bigstone_sandbox:data temp
 function bigstone_sandbox:list/make_private_loaded_list
-
-say make private filtered list

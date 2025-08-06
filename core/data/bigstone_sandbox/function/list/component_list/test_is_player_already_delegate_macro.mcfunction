@@ -1,0 +1,1 @@
+$return run execute if data storage bigstone_sandbox:data temp.test.delegates[{"UUID":$(UUID)}]

@@ -9,12 +9,17 @@ tag @s add bigstone_sandbox.placement_highlight
 tag @s add bigstone_sandbox.sprint_and_sneak_keybind
 #tag @s add bigstone_sandbox.double_sprint_keybind
 #tag @s add bigstone_sandbox.double_sneak_keybind
+tag @s add bigstone_sandbox.block_shape_highlight
 
 scoreboard players set @s bigstone_sandbox.sprint_cooldown 0
 scoreboard players set @s bigstone_sandbox.sneak_cooldown 0
 
+
 execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.filtered run data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filtered set value []
 execute unless data storage xolibs:playerdata storage.bigstone_sandbox.list.loaded run data modify storage xolibs:playerdata storage.bigstone_sandbox.list.loaded set value []
+
+stopsound @s ui
+dialog clear @s
 
 function bigstone_sandbox:main/on_join
 
