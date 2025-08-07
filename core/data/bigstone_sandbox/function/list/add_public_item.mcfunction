@@ -9,7 +9,7 @@ data modify storage bigstone_sandbox:data temp.component.data.public set value t
 
 execute if function bigstone_sandbox:list/component_list/test_is_uuid_in_list run return run \
   execute unless function bigstone_sandbox:list/component_list/test_does_source_differ_from_existing run return run \
-  function bigstone_sandbox:list/make_component_public with storage bigstone_sandbox:data temp.component.source
+  function bigstone_sandbox:list/component_list/add_manager_and_make_component_public
 
 data modify storage bigstone_sandbox:data list.components prepend from storage bigstone_sandbox:data temp.component
 

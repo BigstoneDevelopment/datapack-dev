@@ -15,8 +15,8 @@ data modify storage bigstone_sandbox:data temp.component.source.UUID append from
 
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:custom_data".bigstone_sandbox.source merge from storage bigstone_sandbox:data temp.component.source
 
-execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.delegates set value [{}]
-execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.delegates[0].UUID set from entity @s UUID 
+execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.managers set value [{}]
+execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.managers[0].UUID set from entity @s UUID 
 
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:item_name".text set from storage bigstone_sandbox:data temp.component.source.component_name
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[0].text set from storage bigstone_sandbox:data temp.component.source.description
