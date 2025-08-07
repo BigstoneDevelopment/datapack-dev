@@ -1,2 +1,2 @@
-$execute positioned $(x) $(y) $(z) store success score #chunk_contain_blocks bigstone_sandbox if predicate bigstone_sandbox:chunk_is_empty
+$execute positioned $(x) $(y) $(z) store success score #chunk_contain_blocks bigstone_sandbox.temp if predicate bigstone_sandbox:chunk_is_empty
 #tellraw @a {"score":{"name":"#chunk_contain_blocks","objective":"bigstone_sandbox"}}

@@ -1,0 +1,1 @@
+return run function bigstone_sandbox:list/component_list/test_is_player_already_manager_macro with entity @s

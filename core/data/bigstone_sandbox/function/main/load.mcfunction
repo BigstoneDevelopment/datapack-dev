@@ -6,7 +6,7 @@ execute if data storage bigstone_sandbox:data temp.version{"game":"1.21.5-"} run
 
 # initial setup (only run on first load)
 
-execute if data storage bigstone_sandbox:data {is_setup:1b} run return fail
+execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data {is_setup: 1b}
     scoreboard players set #component_ID_count_0 bigstone_sandbox 0
     scoreboard players set #component_ID_count_1 bigstone_sandbox 0
@@ -21,7 +21,6 @@ execute if data storage bigstone_sandbox:data {is_setup:1b} run return fail
     scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy
     scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
     scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
-    scoreboard objectives add bigstone_sandbox dummy
 
     scoreboard objectives add bigstone_sandbox.last_pos.x dummy
     scoreboard objectives add bigstone_sandbox.last_pos.y dummy

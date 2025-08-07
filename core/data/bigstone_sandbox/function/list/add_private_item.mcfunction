@@ -7,8 +7,10 @@ execute unless function bigstone_sandbox:list/component_list/component_validatio
 function bigstone_sandbox:list/component_list/format_data
 data modify storage bigstone_sandbox:data temp.component.data.public set value false
 
-data modify storage bigstone_sandbox:data temp.list set from storage bigstone_sandbox:data list.components
-#execute if data storage bigstone_sandbox:data list.components[] unless function bigstone_sandbox:list/component_list/test_is_item_in_list run return fail
+execute if function bigstone_sandbox:list/component_list/test_is_uuid_in_list run return run \
+  execute unless function bigstone_sandbox:list/component_list/test_does_source_differ_from_existing run return run \
+  function bigstone_sandbox:list/add_manager_to_component with storage bigstone_sandbox:data temp.component.source
+
 data modify storage bigstone_sandbox:data list.components prepend from storage bigstone_sandbox:data temp.component
 
 data remove storage bigstone_sandbox:data temp
