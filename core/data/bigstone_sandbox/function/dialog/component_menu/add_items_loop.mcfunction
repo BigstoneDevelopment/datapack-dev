@@ -6,6 +6,7 @@ function bigstone_sandbox:dialog/component_menu/add_item_init
 
 execute if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":false} run function bigstone_sandbox:dialog/component_menu/private_icon
 execute if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":true} run function bigstone_sandbox:dialog/component_menu/public_icon
+execute if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":true, "saved":true} run function bigstone_sandbox:dialog/component_menu/saved_icon
 
 execute store result storage bigstone_sandbox:data temp.macros.item_index_0 int 1 run scoreboard players add item_index bigstone_sandbox.temp 1000
 execute store result storage bigstone_sandbox:data temp.macros.item_index_1 int 1 run scoreboard players add item_index bigstone_sandbox.temp 1000

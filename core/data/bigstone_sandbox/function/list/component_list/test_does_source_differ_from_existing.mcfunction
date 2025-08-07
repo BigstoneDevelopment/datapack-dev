@@ -1,0 +1,1 @@
+return run data modify storage bigstone_sandbox:data temp.test.source set from storage bigstone_sandbox:data temp.component.source
