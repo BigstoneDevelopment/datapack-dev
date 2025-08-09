@@ -11,4 +11,4 @@ execute if score #component_ID_count_0 bigstone_sandbox matches -1 \
 scoreboard players add #component_ID_count_0 bigstone_sandbox.temp 1
 
 #run save structure function
-$execute positioned $(x) $(y) $(z) run function bigstone_sandbox:events/input/use/structures/save_structure with storage bigstone_sandbox:data component
+$execute positioned $(x) $(y) $(z) run function bigstone_sandbox:main/events/input/use/structures/save_structure with storage bigstone_sandbox:data component

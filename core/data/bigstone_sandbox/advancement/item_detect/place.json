@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "bigstone_sandbox:events/input/use/item"
+    "function": "bigstone_sandbox:main/events/input/use/item"
   }
 }

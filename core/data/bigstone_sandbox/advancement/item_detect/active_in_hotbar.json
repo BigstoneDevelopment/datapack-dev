@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "bigstone_sandbox:events/input/item_detect_hotbar"
+    "function": "bigstone_sandbox:main/events/input/item_detect_hotbar"
   }
 }

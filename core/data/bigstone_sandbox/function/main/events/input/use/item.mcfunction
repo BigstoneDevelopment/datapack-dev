@@ -72,11 +72,11 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
             run scoreboard players set #weapon_slot_id bigstone_sandbox.temp 2
 
         #run functions to execute placement/save
-        function bigstone_sandbox:events/input/use/sub/store_hand
-        function bigstone_sandbox:events/input/use/sub/place_hand
-        function bigstone_sandbox:events/input/use/sub/delete_hand
-        function bigstone_sandbox:events/input/use/sub/creative_delete_item_hand
-        function bigstone_sandbox:events/input/use/sub/collect_hand
+        function bigstone_sandbox:main/events/input/use/sub/store_hand
+        function bigstone_sandbox:main/events/input/use/sub/place_hand
+        function bigstone_sandbox:main/events/input/use/sub/delete_hand
+        function bigstone_sandbox:main/events/input/use/sub/creative_delete_item_hand
+        function bigstone_sandbox:main/events/input/use/sub/collect_hand
         
 
 #for debugging use

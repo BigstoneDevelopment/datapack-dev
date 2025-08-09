@@ -8,7 +8,7 @@ execute if score bool bigstone_sandbox.temp matches 0 run tag @s add bigstone_sa
 execute if score bool bigstone_sandbox.temp matches 1 run advancement grant @s only bigstone_sandbox:item_detect/hold
 execute if score bool bigstone_sandbox.temp matches 0 run advancement revoke @s only bigstone_sandbox:item_detect/hold
 
-execute if score bool bigstone_sandbox.temp matches 1 run function bigstone_sandbox:events/input/post_hold/item
+execute if score bool bigstone_sandbox.temp matches 1 run function bigstone_sandbox:main/events/input/post_hold/item
 
 scoreboard players reset bool bigstone_sandbox.temp
 
