@@ -5,6 +5,6 @@ data remove storage bigstone_sandbox:data temp
 
 data remove storage xolibs:playerdata storage.bigstone_sandbox.list.loaded[]
 execute store result storage bigstone_sandbox:data temp.loaded_index int 1 run scoreboard players get @s bigstone_sandbox.loaded_index
-function bigstone_sandbox:component_management/list/loaded_list/get_items with storage bigstone_sandbox:data temp
+function bigstone_sandbox:components/list/loaded_list/get_items with storage bigstone_sandbox:data temp
 
 data remove storage bigstone_sandbox:data temp

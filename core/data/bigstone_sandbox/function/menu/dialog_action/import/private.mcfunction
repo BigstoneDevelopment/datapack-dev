@@ -2,7 +2,7 @@ data remove storage bigstone_sandbox:data import
 
 $data modify storage bigstone_sandbox:data import set value $(item_data)
 
-function bigstone_sandbox:component_management/list/add_private_item
+function bigstone_sandbox:components/list/add_private_item
 
 data remove storage bigstone_sandbox:data import
 
