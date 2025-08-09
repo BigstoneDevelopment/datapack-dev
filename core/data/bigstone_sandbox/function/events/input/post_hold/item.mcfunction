@@ -7,4 +7,4 @@ data remove storage bigstone_sandbox:data raycast.temp.Data
 scoreboard players set @s bigstone_sandbox.last_pos.x 0
 scoreboard players set @s bigstone_sandbox.last_pos.y -2147483648
 scoreboard players set @s bigstone_sandbox.last_pos.z 0
-function bigstone_sandbox:grid/clear_highlight with storage bigstone_sandbox:data highlight
+function bigstone_sandbox:placements/grid/clear_highlight with storage bigstone_sandbox:data highlight

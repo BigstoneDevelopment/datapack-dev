@@ -30,12 +30,12 @@ execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
         run data get storage bs:out raycast.targeted_block[2] 0.0625
 
     #offset block placement if holding saveditem
-    execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/cast_offset
+    execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:placements/grid/cast_offset
     #offset if only offhand saved item
     execute \
         unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
         if predicate bigstone_sandbox:item_detect/offhand/is_placeitem \
-            run function bigstone_sandbox:grid/cast_offset
+            run function bigstone_sandbox:placements/grid/cast_offset
 
     #get last location of cast Position
     execute store result storage bigstone_sandbox:data raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x

@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "bigstone_sandbox:dialog_action/keybind/sprint_and_sneak"
+    "function": "bigstone_sandbox:menu/dialog_action/keybind/sprint_and_sneak"
   }
 }

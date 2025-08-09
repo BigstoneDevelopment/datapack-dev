@@ -1,1 +1,0 @@
-function bigstone_sandbox:dialog/credits

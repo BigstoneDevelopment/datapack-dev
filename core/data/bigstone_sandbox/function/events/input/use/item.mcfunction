@@ -24,15 +24,15 @@ execute unless entity @s[predicate=bigstone_sandbox:item_detect/is_item] run ret
 
 
         #offset block placement if holding saveditem
-        execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:grid/cast_offset
+        execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:placements/grid/cast_offset
         #offset if only offhand saved item
         execute \
             unless predicate bigstone_sandbox:item_detect/mainhand/is_item \
             if predicate bigstone_sandbox:item_detect/offhand/is_placeitem \
-                run function bigstone_sandbox:grid/cast_offset
+                run function bigstone_sandbox:placements/grid/cast_offset
             
         #check empty chunk
-        function bigstone_sandbox:grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
+        function bigstone_sandbox:placements/grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
             execute \
                 if score #chunk_contain_blocks bigstone_sandbox.temp matches 0 \
                 unless predicate bigstone_sandbox:item_detect/mainhand/is_storeitem \
