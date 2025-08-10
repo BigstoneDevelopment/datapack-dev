@@ -1,2 +1,0 @@
-function bigstone_sandbox:component_management/list/add_manager_to_component with storage bigstone_sandbox:data temp.component.source
-function bigstone_sandbox:component_management/list/make_component_public with storage bigstone_sandbox:data temp.component.source

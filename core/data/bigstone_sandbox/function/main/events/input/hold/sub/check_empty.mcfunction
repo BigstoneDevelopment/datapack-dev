@@ -9,4 +9,4 @@ tag @s add highlightMode
                     run scoreboard players set #cast_mode bigstone_sandbox.temp 2
             
             #run function to display highlight mesh according to item type
-            function bigstone_sandbox:events/input/hold/update_highlight with storage bigstone_sandbox:data raycast.Data
+            function bigstone_sandbox:main/events/input/hold/update_highlight with storage bigstone_sandbox:data raycast.Data

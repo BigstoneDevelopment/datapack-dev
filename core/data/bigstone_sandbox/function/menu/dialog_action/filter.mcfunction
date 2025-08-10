@@ -1,4 +1,4 @@
-function bigstone_sandbox:component_management/list/make_private_filtered_list
+function bigstone_sandbox:components/list/make_private_filtered_list
 function bigstone_sandbox:menu/dialog/component_menu
 
 dialog show @s bigstone_sandbox:filter

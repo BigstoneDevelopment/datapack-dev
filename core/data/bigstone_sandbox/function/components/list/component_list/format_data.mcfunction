@@ -1,4 +1,4 @@
-function bigstone_sandbox:component_management/list/component_list/data_init
+function bigstone_sandbox:components/list/component_list/data_init
 
 data modify storage bigstone_sandbox:data temp.component.source.component_name set from storage bigstone_sandbox:data import.component_name
 data modify storage bigstone_sandbox:data temp.component.source.creator set from storage bigstone_sandbox:data import.creator
