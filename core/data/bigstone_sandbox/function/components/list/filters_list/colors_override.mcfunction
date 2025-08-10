@@ -1,1 +1,3 @@
 execute if data storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Xoliks"}] run data modify storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Xoliks"}].color set value "#a600f9"
+execute if data storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Huckle"}] run data modify storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Huckle"}].color set value "#661520"
+execute if data storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Art"}] run data modify storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Art"}].color set value "#6BAECD"
