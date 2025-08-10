@@ -1,0 +1,1 @@
+$data modify storage bigstone_sandbox:data temp.color.seed set value "$(seed)$(code)"

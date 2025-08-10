@@ -1,0 +1,1 @@
+$data modify storage bigstone_sandbox:data temp.color.code set from storage bigstone_sandbox:lut characters."$(character)"

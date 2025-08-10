@@ -1,0 +1,1 @@
+execute if data storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Xoliks"}] run data modify storage bigstone_sandbox:data temp.filters[{"type":"creator", "value":"Xoliks"}].color set value "#a600f9"

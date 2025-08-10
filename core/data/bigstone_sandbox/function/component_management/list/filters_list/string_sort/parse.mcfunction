@@ -1,0 +1,1 @@
+$data modify storage bigstone_sandbox:data temp.string_sort.mem.split set value ['$(string)']

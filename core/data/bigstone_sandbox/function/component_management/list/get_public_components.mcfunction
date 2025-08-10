@@ -1,1 +1,0 @@
-data modify storage bigstone_sandbox:data temp.list append from storage bigstone_sandbox:data list.components[{"data":{"public":true}}]
