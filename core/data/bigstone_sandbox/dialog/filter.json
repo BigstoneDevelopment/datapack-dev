@@ -270,12 +270,12 @@
                   "font": "space:default"
                 },
                 {
-                  "translate": "bigstone_sandbox.dialog_menu.button.tag",
+                  "translate": "bigstone_sandbox.dialog_menu.button.creator",
                   "font": "bigstone_sandbox:menu",
                   "color": "#9c62fc"
                 },
                 {
-                  "translate": "space.4",
+                  "translate": "space.3",
                   "font": "space:default"
                 }
               ],
@@ -300,12 +300,12 @@
                   "font": "space:default"
                 },
                 {
-                  "translate": "bigstone_sandbox.dialog_menu.button.tag",
+                  "translate": "bigstone_sandbox.dialog_menu.button.port",
                   "font": "bigstone_sandbox:menu",
                   "color": "#c63564"
                 },
                 {
-                  "translate": "space.4",
+                  "translate": "space.5",
                   "font": "space:default"
                 }
               ],

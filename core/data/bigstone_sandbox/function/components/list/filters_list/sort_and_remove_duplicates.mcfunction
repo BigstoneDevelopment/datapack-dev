@@ -1,3 +1,5 @@
+execute summon marker run function bigstone_sandbox:components/list/filters_list/remove_duplicates
+
 data modify storage bigstone_sandbox:data temp.string_sort.mem set value {obj:{}}
 data modify storage bigstone_sandbox:data temp.string_sort.mem.queue set from storage bigstone_sandbox:data temp.strings
 data modify storage bigstone_sandbox:data temp.string_sort.mem.key set from storage bigstone_sandbox:data temp.string_sort.mem.queue[0]

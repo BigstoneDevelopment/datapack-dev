@@ -16,4 +16,5 @@ data modify storage bigstone_sandbox:data list.components prepend from storage b
 data remove storage bigstone_sandbox:data temp
 scoreboard players reset bool bigstone_sandbox.temp
 
-function bigstone_sandbox:components/list/make_private_filtered_list
+execute as @a run function bigstone_sandbox:components/list/make_private_filtered_list
+execute as @a run function bigstone_sandbox:components/list/make_filters_list
