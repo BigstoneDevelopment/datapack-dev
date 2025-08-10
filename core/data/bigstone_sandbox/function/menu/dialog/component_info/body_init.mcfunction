@@ -248,7 +248,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
         "translate": "newline_2" \
       }, \
       { \
-        "translate": "bigstone_sandbox.dialog_menu.tags", \
+        "translate": "bigstone_sandbox.dialog_menu.tags_list", \
         "with": [ \
           { \
             "text": "", \

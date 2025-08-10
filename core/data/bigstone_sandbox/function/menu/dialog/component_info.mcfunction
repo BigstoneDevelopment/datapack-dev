@@ -16,7 +16,7 @@ execute unless data storage bigstone_sandbox:data temp.component.source.ports.ea
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.west[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.port_west"}] 
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.top[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.port_top"}] 
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.bottom[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.port_bottom"}] 
-execute unless data storage bigstone_sandbox:data temp.component.source.tags[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.tags"}] 
+execute unless data storage bigstone_sandbox:data temp.component.source.tags[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.tags_list"}] 
 
 function bigstone_sandbox:menu/dialog/component_info/north_ports_loop
 function bigstone_sandbox:menu/dialog/component_info/south_ports_loop
