@@ -22,7 +22,7 @@ data modify storage bigstone_sandbox:data temp.strings append from storage bigst
 function bigstone_sandbox:components/list/filters_list/sort_and_remove_duplicates
 function bigstone_sandbox:components/list/filters_list/creators_loop
 
-function bigstone_sandbox:components/list/filters_list/colors_override
+function bigstone_sandbox:components/list/filters_list/filters_override
 
 data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filters set from storage bigstone_sandbox:data temp.filters
 #data remove storage bigstone_sandbox:data temp

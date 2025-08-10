@@ -28,3 +28,28 @@ execute unless data storage bigstone_sandbox:data temp.component.source.ports.ea
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.west[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_west"}]
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.up[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_up"}]
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.down[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_down"}]
+
+
+# make filters list
+data modify storage bigstone_sandbox:data temp.strings set value []
+
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.tags[]
+execute summon marker run function bigstone_sandbox:components/list/filters_list/remove_duplicates
+function bigstone_sandbox:components/list/component_list/tags_loop
+
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.north[]
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.south[]
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.east[]
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.west[]
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.top[]
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.bottom[]
+execute summon marker run function bigstone_sandbox:components/list/filters_list/remove_duplicates
+function bigstone_sandbox:components/list/component_list/ports_loop
+
+data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.creator
+function bigstone_sandbox:components/list/component_list/creators_loop
+
+function bigstone_sandbox:components/list/filters_list/filters_override
+data remove storage bigstone_sandbox:data temp.filters[].color
+
+data modify storage bigstone_sandbox:data temp.component.data.filters set from storage bigstone_sandbox:data temp.filters
