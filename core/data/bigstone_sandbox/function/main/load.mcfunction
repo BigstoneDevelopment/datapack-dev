@@ -28,12 +28,17 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     scoreboard objectives add bigstone_sandbox.cast_mode dummy
     scoreboard objectives add bigstone_sandbox.invalid_highlight dummy
 
+
+
     #constants
     scoreboard objectives add consts dummy
 
     scoreboard players set #16 consts 16
 
     # load storage
+
+    function bigstone_sandbox:main/storage/characters
+
     data merge storage bigstone_sandbox:data \
     { \
         settings: { \

@@ -17,3 +17,4 @@ data remove storage bigstone_sandbox:data temp
 scoreboard players reset bool bigstone_sandbox.temp
 
 function bigstone_sandbox:components/list/make_private_filtered_list
+function bigstone_sandbox:components/list/make_filters_list
