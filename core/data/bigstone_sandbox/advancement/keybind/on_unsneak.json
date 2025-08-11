@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "bigstone_sandbox:menu/dialog_action/keybind/unsneak"
+    "function": "bigstone_sandbox:main/events/keybind/unsneak"
   }
 }

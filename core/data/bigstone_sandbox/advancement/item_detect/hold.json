@@ -53,6 +53,6 @@
     ]
   ],
   "rewards": {
-    "function": "bigstone_sandbox:main/events/input/hold/item"
+    "function": "bigstone_sandbox:main/events/item/hold"
   }
 }
