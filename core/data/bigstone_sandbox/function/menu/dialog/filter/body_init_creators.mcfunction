@@ -270,29 +270,17 @@ data modify storage bigstone_sandbox:data temp.body set value \
         }, \
         { \
           "translate": "bigstone_sandbox.dialog_menu.button.port", \
-          "color": "white", \
+          "color": "dark_gray", \
           "font": "bigstone_sandbox:menu" \
         }, \
         { \
           "translate": "space.-12", \
           "font": "space:default" \
         }, \
-        [ \
-          { \
-            "translate": "space.-2", \
-            "font": "space:default" \
-          }, \
-          { \
-            "translate": "bigstone_sandbox.dialog_menu.button.selected_tab", \
-            "color": "white", \
-            "shadow_color": 0, \
-            "font": "bigstone_sandbox:menu" \
-          }, \
-          { \
-            "translate": "space.0", \
-            "font": "space:default" \
-          } \
-        ] \
+        { \
+          "translate": "space.17", \
+          "font": "space:default" \
+        } \
       ] \
     }, \
     { \
@@ -317,17 +305,29 @@ data modify storage bigstone_sandbox:data temp.body set value \
         }, \
         { \
           "translate": "bigstone_sandbox.dialog_menu.button.creator", \
-          "color": "dark_gray", \
+          "color": "white", \
           "font": "bigstone_sandbox:menu" \
         }, \
         { \
           "translate": "space.-14", \
           "font": "space:default" \
         }, \
-        { \
-          "translate": "space.16", \
-          "font": "space:default" \
-        } \
+        [ \
+          { \
+            "translate": "space.-2", \
+            "font": "space:default" \
+          }, \
+          { \
+            "translate": "bigstone_sandbox.dialog_menu.button.selected_tab", \
+            "color": "white", \
+            "shadow_color": 0, \
+            "font": "bigstone_sandbox:menu" \
+          }, \
+          { \
+            "translate": "space.-1", \
+            "font": "space:default" \
+          } \
+        ] \
       ] \
     }, \
     { \

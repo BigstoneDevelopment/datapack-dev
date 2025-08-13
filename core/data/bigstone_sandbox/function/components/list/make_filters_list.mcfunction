@@ -1,5 +1,7 @@
+
 function xolibs:api/playerdata/load
 data remove storage bigstone_sandbox:data temp
+data modify storage bigstone_sandbox:data temp.old_filters set from storage xolibs:playerdata storage.bigstone_sandbox.list.filters
 data remove storage xolibs:playerdata storage.bigstone_sandbox.list.filters
 
 function bigstone_sandbox:components/list/get_all_personal_components
@@ -25,4 +27,4 @@ function bigstone_sandbox:components/list/filters_list/creators_loop
 function bigstone_sandbox:components/list/filters_list/filters_override
 
 data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filters set from storage bigstone_sandbox:data temp.filters
-#data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp
