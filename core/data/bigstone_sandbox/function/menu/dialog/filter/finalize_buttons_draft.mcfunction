@@ -1,4 +1,3 @@
-execute unless data storage bigstone_sandbox:data temp.buttons.draft[0][0] run return run say draft couldnt run
 execute unless data storage bigstone_sandbox:data temp.buttons.draft[0][0] run return run function bigstone_sandbox:menu/dialog/filter/init_buttons_draft
 
 data modify storage bigstone_sandbox:data temp.buttons.draft[2] set from storage bigstone_sandbox:data temp.buttons.draft[0]
@@ -16,6 +15,8 @@ execute if data storage bigstone_sandbox:data temp.buttons.draft[2][{"translate"
   ] \
 }
 
+data modify storage bigstone_sandbox:data temp.buttons.draft[0] prepend value ""
+data modify storage bigstone_sandbox:data temp.buttons.draft[2] prepend value ""
+
 data modify storage bigstone_sandbox:data temp.buttons.list append from storage bigstone_sandbox:data temp.buttons.draft
-data remove storage bigstone_sandbox:data temp.buttons.draft
 function bigstone_sandbox:menu/dialog/filter/init_buttons_draft

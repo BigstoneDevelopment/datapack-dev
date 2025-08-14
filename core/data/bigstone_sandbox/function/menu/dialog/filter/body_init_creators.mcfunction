@@ -32,7 +32,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "font": "space:default" \
     }, \
     { \
-      "translate": "bigstone_sandbox.dialog_menu.button.filter", \
+      "translate": "bigstone_sandbox.dialog_menu.button.reset", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -41,8 +41,8 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "hover_event": { \
         "action": "show_text", \
         "value": { \
-          "translate": "bigstone_sandbox.dialog_menu.apply_filter", \
-          "color": "aqua", \
+          "translate": "bigstone_sandbox.dialog_menu.reset_filters", \
+          "color": "light_purple", \
           "font": "bigstone_sandbox:small_caps" \
         } \
       } \
@@ -102,8 +102,8 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "hover_event": { \
         "action": "show_text", \
         "value": { \
-          "translate": "bigstone_sandbox.dialog_menu.apply_filter", \
-          "color": "aqua", \
+          "translate": "bigstone_sandbox.dialog_menu.reset_filters", \
+          "color": "light_purple", \
           "font": "bigstone_sandbox:small_caps" \
         } \
       } \

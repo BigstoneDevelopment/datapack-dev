@@ -1,3 +1,4 @@
+data remove storage bigstone_sandbox:data temp.buttons.draft
 data modify storage bigstone_sandbox:data temp.buttons.draft set value \
 [ \
   [], \

@@ -15,7 +15,7 @@ function bigstone_sandbox:menu/dialog/filter/set_trigger with storage bigstone_s
 execute if data storage bigstone_sandbox:data temp.filters.entry{"hide":true} run function bigstone_sandbox:menu/dialog/filter/init_hidden_button
 
 data modify storage bigstone_sandbox:data temp.buttons.draft[0] append from storage bigstone_sandbox:data temp.buttons.entry
-execute if data storage bigstone_sandbox:data temp.buttons.draft[0][12] run function bigstone_sandbox:menu/dialog/filter/finalize_buttons_draft
+execute if data storage bigstone_sandbox:data temp.buttons.draft[0][11] run function bigstone_sandbox:menu/dialog/filter/finalize_buttons_draft
 
 data remove storage bigstone_sandbox:data temp.filters.add[0]
 data remove storage bigstone_sandbox:data temp.filters.entry
