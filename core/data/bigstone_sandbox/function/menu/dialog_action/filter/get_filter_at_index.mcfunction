@@ -1,0 +1,1 @@
+$data modify storage bigstone_sandbox:data temp.filter set from storage xolibs:playerdata storage.bigstone_sandbox.list.filters[{"index":$(index)}]

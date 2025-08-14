@@ -1,4 +1,7 @@
+tag @s add bigstone_sandbox.last_filter_menu.tag
+
 data remove storage bigstone_sandbox:data temp
+scoreboard players reset * bigstone_sandbox.temp
 function xolibs:api/playerdata/load
 
 function bigstone_sandbox:menu/dialog/filter/body_init_tags
@@ -13,3 +16,5 @@ data remove storage bigstone_sandbox:data temp.buttons.list[-1][-1]
 data modify storage bigstone_sandbox:data temp.body.contents[{"translate": "bigstone_sandbox.dialog_menu.available_filters"}].extra append from storage bigstone_sandbox:data temp.buttons.list 
 
 function bigstone_sandbox:menu/dialog/filter/run_dialog with storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp
+scoreboard players reset * bigstone_sandbox.temp

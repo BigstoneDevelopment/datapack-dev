@@ -5,6 +5,8 @@ data remove storage bigstone_sandbox:data temp.entry
 data modify storage bigstone_sandbox:data temp.entry set value \
 { \
   "type": "creator", \
+  "include": false, \
+  "exclude": false \
 }
 data modify storage bigstone_sandbox:data temp.entry.value set from storage bigstone_sandbox:data temp.strings[0]
 function bigstone_sandbox:components/list/filters_list/merge_old_filter with storage bigstone_sandbox:data temp.entry

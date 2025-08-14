@@ -220,7 +220,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "/trigger bigstone_sandbox_menu set -5" \
+        "command": "/trigger bigstone_sandbox_menu set -19" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -267,7 +267,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "/trigger bigstone_sandbox_menu set -19" \
+        "command": "/trigger bigstone_sandbox_menu set -20" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -302,7 +302,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "/trigger bigstone_sandbox_menu set -20" \
+        "command": "/trigger bigstone_sandbox_menu set -21" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -340,7 +340,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "/trigger bigstone_sandbox_menu set -5" \
+        "command": "/trigger bigstone_sandbox_menu set -19" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -362,7 +362,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "/trigger bigstone_sandbox_menu set -19" \
+        "command": "/trigger bigstone_sandbox_menu set -20" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -384,7 +384,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
-        "command": "/trigger bigstone_sandbox_menu set -20" \
+        "command": "/trigger bigstone_sandbox_menu set -21" \
       }, \
       "hover_event": { \
         "action": "show_text", \
