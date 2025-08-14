@@ -14,3 +14,7 @@ function bigstone_sandbox:menu/dialog_action/filter/update_filter_at_index with 
 
 data remove storage bigstone_sandbox:data temp
 scoreboard players reset * bigstone_sandbox.temp
+
+execute if entity @s[tag=bigstone_sandbox.last_filter_menu.port] run return run function bigstone_sandbox:menu/dialog/filter_ports
+execute if entity @s[tag=bigstone_sandbox.last_filter_menu.creator] run return run function bigstone_sandbox:menu/dialog/filter_creators
+return run function bigstone_sandbox:menu/dialog/filter_tags

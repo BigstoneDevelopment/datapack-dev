@@ -12,8 +12,10 @@ execute store result score filter_index bigstone_sandbox.temp run data get stora
 execute store result storage bigstone_sandbox:data temp.filters.entry.index int 1 run scoreboard players add filter_index bigstone_sandbox.temp 100000
 function bigstone_sandbox:menu/dialog/filter/set_trigger with storage bigstone_sandbox:data temp.filters.entry
 
+execute if data storage bigstone_sandbox:data temp.filters.entry{"hide":true} run function bigstone_sandbox:menu/dialog/filter/init_hidden_button
+
 data modify storage bigstone_sandbox:data temp.buttons.draft[0] append from storage bigstone_sandbox:data temp.buttons.entry
-execute if data storage bigstone_sandbox:data temp.buttons.draft[0][11] run function bigstone_sandbox:menu/dialog/filter/finalize_buttons_draft
+execute if data storage bigstone_sandbox:data temp.buttons.draft[0][12] run function bigstone_sandbox:menu/dialog/filter/finalize_buttons_draft
 
 data remove storage bigstone_sandbox:data temp.filters.add[0]
 data remove storage bigstone_sandbox:data temp.filters.entry

@@ -166,9 +166,6 @@ data modify storage bigstone_sandbox:data temp.body set value \
       ] \
     }, \
     { \
-      "translate": "newline_2" \
-    }, \
-    { \
       "translate": "bigstone_sandbox.dialog_menu.background.section_break", \
       "color": "gray", \
       "font": "bigstone_sandbox:menu", \
@@ -200,9 +197,6 @@ data modify storage bigstone_sandbox:data temp.body set value \
           } \
         ] \
       ] \
-    }, \
-    { \
-      "translate": "newline_3" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.background.section_break_2", \
