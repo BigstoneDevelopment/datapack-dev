@@ -9,13 +9,11 @@ function bigstone_sandbox:menu/dialog/filter/init_buttons_draft
 
 data modify storage bigstone_sandbox:data temp.filters.add append from storage xolibs:playerdata storage.bigstone_sandbox.list.filters[{"include":true}]
 function bigstone_sandbox:menu/dialog/filter/add_filters_loop
-data remove storage bigstone_sandbox:data temp.buttons.list[-1][-1]
 data modify storage bigstone_sandbox:data temp.body.contents[{"translate": "bigstone_sandbox.dialog_menu.included_filters"}].extra append from storage bigstone_sandbox:data temp.buttons.list[]
 data remove storage bigstone_sandbox:data temp.buttons.list
 
 data modify storage bigstone_sandbox:data temp.filters.add append from storage xolibs:playerdata storage.bigstone_sandbox.list.filters[{"exclude":true}]
 function bigstone_sandbox:menu/dialog/filter/add_filters_loop
-data remove storage bigstone_sandbox:data temp.buttons.list[-1][-1]
 data modify storage bigstone_sandbox:data temp.body.contents[{"translate": "bigstone_sandbox.dialog_menu.excluded_filters"}].extra append from storage bigstone_sandbox:data temp.buttons.list[]
 data remove storage bigstone_sandbox:data temp.buttons.list
 
