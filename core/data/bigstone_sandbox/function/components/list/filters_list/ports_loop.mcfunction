@@ -5,16 +5,15 @@ data remove storage bigstone_sandbox:data temp.entry
 data modify storage bigstone_sandbox:data temp.entry set value \
 { \
   "type": "port", \
+  "include": false, \
+  "exclude": false \
 }
-
 data modify storage bigstone_sandbox:data temp.entry.value set from storage bigstone_sandbox:data temp.strings[0]
+function bigstone_sandbox:components/list/filters_list/merge_old_filter with storage bigstone_sandbox:data temp.entry
+execute unless data storage bigstone_sandbox:data temp.entry.color run function bigstone_sandbox:components/list/filters_list/generate_color
+execute store result storage bigstone_sandbox:data temp.entry.index int 1 if data storage bigstone_sandbox:data temp.filters[]
+execute if data storage bigstone_sandbox:data temp.entry{"index": 100000} run return fail
 
-data modify storage bigstone_sandbox:data temp.color.string set from storage bigstone_sandbox:data temp.entry.value
-data modify storage bigstone_sandbox:data temp.color.seed set value ""
-function bigstone_sandbox:components/list/filters_list/character_loop
-function bigstone_sandbox:components/list/filters_list/generate_color with storage bigstone_sandbox:data temp.color
-function #bs.color:int_to_hex with storage bigstone_sandbox:data temp.color
-data modify storage bigstone_sandbox:data temp.entry.color set from storage bs:out color.int_to_hex
 data modify storage bigstone_sandbox:data temp.filters append from storage bigstone_sandbox:data temp.entry
 
 data remove storage bigstone_sandbox:data temp.strings[0]

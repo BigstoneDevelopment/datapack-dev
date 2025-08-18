@@ -18,3 +18,5 @@ scoreboard players reset bool bigstone_sandbox.temp
 
 execute as @a run function bigstone_sandbox:components/list/make_private_filtered_list
 execute as @a run function bigstone_sandbox:components/list/make_filters_list
+
+return 1

@@ -1,0 +1,1 @@
+$data modify storage bigstone_sandbox:data temp.buttons.entry.click_event.command set value "/trigger bigstone_sandbox_menu set $(index)"

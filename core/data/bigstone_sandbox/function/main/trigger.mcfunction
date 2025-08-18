@@ -17,11 +17,11 @@ execute if score @s bigstone_sandbox_menu matches -12 run return run function bi
 execute if score @s bigstone_sandbox_menu matches -13 run return run function bigstone_sandbox:menu/dialog_action/options
 execute if score @s bigstone_sandbox_menu matches -15 run return run function bigstone_sandbox:menu/dialog_action/import/private_from_hand
 execute if score @s bigstone_sandbox_menu matches -16 run return run function bigstone_sandbox:menu/dialog_action/import/public_from_hand
-execute if score @s bigstone_sandbox_menu matches -18 run return run function bigstone_sandbox:menu/dialog_action/filter/apply
-execute if score @s bigstone_sandbox_menu matches -19 run return run function bigstone_sandbox:menu/dialog_action/filter
-execute if score @s bigstone_sandbox_menu matches -20 run return run function bigstone_sandbox:menu/dialog_action/filter
+execute if score @s bigstone_sandbox_menu matches -18 run return run function bigstone_sandbox:menu/dialog_action/reset_filters
+execute if score @s bigstone_sandbox_menu matches -21..-19 run return run function bigstone_sandbox:menu/dialog_action/filter
 execute if score @s bigstone_sandbox_menu matches 1000..1999 run return run function bigstone_sandbox:menu/dialog_action/info
 execute if score @s bigstone_sandbox_menu matches 2000..2999 run return run function bigstone_sandbox:menu/dialog_action/give
+execute if score @s bigstone_sandbox_menu matches 100000..199999 run return run function bigstone_sandbox:menu/dialog_action/toggle_filter
 
 execute if score @s bigstone_sandbox_menu matches 900 run return run function bigstone_sandbox:menu/dialog_action/options/default_to_components
 execute if score @s bigstone_sandbox_menu matches 901 run return run function bigstone_sandbox:menu/dialog_action/options/info_on_join
