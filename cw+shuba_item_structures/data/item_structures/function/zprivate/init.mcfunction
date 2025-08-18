@@ -9,7 +9,7 @@ scoreboard objectives add item_structures dummy
 
 bossbar add progress {"text":"Progress","color":"green"}
 
-scoreboard players set .max_export_volume constant 3000000
+#scoreboard players set .max_export_volume constant 3000000
 scoreboard players set #32768 constant 32768
 scoreboard players set #1000 constant 1000
 scoreboard players set #100 constant 100

@@ -1,1 +1,2 @@
+#not in use, use shuba method
 $loot give @s loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:music_disc_creator",functions:[{function:"minecraft:set_components",components:{"minecraft:custom_data":{item_use_effect:{type:"bigstone_sandbox",effect:"place_component"},block_array:$(block_array)},"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:0b},"minecraft:use_cooldown":{seconds:0.1,cooldown_group:"bigstone_sandbox"},"minecraft:max_stack_size":64}}]}]}]}
