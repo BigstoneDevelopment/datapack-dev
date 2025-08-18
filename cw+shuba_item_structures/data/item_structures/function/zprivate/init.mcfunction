@@ -17,9 +17,6 @@ scoreboard players set #50 constant 50
 scoreboard players set #4 constant 4
 scoreboard players set #-1 constant -1
 
-#Ok what the heck, look into what the heck this does, maybe move into the world border if important - Art
-forceload add 69420 69420
-setblock 69420 0 69420 yellow_shulker_box
 
 #schedule function cw_menu:message 1t
 #schedule function item_structures:menu/message 2t

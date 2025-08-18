@@ -7,7 +7,7 @@ scoreboard objectives remove commands
 scoreboard objectives remove item_structures
 scoreboard objectives remove bsc
 bossbar remove progress
-forceload remove 69420 69420
+#undid forceload for chunk including shulkerbox needed for a optimisation shuba did which I undid
 data remove storage item_structures blocks
 data remove storage item_structures id
 data remove storage item_structures save
