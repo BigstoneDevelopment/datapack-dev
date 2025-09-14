@@ -1,5 +1,4 @@
-kill @e[tag=start_point]
-#kill @e[tag=end_point]
+#kill @e[tag=start_point]
 scoreboard objectives remove vect_x
 scoreboard objectives remove vect_y
 scoreboard objectives remove vect_z

@@ -18,6 +18,8 @@ $setblock 29999999 305 29999999 structure_block[mode=save]{\
 } replace
 #make a getaway
 setblock 29999999 306 29999999 minecraft:redstone_block replace
+#stash the data
+function #item_structures:save
 #remove the evidence
 fill 29999999 305 29999999 29999999 306 29999999 air strict
 fill 29999999 288 29999999 29999984 303 29999984 air strict

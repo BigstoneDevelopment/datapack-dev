@@ -8,7 +8,7 @@ bossbar set progress visible false
 data remove storage item_structures forceload
 data modify storage item_structures forceload.x set from storage item_structures save.size[0]
 data modify storage item_structures forceload.z set from storage item_structures save.size[2]
-execute at @n[tag=start_point] run function item_structures:zprivate/forceunload with storage item_structures forceload
+#execute at @n[tag=start_point] run function item_structures:zprivate/forceunload with storage item_structures forceload
 
 ## data size estimate
 # 4 bytes per entry
