@@ -1,0 +1,2 @@
+#if uuid is already in use, generate a new one
+execute if data storage bigstone_sandbox:data list.components[].source{UUID:$(newUUID)} run return run function bigstone_sandbox:utilities/generate_uuid/check_uuid
