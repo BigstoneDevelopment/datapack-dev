@@ -9,8 +9,7 @@ $execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_one,game
                     },\
                     bigstone_sandbox:{\
                         struc:{\
-                            ID_0:$(ID_0),\
-                            ID_1:$(ID_1)\
+                            ID:$(ID)\
                         }\
                     }\
                 },\
@@ -43,7 +42,7 @@ $loot give @s loot {\
                                         type:"bigstone_sandbox",\
                                         effects:["place_component"]\
                                     },\
-                                    bigstone_sandbox:{"struc":{"ID_0":$(ID_0),"ID_1":$(ID_1)}}\
+                                    bigstone_sandbox:{"struc":{"ID":$(ID)}}\
                                 },\
                                 "minecraft:consumable":{\
                                     consume_seconds:0,\

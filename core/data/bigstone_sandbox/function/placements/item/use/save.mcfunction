@@ -1,14 +1,11 @@
-#store count into component ID
-execute store result storage bigstone_sandbox:data component.ID_0 int 1 \
-    run scoreboard players get #component_ID_count_0 bigstone_sandbox.temp
 
-execute store result storage bigstone_sandbox:data component.ID_1 int 1 \
-    run scoreboard players get #component_ID_count_1 bigstone_sandbox.temp
-
-#iterate count and loop
-execute if score #component_ID_count_0 bigstone_sandbox matches -1 \
-    run scoreboard players add #component_ID_count_1 bigstone_sandbox.temp 1
-scoreboard players add #component_ID_count_0 bigstone_sandbox.temp 1
+#generate a id for UUID
+function bigstone_sandbox:utilities/generate_uuid
+data modify storage bigstone_sandbox:data component.ID set from storage bigstone_sandbox:data newUUID
+data modify storage bigstone_sandbox:data component.ID_0 set from storage bigstone_sandbox:data newUUID[0]
+data modify storage bigstone_sandbox:data component.ID_1 set from storage bigstone_sandbox:data newUUID[1]
+data modify storage bigstone_sandbox:data component.ID_2 set from storage bigstone_sandbox:data newUUID[2]
+data modify storage bigstone_sandbox:data component.ID_3 set from storage bigstone_sandbox:data newUUID[3]
 
 #run save structure function
 $execute positioned $(x) $(y) $(z) run function bigstone_sandbox:placements/item/use/structures/save_structure with storage bigstone_sandbox:data component

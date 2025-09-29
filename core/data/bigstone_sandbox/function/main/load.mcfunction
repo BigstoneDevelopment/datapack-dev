@@ -10,8 +10,6 @@ execute if data storage bigstone_sandbox:data temp.version{"game":"1.21.5-"} run
 
 execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data {is_setup: 1b}
-    scoreboard players set #component_ID_count_0 bigstone_sandbox 0
-    scoreboard players set #component_ID_count_1 bigstone_sandbox 0
     forceload add 29999984 29999984 29999999 29999999
 
     # load scoreboards
