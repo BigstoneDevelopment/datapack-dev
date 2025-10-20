@@ -12,6 +12,9 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data {is_setup: 1b}
     forceload add 29999984 29999984 29999999 29999999
 
+    # set gamerules
+    gamerule maxCommandChainLength 25565
+
     # load scoreboards
     scoreboard objectives add bigstone_sandbox_menu trigger
     scoreboard objectives add bigstone_sandbox.loaded_index dummy
