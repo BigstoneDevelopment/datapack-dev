@@ -82,7 +82,7 @@ data modify storage bigstone_sandbox:data temp.component set value \
           "translate": "bigstone_sandbox.dialog_menu.port_west" \
         }, \
         { \
-          "translate": "bigstone_sandbox.dialog_menu.port_up", \
+          "translate": "bigstone_sandbox.dialog_menu.port_top", \
           "with": [ \
             { \
               "text": "", \
@@ -96,7 +96,7 @@ data modify storage bigstone_sandbox:data temp.component set value \
           "italic": false \
         }, \
         { \
-          "translate": "bigstone_sandbox.dialog_menu.port_down", \
+          "translate": "bigstone_sandbox.dialog_menu.port_bottom", \
           "with": [ \
             { \
               "text": "", \

@@ -101,6 +101,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       }, \
       { \
         "text": "ERROR", \
+        "font": "bigstone_sandbox:small_caps", \
         "color": "gray", \
         "italic": true \
       } \
@@ -116,7 +117,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
       "text": "ERROR" \
     }, \
     "show_tooltip": true, \
-    "width": 16, \
+    "width": 20, \
     "height": 16 \
   }, \
   { \
@@ -258,7 +259,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
                 }, \
              ], \
             "color": "dark_gray", \
-            "font": "minecraft:default" \
+            "font": "bigstone_sandbox:small_caps" \
           } \
         ], \
         "font": "bigstone_sandbox:small_caps" \

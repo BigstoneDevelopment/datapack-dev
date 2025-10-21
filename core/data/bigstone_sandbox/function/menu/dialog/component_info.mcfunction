@@ -10,6 +10,7 @@ data modify storage bigstone_sandbox:data temp.body[0].contents[11].text set fro
 data modify storage bigstone_sandbox:data temp.body[0].contents[13].text set from storage bigstone_sandbox:data temp.component.source.creator
 data modify storage bigstone_sandbox:data temp.body[1].item set from storage bigstone_sandbox:data temp.component.item
 data modify storage bigstone_sandbox:data temp.body[1].description.text set from storage bigstone_sandbox:data temp.component.source.description
+#data modify storage bigstone_sandbox:data temp.body[2].contents[2].text set from storage bigstone_sandbox:data temp.component.source.description
 
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.north[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.port_north"}] 
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.south[] run data remove storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.port_south"}] 

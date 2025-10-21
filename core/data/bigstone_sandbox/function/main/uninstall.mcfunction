@@ -21,7 +21,7 @@ data remove storage xolibs:playerdata rom
 data remove storage xolibs:playerdata temp
 
 data remove storage bigstone_sandbox:data newUUID
-data remove storage bigstone_sandbox:data list
+data remove storage bigstone_sandbox:data components
 data remove storage bigstone_sandbox:data temp
 data remove storage bigstone_sandbox:data is_setup
 data remove storage bigstone_sandbox:data args
