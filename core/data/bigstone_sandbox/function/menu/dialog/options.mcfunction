@@ -1,5 +1,4 @@
 data remove storage bigstone_sandbox:data temp.body
-data remove storage bigstone_sandbox:data temp.version
 
 function bigstone_sandbox:menu/dialog/options/body_init
 
@@ -15,7 +14,7 @@ execute if entity @s[tag=bigstone_sandbox.block_shape_highlight] run data modify
 
 function bigstone_sandbox:main/version/data
 function bigstone_sandbox:main/version/game
-data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[0] set from storage bigstone_sandbox:data temp.version.game
+data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[0] set from storage bigstone_sandbox:data temp.version.format
 data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[1] set from storage bigstone_sandbox:data temp.version.data
 
 execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigstone_sandbox:data temp.body[0].contents[{"hover_event":{"value":{"translate":"bigstone_sandbox.dialog_menu.admin_options"}}}].click_event.command set value "trigger bigstone_sandbox_menu set -14"
@@ -25,4 +24,3 @@ execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigston
 function bigstone_sandbox:menu/dialog/options/run_dialog with storage bigstone_sandbox:data temp
 
 data remove storage bigstone_sandbox:data temp.body
-data remove storage bigstone_sandbox:data temp.version
