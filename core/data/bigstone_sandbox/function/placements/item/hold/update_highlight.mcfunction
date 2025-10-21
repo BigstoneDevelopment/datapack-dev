@@ -1,8 +1,8 @@
 tag @s add highlightMode
 #check hand for placeblock
 scoreboard players set #chunk_contain_blocks bigstone_sandbox.temp 1
-execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:placements/grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
-execute if predicate bigstone_sandbox:item_detect/offhand/is_placeitem unless predicate bigstone_sandbox:item_detect/offhand/is_item run function bigstone_sandbox:placements/grid/check_empty_chunk_block with storage bigstone_sandbox:data raycast.Data
+execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:placements/grid/check_empty_chunk_block with storage bigstone_sandbox:data temp.raycast.Data
+execute if predicate bigstone_sandbox:item_detect/offhand/is_placeitem unless predicate bigstone_sandbox:item_detect/offhand/is_item run function bigstone_sandbox:placements/grid/check_empty_chunk_block with storage bigstone_sandbox:data temp.raycast.Data
 
 #set player ID if they don't have one
 execute as @s[predicate=!bs.id:has_suid] run function #bs.id:give_suid

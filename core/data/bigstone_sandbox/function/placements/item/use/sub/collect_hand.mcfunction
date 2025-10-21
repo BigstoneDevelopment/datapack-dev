@@ -1,6 +1,6 @@
 #run functions to execute save
 execute \
-    unless data storage bigstone_sandbox:data {temp:{effects:["collect_component"]}} \
+    unless data storage bigstone_sandbox:data {temp:{item_use_effect:{effects:["collect_component"]}}} \
         run return fail
         
 execute if score #weapon_slot_id bigstone_sandbox.temp matches 1 \

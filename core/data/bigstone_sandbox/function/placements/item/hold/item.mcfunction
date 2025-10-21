@@ -8,13 +8,13 @@ execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute 
 
 #snap to grid at corner for each of the axes (16x16x16)
 #x axes
-execute store result storage bigstone_sandbox:data raycast.Data.x int 16 \
+execute store result storage bigstone_sandbox:data temp.raycast.Data.x int 16 \
     run data get storage bs:out raycast.targeted_block[0] 0.0625
 #y axes
-execute store result storage bigstone_sandbox:data raycast.Data.y int 16 \
+execute store result storage bigstone_sandbox:data temp.raycast.Data.y int 16 \
     run data get storage bs:out raycast.targeted_block[1] 0.0625
 #z axes
-execute store result storage bigstone_sandbox:data raycast.Data.z int 16 \
+execute store result storage bigstone_sandbox:data temp.raycast.Data.z int 16 \
     run data get storage bs:out raycast.targeted_block[2] 0.0625
 
 #offset block placement if holding saveditem
@@ -26,21 +26,21 @@ execute \
         run function bigstone_sandbox:placements/grid/cast_offset
 
 #get last location of cast Position
-execute store result storage bigstone_sandbox:data raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x
-execute store result storage bigstone_sandbox:data raycast.temp.Data.y int 1 run scoreboard players get @s bigstone_sandbox.last_pos.y
-execute store result storage bigstone_sandbox:data raycast.temp.Data.z int 1 run scoreboard players get @s bigstone_sandbox.last_pos.z
+execute store result storage bigstone_sandbox:data temp.raycast.temp.Data.x int 1 run scoreboard players get @s bigstone_sandbox.last_pos.x
+execute store result storage bigstone_sandbox:data temp.raycast.temp.Data.y int 1 run scoreboard players get @s bigstone_sandbox.last_pos.y
+execute store result storage bigstone_sandbox:data temp.raycast.temp.Data.z int 1 run scoreboard players get @s bigstone_sandbox.last_pos.z
 #run to test if there are any changes
 execute store success score #raycast.Changed.x bigstone_sandbox.temp \
-    run data modify storage bigstone_sandbox:data raycast.temp.Data.x set from storage bigstone_sandbox:data raycast.Data.x
+    run data modify storage bigstone_sandbox:data temp.raycast.temp.Data.x set from storage bigstone_sandbox:data temp.raycast.Data.x
 execute store success score #raycast.Changed.y bigstone_sandbox.temp \
-    run data modify storage bigstone_sandbox:data raycast.temp.Data.y set from storage bigstone_sandbox:data raycast.Data.y
+    run data modify storage bigstone_sandbox:data temp.raycast.temp.Data.y set from storage bigstone_sandbox:data temp.raycast.Data.y
 execute store success score #raycast.Changed.z bigstone_sandbox.temp \
-    run data modify storage bigstone_sandbox:data raycast.temp.Data.z set from storage bigstone_sandbox:data raycast.Data.z
+    run data modify storage bigstone_sandbox:data temp.raycast.temp.Data.z set from storage bigstone_sandbox:data temp.raycast.Data.z
 
 #update last location of cast Position
-execute store result score @s bigstone_sandbox.last_pos.x run data get storage bigstone_sandbox:data raycast.temp.Data.x
-execute store result score @s bigstone_sandbox.last_pos.y run data get storage bigstone_sandbox:data raycast.temp.Data.y
-execute store result score @s bigstone_sandbox.last_pos.z run data get storage bigstone_sandbox:data raycast.temp.Data.z
+execute store result score @s bigstone_sandbox.last_pos.x run data get storage bigstone_sandbox:data temp.raycast.temp.Data.x
+execute store result score @s bigstone_sandbox.last_pos.y run data get storage bigstone_sandbox:data temp.raycast.temp.Data.y
+execute store result score @s bigstone_sandbox.last_pos.z run data get storage bigstone_sandbox:data temp.raycast.temp.Data.z
 
 #update selection mode id
 function bigstone_sandbox:placements/item/hold/sub/highlight_hand
@@ -52,7 +52,7 @@ execute \
     if score #raycast.Changed.z bigstone_sandbox.temp matches 0 \
     if score @s bigstone_sandbox.cast_mode = #cast_mode bigstone_sandbox.temp run return fail
         #run function to display highlight mesh according to item type
-        function bigstone_sandbox:placements/item/hold/update_highlight with storage bigstone_sandbox:data raycast.Data
+        function bigstone_sandbox:placements/item/hold/update_highlight with storage bigstone_sandbox:data temp.raycast.Data
 
 
 

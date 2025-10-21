@@ -2,7 +2,7 @@ execute \
     unless entity @s[gamemode=creative] \
         run return fail
 execute \
-    unless data storage bigstone_sandbox:data {temp:{effects:["creative_self_delete_component"]}} \
+    unless data storage bigstone_sandbox:data {temp:{item_use_effect:{effects:["creative_self_delete_component"]}}} \
         run return fail
 execute \
     if score #weapon_slot_id bigstone_sandbox.temp matches 1 \
