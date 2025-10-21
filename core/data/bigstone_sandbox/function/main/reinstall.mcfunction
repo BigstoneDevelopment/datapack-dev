@@ -32,17 +32,17 @@ data remove storage bigstone_sandbox:data import
 data remove storage bigstone_sandbox:data characters
 
 tag @a remove bigstone_sandbox.admin
-tag @s remove bigstone_sandbox.default_to_components
-tag @s remove bigstone_sandbox.info_on_join
-tag @s remove bigstone_sandbox.sound_effects
-tag @s remove bigstone_sandbox.music
-tag @s remove bigstone_sandbox.placement_highlight
-tag @s remove bigstone_sandbox.sprint_and_sneak_keybind
-tag @s remove bigstone_sandbox.double_sprint_keybind
-tag @s remove bigstone_sandbox.double_sneak_keybind
-tag @s remove bigstone_sandbox.block_shape_highlight
-tag @s remove bigstone_sandbox.last_filter_menu.tag
-tag @s remove bigstone_sandbox.last_filter_menu.port
-tag @s remove bigstone_sandbox.last_filter_menu.creator
+tag @a remove bigstone_sandbox.default_to_components
+tag @a remove bigstone_sandbox.info_on_join
+tag @a remove bigstone_sandbox.sound_effects
+tag @a remove bigstone_sandbox.music
+tag @a remove bigstone_sandbox.placement_highlight
+tag @a remove bigstone_sandbox.sprint_and_sneak_keybind
+tag @a remove bigstone_sandbox.double_sprint_keybind
+tag @a remove bigstone_sandbox.double_sneak_keybind
+tag @a remove bigstone_sandbox.block_shape_highlight
+tag @a remove bigstone_sandbox.last_filter_menu.tag
+tag @a remove bigstone_sandbox.last_filter_menu.port
+tag @a remove bigstone_sandbox.last_filter_menu.creator
 
 reload
