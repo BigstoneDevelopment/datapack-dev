@@ -125,7 +125,7 @@ dialog show @s \
       "width": 125, \
       "action": { \
         "type": "dynamic/run_command", \
-        "template": "function bigstone_sandbox:menu/dialog_action/import/private {item_data:'$(item_data)'}" \
+        "template": "function bigstone_sandbox:menu/dialog_action/import/private/import {item_data:'$(item_data)'}" \
       } \
     }, \
     { \
@@ -136,7 +136,7 @@ dialog show @s \
       "width": 125, \
       "action": { \
         "type": "dynamic/run_command", \
-        "template": "function bigstone_sandbox:menu/dialog_action/import/public {item_data:'$(item_data)'}" \
+        "template": "function bigstone_sandbox:menu/dialog_action/import/public/import {item_data:'$(item_data)'}" \
       } \
     } \
   ] \

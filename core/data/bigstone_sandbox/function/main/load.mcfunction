@@ -2,36 +2,46 @@
 execute if data storage bigstone_sandbox:data settings{"reload_message":true} run tellraw @a ["",{"text":" \n \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"yellow",click_event:{"action":"open_url","url":"https://github.com/bigstonedevelopment/datapack"}},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.description","fallback":"A simple Bigstone Sandbox","color":"gray"},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.author","fallback":"@Bigstone Development - ","italic":true,"color":"gray"},{"translate":"bigstone_sandbox.tellraw_message.click_for_github","fallback":"Click for github","italic":true,"color":"yellow","click_event":{"action":"open_url","url":"https://github.com/bigstonedevelopment"}},{"text":" \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.reloaded","fallback":"Reloaded Functions, etc..","color":"gray"},{"text":" \n \n "}]
 execute if data storage bigstone_sandbox:data temp.version{"game":"1.21.5-"} run tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.unsupported_version","fallback":"This version isn't supported!","color":"red"}]
 
-#gamerule maxCommandChainLength 10000
+# check maxCommandChainLength
+execute store result storage bigstone_sandbox:data temp.maxCommandChainLength int 1 run gamerule maxCommandChainLength
+execute store result score maxCommandChainLength bigstone_sandbox.temp run data get storage bigstone_sandbox:data temp.maxCommandChainLength 1
+scoreboard players set minCommandChainLength bigstone_sandbox.temp 10000
+    
+execute if score maxCommandChainLength bigstone_sandbox.temp < minCommandChainLength bigstone_sandbox.temp run tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.maxCommandChainLength_warning","fallback":"Warning: The gamerule maxCommandChainLength needs to be greater than 10000!","color":"red"}]
+    
+scoreboard players reset maxCommandChainLength bigstone_sandbox.temp
+scoreboard players reset minCommandChainLength bigstone_sandbox.temp
+data remove storage bigstone_sandbox:data temp.maxCommandChainLength
 
 #function bigstone_sandbox:main/reset_entities not needed for now
 
 # initial setup (only run on first load)
-
 execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data {is_setup: 1b}
     forceload add 29999984 29999984 29999999 29999999
 
-    # load scoreboards
-    scoreboard objectives add bigstone_sandbox_menu trigger
-    scoreboard objectives add bigstone_sandbox.loaded_index dummy
-    scoreboard objectives add bigstone_sandbox.selected_index dummy
-    scoreboard objectives add bigstone_sandbox.temp dummy
-    scoreboard objectives add bigstone_sandbox.raycast dummy
-    scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy
-    scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
-    scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
+    tellraw @a ["",{"text":" \n \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"yellow",click_event:{"action":"open_url","url":"https://github.com/bigstonedevelopment/datapack"}},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.description","fallback":"A simple Bigstone Sandbox","color":"gray"},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.author","fallback":"@Bigstone Development - ","italic":true,"color":"gray"},{"translate":"bigstone_sandbox.tellraw_message.click_for_github","fallback":"Click for github","italic":true,"color":"yellow","click_event":{"action":"open_url","url":"https://github.com/bigstonedevelopment"}},{"text":" \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.reloaded","fallback":"Reloaded Functions, etc..","color":"gray"},{"text":" \n \n "}]
 
-    scoreboard objectives add bigstone_sandbox.last_pos.x dummy
-    scoreboard objectives add bigstone_sandbox.last_pos.y dummy
-    scoreboard objectives add bigstone_sandbox.last_pos.z dummy
-    scoreboard objectives add bigstone_sandbox.cast_mode dummy
-    scoreboard objectives add bigstone_sandbox.invalid_highlight dummy
+    # load scoreboards
+    scoreboard objectives add bigstone_sandbox_menu trigger [{text:"BS ",color:"gold"},{text:"Menu",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.loaded_index dummy [{text:"BS ",color:"gold"},{text:"Loaded_index",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.selected_index dummy [{text:"BS ",color:"gold"},{text:"Selected_index",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.temp dummy [{text:"BS ",color:"gold"},{text:"Temp",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.raycast dummy [{text:"BS ",color:"gold"},{text:"Raycast",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy [{text:"BS ",color:"gold"},{text:"Sprint_cooldown",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy [{text:"BS ",color:"gold"},{text:"Sneak_cooldown",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game [{text:"BS ",color:"gold"},{text:"Join",color:"gray"}]
+
+    scoreboard objectives add bigstone_sandbox.last_pos.x dummy [{text:"BS ",color:"gold"},{text:"Last_pos.x",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.last_pos.y dummy [{text:"BS ",color:"gold"},{text:"Last_pos.y",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.last_pos.z dummy [{text:"BS ",color:"gold"},{text:"Last_pos.z",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.cast_mode dummy [{text:"BS ",color:"gold"},{text:"Cast_mode",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.invalid_highlight dummy [{text:"BS ",color:"gold"},{text:"Invalid_highlight",color:"gray"}]
 
 
 
     #constants
-    scoreboard objectives add consts dummy
+    scoreboard objectives add consts dummy [{text:"BS ",color:"gold"},{text:"Consts",color:"gray"}]
 
     scoreboard players set #16 consts 16
 
