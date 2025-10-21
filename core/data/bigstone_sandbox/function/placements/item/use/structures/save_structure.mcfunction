@@ -27,7 +27,7 @@ setblock 29999999 306 29999999 minecraft:redstone_block replace
 
 #data modify storage bigstone_sandbox:data temp.component.save set from storage item_structures save
 #data modify storage bigstone_sandbox:data temp.component.id set from 
-#data modify storage bigstone_sandbox:data list.components append from storage bigstone_sandbox:data temp.component
+#data modify storage bigstone_sandbox:data components append from storage bigstone_sandbox:data temp.component
 #data remove storage minecraft:item_structures save
 #remove the evidence
 fill 29999999 305 29999999 29999999 306 29999999 air strict

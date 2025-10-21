@@ -11,7 +11,7 @@ execute if function bigstone_sandbox:components/list/component_list/test_is_uuid
   execute unless function bigstone_sandbox:components/list/component_list/test_does_source_differ_from_existing run return run \
   function bigstone_sandbox:components/list/add_manager_to_component with storage bigstone_sandbox:data temp.component.source
 
-data modify storage bigstone_sandbox:data list.components prepend from storage bigstone_sandbox:data temp.component
+data modify storage bigstone_sandbox:data components prepend from storage bigstone_sandbox:data temp.component
 
 data remove storage bigstone_sandbox:data temp.component
 scoreboard players reset bool bigstone_sandbox.temp

@@ -1,1 +1,1 @@
-$data modify storage bigstone_sandbox:data list.components[{"source":{"UUID":$(UUID)}}].data.public set value true
+$data modify storage bigstone_sandbox:data components[{"source":{"UUID":$(UUID)}}].data.public set value true
