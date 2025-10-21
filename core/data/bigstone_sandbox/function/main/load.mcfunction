@@ -16,7 +16,6 @@ data remove storage bigstone_sandbox:data temp.maxCommandChainLength
 #function bigstone_sandbox:main/reset_entities not needed for now
 
 # initial setup (only run on first load)
-
 execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data {is_setup: 1b}
     forceload add 29999984 29999984 29999999 29999999
