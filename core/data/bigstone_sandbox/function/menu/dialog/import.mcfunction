@@ -1,4 +1,4 @@
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.body
 
 function bigstone_sandbox:menu/dialog/import/body_init
 
@@ -8,4 +8,4 @@ execute if entity @s[tag=bigstone_sandbox.admin] run data modify storage bigston
 
 function bigstone_sandbox:menu/dialog/import/run_dialog with storage bigstone_sandbox:data temp
 
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.body

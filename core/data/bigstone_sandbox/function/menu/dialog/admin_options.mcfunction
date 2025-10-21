@@ -1,4 +1,4 @@
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.body
 scoreboard players set bool bigstone_sandbox.temp 0
 execute store result score bool bigstone_sandbox.temp run gamerule sendCommandFeedback
 
@@ -17,5 +17,5 @@ execute if data storage bigstone_sandbox:data settings{instant_snap:true} run da
 
 function bigstone_sandbox:menu/dialog/admin_options/run_dialog with storage bigstone_sandbox:data temp
 
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.body
 scoreboard players reset bool bigstone_sandbox.temp

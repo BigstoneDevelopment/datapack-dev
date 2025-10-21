@@ -333,7 +333,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://wiki.bigstone.ovh" \
+            "url": "https://wiki.bigstone.dev" \
           }, \
           "hover_event": { \
             "action": "show_text", \
