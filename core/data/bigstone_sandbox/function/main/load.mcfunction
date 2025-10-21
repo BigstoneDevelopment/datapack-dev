@@ -21,26 +21,28 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data {is_setup: 1b}
     forceload add 29999984 29999984 29999999 29999999
 
-    # load scoreboards
-    scoreboard objectives add bigstone_sandbox_menu trigger
-    scoreboard objectives add bigstone_sandbox.loaded_index dummy
-    scoreboard objectives add bigstone_sandbox.selected_index dummy
-    scoreboard objectives add bigstone_sandbox.temp dummy
-    scoreboard objectives add bigstone_sandbox.raycast dummy
-    scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy
-    scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy
-    scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game
+    tellraw @a ["",{"text":" \n \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"yellow",click_event:{"action":"open_url","url":"https://github.com/bigstonedevelopment/datapack"}},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.description","fallback":"A simple Bigstone Sandbox","color":"gray"},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.author","fallback":"@Bigstone Development - ","italic":true,"color":"gray"},{"translate":"bigstone_sandbox.tellraw_message.click_for_github","fallback":"Click for github","italic":true,"color":"yellow","click_event":{"action":"open_url","url":"https://github.com/bigstonedevelopment"}},{"text":" \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.reloaded","fallback":"Reloaded Functions, etc..","color":"gray"},{"text":" \n \n "}]
 
-    scoreboard objectives add bigstone_sandbox.last_pos.x dummy
-    scoreboard objectives add bigstone_sandbox.last_pos.y dummy
-    scoreboard objectives add bigstone_sandbox.last_pos.z dummy
-    scoreboard objectives add bigstone_sandbox.cast_mode dummy
-    scoreboard objectives add bigstone_sandbox.invalid_highlight dummy
+    # load scoreboards
+    scoreboard objectives add bigstone_sandbox_menu trigger [{text:"BS ",color:"gold"},{text:"Menu",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.loaded_index dummy [{text:"BS ",color:"gold"},{text:"Loaded_index",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.selected_index dummy [{text:"BS ",color:"gold"},{text:"Selected_index",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.temp dummy [{text:"BS ",color:"gold"},{text:"Temp",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.raycast dummy [{text:"BS ",color:"gold"},{text:"Raycast",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.sprint_cooldown dummy [{text:"BS ",color:"gold"},{text:"Sprint_cooldown",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.sneak_cooldown dummy [{text:"BS ",color:"gold"},{text:"Sneak_cooldown",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.join minecraft.custom:minecraft.leave_game [{text:"BS ",color:"gold"},{text:"Join",color:"gray"}]
+
+    scoreboard objectives add bigstone_sandbox.last_pos.x dummy [{text:"BS ",color:"gold"},{text:"Last_pos.x",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.last_pos.y dummy [{text:"BS ",color:"gold"},{text:"Last_pos.y",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.last_pos.z dummy [{text:"BS ",color:"gold"},{text:"Last_pos.z",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.cast_mode dummy [{text:"BS ",color:"gold"},{text:"Cast_mode",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.invalid_highlight dummy [{text:"BS ",color:"gold"},{text:"Invalid_highlight",color:"gray"}]
 
 
 
     #constants
-    scoreboard objectives add consts dummy
+    scoreboard objectives add consts dummy [{text:"BS ",color:"gold"},{text:"Consts",color:"gray"}]
 
     scoreboard players set #16 consts 16
 
