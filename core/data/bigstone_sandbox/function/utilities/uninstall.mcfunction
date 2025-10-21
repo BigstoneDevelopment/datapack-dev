@@ -28,6 +28,7 @@ data remove storage bigstone_sandbox:data args
 data remove storage bigstone_sandbox:data settings
 data remove storage bigstone_sandbox:data options
 data remove storage bigstone_sandbox:data highlight
+data remove storage bigstone_sandbox:data import
 
 data remove storage bigstone_sandbox:data characters
 
