@@ -1,5 +1,5 @@
 execute unless entity @s[type=player] run return fail
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.component
 scoreboard players reset bool bigstone_sandbox.temp
 
 execute unless function bigstone_sandbox:components/list/component_list/component_validation run return fail
@@ -13,7 +13,7 @@ execute if function bigstone_sandbox:components/list/component_list/test_is_uuid
 
 data modify storage bigstone_sandbox:data list.components prepend from storage bigstone_sandbox:data temp.component
 
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.component
 scoreboard players reset bool bigstone_sandbox.temp
 
 function bigstone_sandbox:components/list/make_private_filtered_list

@@ -1,5 +1,5 @@
 # uses storage xolibs:playerdata storage.bigstone_sandbox.filter as input
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.list
 function xolibs:api/playerdata/load
 
 data remove storage xolibs:playerdata storage.bigstone_sandbox.list.filtered[]
@@ -10,5 +10,5 @@ data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filtered set
 
 function bigstone_sandbox:components/list/filtered_list/mark_saved_components with storage xolibs:playerdata storage
 
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.list
 function bigstone_sandbox:components/list/make_private_loaded_list
