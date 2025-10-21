@@ -1,4 +1,5 @@
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.filter
+data remove storage bigstone_sandbox:data temp.index
 scoreboard players reset * bigstone_sandbox.temp
 function xolibs:api/playerdata/load
 
@@ -12,7 +13,8 @@ execute if data storage bigstone_sandbox:data temp.filter{"include":true, "exclu
 
 function bigstone_sandbox:menu/dialog_action/filter/update_filter_at_index with storage bigstone_sandbox:data temp
 
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.filter
+data remove storage bigstone_sandbox:data temp.index
 scoreboard players reset * bigstone_sandbox.temp
 
 execute if entity @s[tag=bigstone_sandbox.last_filter_menu.port] run return run function bigstone_sandbox:menu/dialog/filter_ports

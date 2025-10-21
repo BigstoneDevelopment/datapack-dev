@@ -1,4 +1,5 @@
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.body
+data remove storage bigstone_sandbox:data temp.component
 
 function bigstone_sandbox:menu/dialog/component_info/body_init
 
@@ -28,4 +29,5 @@ function bigstone_sandbox:menu/dialog/component_info/tags_loop
 
 function bigstone_sandbox:menu/dialog/component_info/run_dialog with storage bigstone_sandbox:data temp
 
-data remove storage bigstone_sandbox:data temp
+data remove storage bigstone_sandbox:data temp.body
+data remove storage bigstone_sandbox:data temp.component
