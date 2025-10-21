@@ -8,8 +8,8 @@ $execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_one,gam
                         effects:["place_component"]\
                     },\
                     bigstone_sandbox:{\
-                        struc:{\
-                            ID:$(ID)\
+                        source:{\
+                            UUID:$(ID)\
                         }\
                     }\
                 },\
@@ -42,7 +42,7 @@ $loot give @s loot {\
                                         type:"bigstone_sandbox",\
                                         effects:["place_component"]\
                                     },\
-                                    bigstone_sandbox:{"struc":{"ID":$(ID)}}\
+                                    bigstone_sandbox:{"source":{"UUID":$(ID)}}\
                                 },\
                                 "minecraft:consumable":{\
                                     consume_seconds:0,\

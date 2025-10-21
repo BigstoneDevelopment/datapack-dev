@@ -40,37 +40,37 @@ execute if score #rayhit bigstone_sandbox.temp matches 0 run return fail
     #mainhand optimize all of this later
     execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID \
-            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID
+            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.source.UUID
 
     execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_0 \
-            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID[0]
+            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.source.UUID[0]
     execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_1 \
-            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID[1]
+            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.source.UUID[1]
     execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_2 \
-            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID[2]
+            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.source.UUID[2]
     execute if entity @s[predicate=bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_3 \
-            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.struc.ID[3]
+            set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.source.UUID[3]
     #offhand
     execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID \
-            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID
+            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.source.UUID
     
     execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_0 \
-            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID[0]
+            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.source.UUID[0]
     execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_1 \
-            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID[1]
+            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.source.UUID[1]
     execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_2 \
-            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID[2]
+            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.source.UUID[2]
     execute if entity @s[predicate=bigstone_sandbox:item_detect/offhand/is_placeitem,predicate=!bigstone_sandbox:item_detect/mainhand/is_placeitem] \
         run data modify storage bigstone_sandbox:data temp.raycast.Data.ID_3 \
-            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.struc.ID[3]
+            set from entity @s equipment.offhand.components."minecraft:custom_data".bigstone_sandbox.source.UUID[3]
 
     scoreboard players set #weapon_slot_id bigstone_sandbox.temp 0
     #store component data in a temporary read only location
@@ -86,6 +86,7 @@ execute if score #rayhit bigstone_sandbox.temp matches 0 run return fail
         if predicate bigstone_sandbox:item_detect/offhand/is_item \
         run scoreboard players set #weapon_slot_id bigstone_sandbox.temp 2
 
+    
     #run functions to execute placement/save
     function bigstone_sandbox:placements/item/use/sub/store_hand
     function bigstone_sandbox:placements/item/use/sub/place_hand
@@ -94,8 +95,8 @@ execute if score #rayhit bigstone_sandbox.temp matches 0 run return fail
     function bigstone_sandbox:placements/item/use/sub/collect_hand
     
     #clear temp data
-    data remove storage bigstone_sandbox:data temp.item_use_effect
-    data remove storage bigstone_sandbox:data temp.raycast
-    
+    #data remove storage bigstone_sandbox:data temp.item_use_effect
+    #data remove storage bigstone_sandbox:data temp.raycast
+
 #for debugging use
 #tellraw @a {"storage":"bigstone_sandbox","nbt":"raycast"}
