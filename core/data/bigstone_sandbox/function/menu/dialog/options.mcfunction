@@ -13,7 +13,7 @@ execute if entity @s[tag=bigstone_sandbox.double_sneak_keybind] run data modify 
 execute if entity @s[tag=bigstone_sandbox.block_shape_highlight] run data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.options.block_shape_highlight"}].with[0].translate set value bigstone_sandbox.dialog_menu.toggle.on
 
 function bigstone_sandbox:main/version/data
-function bigstone_sandbox:main/version/game
+function bigstone_sandbox:main/version/format
 data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[0] set from storage bigstone_sandbox:data temp.version.format
 data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.version_info"}].with[1] set from storage bigstone_sandbox:data temp.version.data
 
