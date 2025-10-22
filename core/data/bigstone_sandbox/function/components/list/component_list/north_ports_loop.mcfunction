@@ -13,6 +13,6 @@ execute if data storage bigstone_sandbox:data temp.component.source.ports.north[
   ] \
 }
 
-data modify storage bigstone_sandbox:data temp.body[2].contents[{"translate": "bigstone_sandbox.dialog_menu.port_north"}].with[0].extra append from storage bigstone_sandbox:data temp.ports
+data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_north"}].with[0].extra append from storage bigstone_sandbox:data temp.ports
 
-function bigstone_sandbox:menu/dialog/component_info/north_ports_loop
+function bigstone_sandbox:components/list/component_list/north_ports_loop

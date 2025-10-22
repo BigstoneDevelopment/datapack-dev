@@ -38,6 +38,22 @@ function bigstone_sandbox:components/list/component_list/west_ports_loop
 function bigstone_sandbox:components/list/component_list/top_ports_loop
 function bigstone_sandbox:components/list/component_list/bottom_ports_loop
 
+# readd port data for info loop
+data modify storage bigstone_sandbox:data temp.component.source.ports.north append from storage bigstone_sandbox:data import.ports.north[]
+data modify storage bigstone_sandbox:data temp.component.source.ports.south append from storage bigstone_sandbox:data import.ports.south[]
+data modify storage bigstone_sandbox:data temp.component.source.ports.east append from storage bigstone_sandbox:data import.ports.east[]
+data modify storage bigstone_sandbox:data temp.component.source.ports.west append from storage bigstone_sandbox:data import.ports.west[]
+data modify storage bigstone_sandbox:data temp.component.source.ports.top append from storage bigstone_sandbox:data import.ports.top[]
+data modify storage bigstone_sandbox:data temp.component.source.ports.bottom append from storage bigstone_sandbox:data import.ports.bottom[]
+
+# remove unused port directions again
+execute unless data storage bigstone_sandbox:data temp.component.source.ports.north[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_north"}]
+execute unless data storage bigstone_sandbox:data temp.component.source.ports.south[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_south"}]
+execute unless data storage bigstone_sandbox:data temp.component.source.ports.east[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_east"}]
+execute unless data storage bigstone_sandbox:data temp.component.source.ports.west[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_west"}]
+execute unless data storage bigstone_sandbox:data temp.component.source.ports.top[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_top"}]
+execute unless data storage bigstone_sandbox:data temp.component.source.ports.bottom[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_bottom"}]
+
 # make filters list
 data modify storage bigstone_sandbox:data temp.strings set value []
 
