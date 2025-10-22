@@ -1,3 +1,6 @@
+execute unless data storage bigstone_sandbox:data settings{"search":1b} run tellraw @s ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.search_disabled","fallback":"Search by name has been disabled by an OP.","color":"yellow"}]
+execute unless data storage bigstone_sandbox:data settings{"search":1b} run return fail
+
 dialog show @s \
 { \
   "type": "minecraft:confirmation", \

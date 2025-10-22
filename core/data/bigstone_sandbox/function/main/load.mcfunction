@@ -2,7 +2,7 @@
 function bigstone_sandbox:main/version/format
 
 # reload message
-execute if data storage bigstone_sandbox:data settings{"reload_message":true} run tellraw @a ["",{"text":" \n \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"yellow",click_event:{"action":"open_url","url":"https://github.com/bigstonedevelopment/datapack"}},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.description","fallback":"A simple Bigstone Sandbox","color":"gray"},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.author","fallback":"@Bigstone Development - ","italic":true,"color":"gray"},{"translate":"bigstone_sandbox.tellraw_message.click_for_github","fallback":"Click for github","italic":true,"color":"yellow","click_event":{"action":"open_url","url":"https://github.com/bigstonedevelopment"}},{"text":" \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.reloaded","fallback":"Reloaded Functions, etc..","color":"gray"},{"text":" \n \n "}]
+execute if data storage bigstone_sandbox:data settings{"reload_message":1b} run tellraw @a ["",{"text":" \n \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"yellow",click_event:{"action":"open_url","url":"https://github.com/bigstonedevelopment/datapack"}},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.description","fallback":"A simple Bigstone Sandbox","color":"gray"},{"text":" \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.author","fallback":"@Bigstone Development - ","italic":true,"color":"gray"},{"translate":"bigstone_sandbox.tellraw_message.click_for_github","fallback":"Click for github","italic":true,"color":"yellow","click_event":{"action":"open_url","url":"https://github.com/bigstonedevelopment"}},{"text":" \n \n"},{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.reloaded","fallback":"Reloaded Functions, etc..","color":"gray"},{"text":" \n \n "}]
 execute if data storage bigstone_sandbox:data temp.version{"format":"Unsupported"} run tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.unsupported_version","fallback":"This version isn't supported!","color":"red"}]
 
 # check maxCommandChainLength
@@ -40,13 +40,17 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     scoreboard objectives add bigstone_sandbox.last_pos.z dummy [{text:"BS ",color:"gold"},{text:"Last_pos.z",color:"gray"}]
     scoreboard objectives add bigstone_sandbox.cast_mode dummy [{text:"BS ",color:"gold"},{text:"Cast_mode",color:"gray"}]
     scoreboard objectives add bigstone_sandbox.invalid_highlight dummy [{text:"BS ",color:"gold"},{text:"Invalid_highlight",color:"gray"}]
-
+    scoreboard objectives add bigstone_sandbox.temp.import_total dummy [{text:"BS ",color:"gold"},{text:"Temp.import_total",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.temp.import_percent dummy [{text:"BS ",color:"gold"},{text:"Temp.import_percent",color:"gray"}]
+    scoreboard objectives add bigstone_sandbox.temp.import_done dummy [{text:"BS ",color:"gold"},{text:"Temp.import_done",color:"gray"}]
 
 
     #constants
     scoreboard objectives add consts dummy [{text:"BS ",color:"gold"},{text:"Consts",color:"gray"}]
 
+    scoreboard players set #1 consts 1
     scoreboard players set #16 consts 16
+    scoreboard players set #100 consts 100
 
     # load storage
 

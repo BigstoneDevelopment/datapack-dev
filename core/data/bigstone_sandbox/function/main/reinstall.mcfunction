@@ -12,6 +12,9 @@ scoreboard objectives remove bigstone_sandbox.selected_index
 scoreboard objectives remove bigstone_sandbox.sneak_cooldown
 scoreboard objectives remove bigstone_sandbox.sprint_cooldown
 scoreboard objectives remove bigstone_sandbox.temp
+scoreboard objectives remove bigstone_sandbox.temp.import_total
+scoreboard objectives remove bigstone_sandbox.temp.import_percent
+scoreboard objectives remove bigstone_sandbox.temp.import_done
 scoreboard objectives remove consts
 
 data remove storage xolibs:playerdata player
@@ -46,5 +49,7 @@ tag @a remove bigstone_sandbox.block_shape_highlight
 tag @a remove bigstone_sandbox.last_filter_menu.tag
 tag @a remove bigstone_sandbox.last_filter_menu.port
 tag @a remove bigstone_sandbox.last_filter_menu.creator
+
+forceload remove 29999984 29999984 29999999 29999999
 
 reload
