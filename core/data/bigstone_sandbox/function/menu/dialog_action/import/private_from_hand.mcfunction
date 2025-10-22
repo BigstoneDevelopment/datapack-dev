@@ -1,3 +1,6 @@
+execute if data storage bigstone_sandbox:data settings{"private":0b} run tellraw @s ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.private_components_disabled","fallback":"Private components has been disabled by an OP.","color":"yellow"}]
+execute if data storage bigstone_sandbox:data settings{"private":0b} run return fail
+
 data remove storage bigstone_sandbox:data import
 
 data modify storage bigstone_sandbox:data import set from entity @s SelectedItem.components."minecraft:custom_data".bigstone_sandbox.source

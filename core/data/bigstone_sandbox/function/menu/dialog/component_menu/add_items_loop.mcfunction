@@ -16,7 +16,8 @@ scoreboard players remove item_index bigstone_sandbox.temp 2000
 data modify storage bigstone_sandbox:data temp.add_item.item set from storage bigstone_sandbox:data temp.menu_items[0].item
 data modify storage bigstone_sandbox:data temp.add_item.description.contents[6] set from storage bigstone_sandbox:data temp.menu_items[0].source.component_name
 
-data modify storage bigstone_sandbox:data temp.body append from storage bigstone_sandbox:data temp.add_item
+execute if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":true} run data modify storage bigstone_sandbox:data temp.body append from storage bigstone_sandbox:data temp.add_item
+execute if data storage bigstone_sandbox:data settings{"private":1b} if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":false} run data modify storage bigstone_sandbox:data temp.body append from storage bigstone_sandbox:data temp.add_item
 execute store result storage bigstone_sandbox:data temp.macros.item_index int 1 run scoreboard players add item_index bigstone_sandbox.temp 1
 
 data remove storage bigstone_sandbox:data temp.menu_items[0]
