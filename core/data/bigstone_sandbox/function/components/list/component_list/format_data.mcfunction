@@ -31,7 +31,12 @@ execute unless data storage bigstone_sandbox:data temp.component.source.ports.to
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.bottom[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_bottom"}]
 
 # add ports
-
+function bigstone_sandbox:components/list/component_list/north_ports_loop
+function bigstone_sandbox:components/list/component_list/south_ports_loop
+function bigstone_sandbox:components/list/component_list/east_ports_loop
+function bigstone_sandbox:components/list/component_list/west_ports_loop
+function bigstone_sandbox:components/list/component_list/top_ports_loop
+function bigstone_sandbox:components/list/component_list/bottom_ports_loop
 
 # make filters list
 data modify storage bigstone_sandbox:data temp.strings set value []
