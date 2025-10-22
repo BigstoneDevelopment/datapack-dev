@@ -50,6 +50,7 @@ tag @a remove bigstone_sandbox.block_shape_highlight
 tag @a remove bigstone_sandbox.last_filter_menu.tag
 tag @a remove bigstone_sandbox.last_filter_menu.port
 tag @a remove bigstone_sandbox.last_filter_menu.creator
+tag @a remove bigstone_sandbox.highlightMode
 
 forceload remove 29999984 29999984 29999999 29999999
 

@@ -1,6 +1,9 @@
 #run when target item in hand
 
+# if disabled in settings
+execute unless entity @s[tag=bigstone_sandbox.placement_highlight] run function bigstone_sandbox:placements/item/post_hold/item
 execute unless entity @s[tag=bigstone_sandbox.placement_highlight] run return fail
+
 #if item is not equipped exit function
 execute unless predicate bigstone_sandbox:item_detect/is_item run return fail
     #reset function and enable posthold process

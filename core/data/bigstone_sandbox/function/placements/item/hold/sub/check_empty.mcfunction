@@ -1,4 +1,4 @@
-tag @s add highlightMode
+tag @s add bigstone_sandbox.highlightMode
 
             scoreboard players set #chunk_contain_blocks bigstone_sandbox.temp 1
             execute if predicate bigstone_sandbox:item_detect/mainhand/is_placeitem run function bigstone_sandbox:placements/grid/check_empty_chunk_block with storage bigstone_sandbox:data temp.raycast.Data

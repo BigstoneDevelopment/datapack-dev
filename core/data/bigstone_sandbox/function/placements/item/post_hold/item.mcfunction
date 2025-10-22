@@ -1,5 +1,5 @@
 #get player id and run macro to delete highlight with player id
-tag @s remove highlightMode
+tag @s remove bigstone_sandbox.highlightMode
 execute store result storage bigstone_sandbox:data highlight.SUID int 1 run scoreboard players get @s bs.id
 #reset position data for change detection
 data remove storage bigstone_sandbox:data temp.raycast.temp.Data

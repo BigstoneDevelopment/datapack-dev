@@ -4,7 +4,11 @@ execute anchored eyes positioned ^ ^ ^ \
     run function #bs.raycast:run {with:{max_distance:72}}
 execute store result score #rayhit bigstone_sandbox.temp run data get storage bs:out raycast.hit_point
 #exit if cast failed and kill highlight
-execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute if entity @s[tag=highlightMode] run function bigstone_sandbox:placements/item/post_hold/item
+execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute if entity @s[tag=bigstone_sandbox.highlightMode] run function bigstone_sandbox:placements/item/post_hold/item
+execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute if entity @s[tag=bigstone_sandbox.highlightMode] run return fail
+# if in gamemodes such as spectator or adventure
+execute if entity @s[gamemode=!survival,gamemode=!creative] run function bigstone_sandbox:placements/item/post_hold/item
+execute if entity @s[gamemode=!survival,gamemode=!creative] run return fail
 
 #snap to grid at corner for each of the axes (16x16x16)
 #x axes
