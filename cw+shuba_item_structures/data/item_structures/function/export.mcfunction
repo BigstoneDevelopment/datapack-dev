@@ -1,9 +1,15 @@
 execute if data entity @s SelectedItem run function item_structures:zprivate/preserve_selected_item
 
 #undid shuba optimisation
-item replace entity B5-0-0-0-3 container.0 with netherite_ingot
-item replace entity B5-0-0-0-3 container.0 with item_structures:export
-item replace entity @s weapon from entity B5-0-0-0-3 container.0
+#item replace entity B5-0-0-0-3 container.0 with netherite_ingot
+#item replace entity B5-0-0-0-3 container.0 with item_structures:export
+#item replace entity @s weapon from entity B5-0-0-0-3 container.0
+
+data remove block 69420 0 69420 Items
+item replace block 69420 0 69420 container.0 with netherite_ingot 1
+item modify block 69420 0 69420 container.0 item_structures:export
+
+item replace entity @s weapon from block 69420 0 69420 container.0
 
 title @s times 10 80 10
 title @s title {"text":"Item Exported","color":"gold"}
