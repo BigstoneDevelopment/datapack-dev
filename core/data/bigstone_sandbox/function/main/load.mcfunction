@@ -6,6 +6,7 @@ execute if data storage bigstone_sandbox:data settings{"reload_message":1b} run 
 execute if data storage bigstone_sandbox:data temp.version{"format":"Unsupported"} run tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.unsupported_version","fallback":"This version isn't supported!","color":"red"}]
 
 # check maxCommandChainLength
+#gamerule maxCommandChainLength 2147483647
 execute store result storage bigstone_sandbox:data temp.maxCommandChainLength int 1 run gamerule maxCommandChainLength
 execute store result score maxCommandChainLength bigstone_sandbox.temp run data get storage bigstone_sandbox:data temp.maxCommandChainLength 1
 scoreboard players set minCommandChainLength bigstone_sandbox.temp 25565
