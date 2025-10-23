@@ -12,8 +12,8 @@ scoreboard players set system vect_y 16
 scoreboard players set #z1 vect_z 29999984
 
 scoreboard players set system vect_x 1
-summon acacia_boat ~ ~ ~
-summon marker ~ ~ ~ {Tags:["positioner"]}
+
+summon marker 29999984 287 29999984 {Tags:["positioner"]}
 execute store result entity @e[tag=positioner,limit=1] Pos[0] double 1 run scoreboard players get #x1 vect_x
 execute store result entity @e[tag=positioner,limit=1] Pos[1] double 1 run scoreboard players get #y1 vect_y
 execute store result entity @e[tag=positioner,limit=1] Pos[2] double 1 run scoreboard players get #z1 vect_z
