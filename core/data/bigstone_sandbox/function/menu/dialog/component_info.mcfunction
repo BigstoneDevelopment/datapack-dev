@@ -1,7 +1,8 @@
 data remove storage bigstone_sandbox:data temp.body
 data remove storage bigstone_sandbox:data temp.component
 
-function bigstone_sandbox:menu/dialog/component_info/body_init
+execute if entity @s[tag=bigstone_sandbox.admin] run function bigstone_sandbox:menu/dialog/component_info/admin_body_init
+execute unless entity @s[tag=bigstone_sandbox.admin] run function bigstone_sandbox:menu/dialog/component_info/body_init
 
 execute store result storage bigstone_sandbox:data temp.selected_index int 1 run scoreboard players get @s bigstone_sandbox.selected_index
 function bigstone_sandbox:menu/dialog/component_info/get_item_data with storage bigstone_sandbox:data temp
