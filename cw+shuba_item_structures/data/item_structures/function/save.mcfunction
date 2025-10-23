@@ -9,10 +9,10 @@ scoreboard players add #y1 vect_y 1
 
 scoreboard players set system vect_y 16
 #execute store result score #z1 vect_z run data get entity @e[tag=start_point,limit=1] Pos[2]
-scoreboard players set #z1 vect_z 299999984
+scoreboard players set #z1 vect_z 29999984
 
-scoreboard players set system vect_x 16
-
+scoreboard players set system vect_x 1
+summon acacia_boat ~ ~ ~
 summon marker ~ ~ ~ {Tags:["positioner"]}
 execute store result entity @e[tag=positioner,limit=1] Pos[0] double 1 run scoreboard players get #x1 vect_x
 execute store result entity @e[tag=positioner,limit=1] Pos[1] double 1 run scoreboard players get #y1 vect_y
