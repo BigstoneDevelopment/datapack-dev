@@ -1,1 +1,0 @@
-$data remove storage bigstone_sandbox:data components[$(selected_index)]
