@@ -1,0 +1,1 @@
+$data remove storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}]
