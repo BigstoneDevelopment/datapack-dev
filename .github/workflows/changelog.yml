@@ -1,0 +1,70 @@
+name: Auto changelog embed
+
+on:
+  release:
+    types: [published]
+
+env:
+  DISCORD_ROLE_ID: "1392145221638295686"
+
+jobs:
+  send-discord-embed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set vars
+        id: vars
+        run: |
+          echo "repo_name=${GITHUB_REPOSITORY#*/}" >> $GITHUB_OUTPUT
+          echo "repo_url=https://github.com/${GITHUB_REPOSITORY}" >> $GITHUB_OUTPUT
+
+      - name: Send embed
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RELEASE_NAME: ${{ github.event.release.name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_BODY: ${{ github.event.release.body }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+          REPO_NAME: ${{ steps.vars.outputs.repo_name }}
+          REPO_URL: ${{ steps.vars.outputs.repo_url }}
+          ROLE_ID: ${{ env.DISCORD_ROLE_ID }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "Discord webhook url not found. Use the secret: DISCORD_WEBHOOK_URL"
+            exit 1
+          fi
+
+          DESCRIPTION="${RELEASE_BODY}
+          
+          _Contact a <@&${ROLE_ID}> if you have any questions!_
+          
+          -# Pull requests, suggestions and feedback are welcome!"
+
+          EMBED_JSON=$(jq -n \
+            --arg title "$RELEASE_NAME" \
+            --arg url "$RELEASE_URL" \
+            --arg description "$DESCRIPTION" \
+            --arg tag "$RELEASE_TAG" \
+            --arg repo "$REPO_NAME" \
+            --arg repo_url "$REPO_URL" \
+            '{
+              embeds: [
+                {
+                  title: "\($title)",
+                  description: ($description | gsub("\r"; "") | if length > 800 then (.[:797] + "...") else . end),
+                  fields: [
+                    { name: "Tag", value: "[\($tag)](\($url))", inline: true },
+                    { name: "Repository", value: "[\($repo)](\($repo_url))", inline: true },
+                    { name: "Release", value: "[View on GitHub](\($url))", inline: false }
+                  ],
+                  timestamp: (now | todate)
+                }
+              ]
+            }')
+
+          echo "$EMBED_JSON" | jq .
+
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "$EMBED_JSON" \
+               "$DISCORD_WEBHOOK"
