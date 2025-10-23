@@ -3,7 +3,7 @@ $execute unless data storage bigstone_sandbox:data settings{"instant_snap":true}
 $execute as @n[type=text_display,tag=highlightID_$(SUID)] on passengers run kill @s
 $execute as @n[type=text_display,tag=highlightID_$(SUID)] run kill @s
 #render cube hull
-#there are 4 colours, referencing north-south, east-west, top and bottom
+#there are 4 colors, referencing north-south, east-west, top and bottom
 $summon text_display ~ ~ ~ {\
     start_interpolation:0,\
     interpolation_duration:0,\
@@ -24,7 +24,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour1)\
+            background:$(color1)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -40,7 +40,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour2)\
+            background:$(color2)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -56,7 +56,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour1)},\
+            background:$(color1)},\
         {\
             id:"minecraft:text_display",\
             see_through:1b,start_interpolation:0,\
@@ -71,7 +71,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour2)\
+            background:$(color2)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -87,7 +87,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour3)},\
+            background:$(color3)},\
         {\
             id:"minecraft:text_display",\
             see_through:1b,start_interpolation:0,\
@@ -102,7 +102,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour4)\
+            background:$(color4)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -118,7 +118,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour1)\
+            background:$(color1)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -134,7 +134,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour2)\
+            background:$(color2)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -150,7 +150,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour1)\
+            background:$(color1)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -166,7 +166,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour2)\
+            background:$(color2)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -182,7 +182,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour3)\
+            background:$(color3)\
         },\
         {\
             id:"minecraft:text_display",\
@@ -198,7 +198,7 @@ $summon text_display ~ ~ ~ {\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
-            background:$(colour4)\
+            background:$(color4)\
         },\
         \
         \

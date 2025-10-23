@@ -60,30 +60,30 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
     data merge storage bigstone_sandbox:data \
     { \
         settings: { \
-            highlightColour:{ \
+            highlightColor:{ \
                 paste:{ \
-                    colour1: 626778336, \
-                    colour2: 622329855, \
-                    colour3: 621853627, \
-                    colour4: 630390783 \
+                    color1: 626778336, \
+                    color2: 622329855, \
+                    color3: 621853627, \
+                    color4: 630390783 \
                 }, \
                 select:{ \
-                    colour1: 627040347, \
-                    colour2: 627826023, \
-                    colour3: 626045773, \
-                    colour4: 630781844 \
+                    color1: 627040347, \
+                    color2: 627826023, \
+                    color3: 626045773, \
+                    color4: 630781844 \
                 }, \
                 delete:{ \
-                    colour1: 520060163, \
-                    colour2: 520060163, \
-                    colour3: 520060163, \
-                    colour4: 520060163 \
+                    color1: 520060163, \
+                    color2: 520060163, \
+                    color3: 520060163, \
+                    color4: 520060163 \
                 },\
                 invalid:{ \
-                    colour1: 520028160, \
-                    colour2: 520028160, \
-                    colour3: 520028160, \
-                    colour4: 520028160 \
+                    color1: 520028160, \
+                    color2: 520028160, \
+                    color3: 520028160, \
+                    color4: 520028160 \
                 },\
             }, \
             add: true, \

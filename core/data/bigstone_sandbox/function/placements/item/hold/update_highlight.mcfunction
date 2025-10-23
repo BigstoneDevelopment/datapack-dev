@@ -17,11 +17,11 @@ scoreboard players operation @s bigstone_sandbox.cast_mode = #cast_mode bigstone
 scoreboard players operation @s bigstone_sandbox.invalid_highlight = #chunk_contain_blocks bigstone_sandbox.temp
 
 #set highlight mode
-execute if score #cast_mode bigstone_sandbox.temp matches 0 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColour.paste
-execute if score #cast_mode bigstone_sandbox.temp matches 1 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColour.select
-execute if score #cast_mode bigstone_sandbox.temp matches 3 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColour.delete
-execute if score #chunk_contain_blocks bigstone_sandbox.temp matches 0 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColour.invalid
-#data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColour.paste
+execute if score #cast_mode bigstone_sandbox.temp matches 0 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColor.paste
+execute if score #cast_mode bigstone_sandbox.temp matches 1 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColor.select
+execute if score #cast_mode bigstone_sandbox.temp matches 3 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColor.delete
+execute if score #chunk_contain_blocks bigstone_sandbox.temp matches 0 run data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColor.invalid
+#data modify storage bigstone_sandbox:data highlight set from storage bigstone_sandbox:data settings.highlightColor.paste
 #store player ID in highlight storage
 execute store result storage bigstone_sandbox:data highlight.SUID int 1 run scoreboard players get @s bs.id
 $execute positioned $(x) $(y) $(z) align xyz run function bigstone_sandbox:placements/grid/create_boxhighlight with storage bigstone_sandbox:data highlight
