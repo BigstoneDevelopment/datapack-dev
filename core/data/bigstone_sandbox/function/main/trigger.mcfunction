@@ -19,6 +19,8 @@ execute if score @s bigstone_sandbox_menu matches -15 run return run function bi
 execute if score @s bigstone_sandbox_menu matches -16 run return run function bigstone_sandbox:menu/dialog_action/import/public_from_hand
 execute if score @s bigstone_sandbox_menu matches -18 run return run function bigstone_sandbox:menu/dialog_action/reset_filters
 execute if score @s bigstone_sandbox_menu matches -21..-19 run return run function bigstone_sandbox:menu/dialog_action/filter
+execute if score @s bigstone_sandbox_menu matches -23 run return run function bigstone_sandbox:menu/dialog_action/previous_page
+execute if score @s bigstone_sandbox_menu matches -24 run return run function bigstone_sandbox:menu/dialog_action/next_page
 execute if score @s bigstone_sandbox_menu matches 1000..1999 run return run function bigstone_sandbox:menu/dialog_action/info
 execute if score @s bigstone_sandbox_menu matches 2000..2999 run return run function bigstone_sandbox:menu/dialog_action/give_quick
 execute if score @s bigstone_sandbox_menu matches 100000..199999 run return run function bigstone_sandbox:menu/dialog_action/toggle_filter
