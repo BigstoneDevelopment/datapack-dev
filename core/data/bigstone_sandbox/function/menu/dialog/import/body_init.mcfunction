@@ -156,7 +156,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
-        "command": "/function bigstone_sandbox:menu/dialog_action/admin_check {\"command\": \"function bigstone_sandbox:menu/dialog_action/admin_import\"}" \
+        "command": "/function bigstone_sandbox:menu/dialog_action/admin_check {\"command\": \"function bigstone_sandbox:menu/dialog/admin_import\"}" \
       }, \
       "hover_event": { \
         "action": "show_text", \
@@ -176,7 +176,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
-        "command": "/function bigstone_sandbox:menu/dialog_action/admin_check {\"command\": \"function bigstone_sandbox:menu/dialog_action/admin_import\"}" \
+        "command": "/function bigstone_sandbox:menu/dialog_action/admin_check {\"command\": \"function bigstone_sandbox:menu/dialog/admin_import\"}" \
       }, \
       "hover_event": { \
         "action": "show_text", \
