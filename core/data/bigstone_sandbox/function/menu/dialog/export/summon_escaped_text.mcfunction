@@ -1,0 +1,1 @@
+$summon text_display ~ ~ ~ {text:'$(source_data)',Tags:["bigstone_sandbox.escaped_text"]}
