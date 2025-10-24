@@ -1,4 +1,4 @@
-function bigstone_sandbox:components/list/component_list/data_init
+function bigstone_sandbox:list/component_list/data_init
 
 data modify storage bigstone_sandbox:data temp.component.source.component_name set from storage bigstone_sandbox:data import.component_name
 data modify storage bigstone_sandbox:data temp.component.source.creator set from storage bigstone_sandbox:data import.creator
@@ -31,12 +31,12 @@ execute unless data storage bigstone_sandbox:data temp.component.source.ports.to
 execute unless data storage bigstone_sandbox:data temp.component.source.ports.bottom[] run data remove storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_bottom"}]
 
 # add ports
-function bigstone_sandbox:components/list/component_list/north_ports_loop
-function bigstone_sandbox:components/list/component_list/south_ports_loop
-function bigstone_sandbox:components/list/component_list/east_ports_loop
-function bigstone_sandbox:components/list/component_list/west_ports_loop
-function bigstone_sandbox:components/list/component_list/top_ports_loop
-function bigstone_sandbox:components/list/component_list/bottom_ports_loop
+function bigstone_sandbox:list/component_list/north_ports_loop
+function bigstone_sandbox:list/component_list/south_ports_loop
+function bigstone_sandbox:list/component_list/east_ports_loop
+function bigstone_sandbox:list/component_list/west_ports_loop
+function bigstone_sandbox:list/component_list/top_ports_loop
+function bigstone_sandbox:list/component_list/bottom_ports_loop
 
 # readd port data for info loop
 data modify storage bigstone_sandbox:data temp.component.source.ports.north append from storage bigstone_sandbox:data import.ports.north[]
@@ -58,8 +58,8 @@ execute unless data storage bigstone_sandbox:data temp.component.source.ports.bo
 data modify storage bigstone_sandbox:data temp.strings set value []
 
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.tags[]
-execute summon marker run function bigstone_sandbox:components/list/filters_list/remove_duplicates
-function bigstone_sandbox:components/list/component_list/tags_loop
+execute summon marker run function bigstone_sandbox:list/filters_list/remove_duplicates
+function bigstone_sandbox:list/component_list/tags_loop
 
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.north[]
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.south[]
@@ -67,13 +67,13 @@ data modify storage bigstone_sandbox:data temp.strings append from storage bigst
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.west[]
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.top[]
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.ports.bottom[]
-execute summon marker run function bigstone_sandbox:components/list/filters_list/remove_duplicates
-function bigstone_sandbox:components/list/component_list/ports_loop
+execute summon marker run function bigstone_sandbox:list/filters_list/remove_duplicates
+function bigstone_sandbox:list/component_list/ports_loop
 
 data modify storage bigstone_sandbox:data temp.strings append from storage bigstone_sandbox:data temp.component.source.creator
-function bigstone_sandbox:components/list/component_list/creators_loop
+function bigstone_sandbox:list/component_list/creators_loop
 
-function bigstone_sandbox:components/list/filters_list/filters_override
+function bigstone_sandbox:list/filters_list/filters_override
 data remove storage bigstone_sandbox:data temp.filters[].color
 
 data modify storage bigstone_sandbox:data temp.component.data.filters set from storage bigstone_sandbox:data temp.filters

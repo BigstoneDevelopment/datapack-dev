@@ -13,4 +13,4 @@ data modify storage bigstone_sandbox:data temp.filters append from storage bigst
 
 data remove storage bigstone_sandbox:data temp.strings[0]
 
-function bigstone_sandbox:components/list/component_list/creators_loop
+function bigstone_sandbox:list/component_list/creators_loop

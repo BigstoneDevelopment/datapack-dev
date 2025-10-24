@@ -3,7 +3,7 @@ data remove storage bigstone_sandbox:data import
 data modify storage bigstone_sandbox:data import set from storage bigstone_sandbox:data temp.import_list[-1]
 
 # run add function
-function bigstone_sandbox:components/list/add_public_item
+function bigstone_sandbox:list/add_public_item
 
 # calc progress
 scoreboard players operation @s bigstone_sandbox.temp.import_done += #1 consts

@@ -1,3 +1,3 @@
 scoreboard players set @s bigstone_sandbox.loaded_index 0
-function bigstone_sandbox:components/list/make_private_loaded_list
+function bigstone_sandbox:list/make_private_loaded_list
 function bigstone_sandbox:menu/dialog/component_menu

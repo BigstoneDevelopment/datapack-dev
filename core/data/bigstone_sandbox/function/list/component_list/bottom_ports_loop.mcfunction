@@ -15,4 +15,4 @@ execute if data storage bigstone_sandbox:data temp.component.source.ports.bottom
 
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[{"translate": "bigstone_sandbox.dialog_menu.port_bottom"}].with[0].extra append from storage bigstone_sandbox:data temp.ports
 
-function bigstone_sandbox:components/list/component_list/bottom_ports_loop
+function bigstone_sandbox:list/component_list/bottom_ports_loop

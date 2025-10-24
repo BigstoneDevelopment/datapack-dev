@@ -9,8 +9,8 @@ data modify storage bigstone_sandbox:data temp.entry set value \
   "exclude": false \
 }
 data modify storage bigstone_sandbox:data temp.entry.value set from storage bigstone_sandbox:data temp.strings[0]
-function bigstone_sandbox:components/list/filters_list/merge_old_filter with storage bigstone_sandbox:data temp.entry
-execute unless data storage bigstone_sandbox:data temp.entry.color run function bigstone_sandbox:components/list/filters_list/generate_color
+function bigstone_sandbox:list/filters_list/merge_old_filter with storage bigstone_sandbox:data temp.entry
+execute unless data storage bigstone_sandbox:data temp.entry.color run function bigstone_sandbox:list/filters_list/generate_color
 execute store result storage bigstone_sandbox:data temp.entry.index int 1 if data storage bigstone_sandbox:data temp.filters[]
 execute if data storage bigstone_sandbox:data temp.entry{"index": 100000} run return fail
 
@@ -18,4 +18,4 @@ data modify storage bigstone_sandbox:data temp.filters append from storage bigst
 
 data remove storage bigstone_sandbox:data temp.strings[0]
 
-function bigstone_sandbox:components/list/filters_list/tags_loop
+function bigstone_sandbox:list/filters_list/tags_loop
