@@ -69,7 +69,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
         } \
       }, \
       { \
-        "translate": "space.196", \
+        "translate": "space.195", \
         "font": "space:default" \
       }, \
       { \
@@ -268,57 +268,17 @@ data modify storage bigstone_sandbox:data temp.body set value \
         "translate": "newline_2" \
       }, \
       { \
-        "translate": "space.83", \
-        "font": "space:default" \
-      }, \
-      { \
-        "translate": "bigstone_sandbox.dialog_menu.button.give_long", \
+        "translate": "bigstone_sandbox.dialog_menu.button.admin_check", \
         "font": "bigstone_sandbox:menu", \
         "click_event": { \
           "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -6" \
+          "command": "/function bigstone_sandbox:menu/dialog_action/admin_check {\"command\": \"function bigstone_sandbox:menu/dialog/component_info\"}" \
         }, \
         "hover_event": { \
           "action": "show_text", \
           "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.give", \
-            "color": "dark_green", \
-            "font": "bigstone_sandbox:small_caps" \
-          } \
-        } \
-      }, \
-      { \
-        "translate": "space.31", \
-        "font": "space:default" \
-      }, \
-      { \
-        "translate": "bigstone_sandbox.dialog_menu.button.export", \
-        "font": "bigstone_sandbox:menu", \
-        "click_event": { \
-          "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -4" \
-        }, \
-        "hover_event": { \
-          "action": "show_text", \
-          "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.export", \
-            "color": "gold", \
-            "font": "bigstone_sandbox:small_caps" \
-          } \
-        } \
-      }, \
-      { \
-        "translate": "bigstone_sandbox.dialog_menu.button.edit", \
-        "font": "bigstone_sandbox:menu", \
-        "click_event": { \
-          "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -3" \
-        }, \
-        "hover_event": { \
-          "action": "show_text", \
-          "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.edit", \
-            "color": "yellow", \
+            "translate": "bigstone_sandbox.dialog_menu.admin_delete", \
+            "color": "red", \
             "font": "bigstone_sandbox:small_caps" \
           } \
         } \
@@ -340,10 +300,100 @@ data modify storage bigstone_sandbox:data temp.body set value \
         } \
       }, \
       { \
+        "translate": "space.48", \
+        "font": "space:default" \
+      }, \
+      { \
+        "translate": "bigstone_sandbox.dialog_menu.button.give_long", \
+        "font": "bigstone_sandbox:menu", \
+        "click_event": { \
+          "action": "run_command", \
+          "command": "trigger bigstone_sandbox_menu set -6" \
+        }, \
+        "hover_event": { \
+          "action": "show_text", \
+          "value": { \
+            "translate": "bigstone_sandbox.dialog_menu.give", \
+            "color": "dark_green", \
+            "font": "bigstone_sandbox:small_caps" \
+          } \
+        } \
+      }, \
+      { \
+        "translate": "space.48", \
+        "font": "space:default" \
+      }, \
+      { \
+        "translate": "bigstone_sandbox.dialog_menu.button.export", \
+        "font": "bigstone_sandbox:menu", \
+        "click_event": { \
+          "action": "run_command", \
+          "command": "trigger bigstone_sandbox_menu set -4" \
+        }, \
+        "hover_event": { \
+          "action": "show_text", \
+          "value": { \
+            "translate": "bigstone_sandbox.dialog_menu.export", \
+            "color": "gold", \
+            "font": "bigstone_sandbox:small_caps" \
+          } \
+        } \
+      }, \
+      { \
+        "translate": "bigstone_sandbox.dialog_menu.button.share", \
+        "font": "bigstone_sandbox:menu", \
+        "click_event": { \
+          "action": "run_command", \
+          "command": "trigger bigstone_sandbox_menu set -25" \
+        }, \
+        "hover_event": { \
+          "action": "show_text", \
+          "value": { \
+            "translate": "bigstone_sandbox.dialog_menu.share", \
+            "color": "yellow", \
+            "font": "bigstone_sandbox:small_caps" \
+          } \
+        } \
+      }, \
+      { \
         "translate": "newline_1" \
       }, \
       { \
-        "translate": "space.83", \
+        "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+        "shadow_color": 0, \
+        "font": "bigstone_sandbox:menu", \
+        "click_event": { \
+          "action": "run_command", \
+          "command": "/function bigstone_sandbox:menu/dialog_action/admin_check {\"command\": \"function bigstone_sandbox:menu/dialog/component_info\"}" \
+        }, \
+        "hover_event": { \
+          "action": "show_text", \
+          "value": { \
+            "translate": "bigstone_sandbox.dialog_menu.admin_delete", \
+            "color": "red", \
+            "font": "bigstone_sandbox:small_caps" \
+          } \
+        } \
+      }, \
+      { \
+        "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+        "shadow_color": 0, \
+        "font": "bigstone_sandbox:menu", \
+        "click_event": { \
+          "action": "run_command", \
+          "command": "trigger bigstone_sandbox_menu set -2" \
+        }, \
+        "hover_event": { \
+          "action": "show_text", \
+          "value": { \
+            "translate": "bigstone_sandbox.dialog_menu.delete", \
+            "color": "red", \
+            "font": "bigstone_sandbox:small_caps" \
+          } \
+        } \
+      }, \
+      { \
+        "translate": "space.48", \
         "font": "space:default" \
       }, \
       { \
@@ -364,7 +414,7 @@ data modify storage bigstone_sandbox:data temp.body set value \
         } \
       }, \
       { \
-        "translate": "space.31", \
+        "translate": "space.48", \
         "font": "space:default" \
       }, \
       { \
@@ -390,30 +440,13 @@ data modify storage bigstone_sandbox:data temp.body set value \
         "font": "bigstone_sandbox:menu", \
         "click_event": { \
           "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -3" \
+          "command": "trigger bigstone_sandbox_menu set -25" \
         }, \
         "hover_event": { \
           "action": "show_text", \
           "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.edit", \
+            "translate": "bigstone_sandbox.dialog_menu.share", \
             "color": "yellow", \
-            "font": "bigstone_sandbox:small_caps" \
-          } \
-        } \
-      }, \
-      { \
-        "translate": "bigstone_sandbox.dialog_menu.button.blank", \
-        "shadow_color": 0, \
-        "font": "bigstone_sandbox:menu", \
-        "click_event": { \
-          "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -2" \
-        }, \
-        "hover_event": { \
-          "action": "show_text", \
-          "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.delete", \
-            "color": "red", \
             "font": "bigstone_sandbox:small_caps" \
           } \
         } \
