@@ -47,7 +47,7 @@ data modify storage bigstone_sandbox:data temp.add_item set value \
         "text": "" \
       } \
     ], \
-    "width": 128 \
+    "width": 512 \
   }, \
   "width": 16, \
   "height": 16 \

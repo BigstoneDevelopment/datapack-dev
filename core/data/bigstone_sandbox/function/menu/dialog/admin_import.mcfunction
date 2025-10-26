@@ -154,6 +154,12 @@ dialog show @s \
       "translate": "bigstone_sandbox.dialog_menu.background.middle", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0 \
+    }, \
+    { \
+      "translate": "newline_1" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.or" \
     } \
     ], \
     "width": 256 \
