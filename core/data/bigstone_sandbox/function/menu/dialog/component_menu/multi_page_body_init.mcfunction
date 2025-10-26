@@ -6,7 +6,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       "text": "" \
     }, \
     { \
-      "translate": "bigstone_sandbox.dialog_menu.background.button_box_large", \
+      "translate": "bigstone_sandbox.dialog_menu.background.top", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0 \
     }, \
@@ -168,6 +168,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
       "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
         "command": "trigger bigstone_sandbox_menu set -23" \
@@ -243,6 +244,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
       "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0, \
       "click_event": { \
         "action": "run_command", \
         "command": "trigger bigstone_sandbox_menu set -24" \
@@ -293,10 +295,20 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
           "color": "dark_gray" \
         }, \
       ] \
-    }, \
+    } \
+  ], \
+  "width": 256 \
+}
+
+data modify storage bigstone_sandbox:data temp.body append value \
+{ \
+  "type": "minecraft:plain_message", \
+  "contents": [ \
     { \
-      "translate": "newline_1", \
-    }, \
+      "translate": "bigstone_sandbox.dialog_menu.background.bottom", \
+      "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0 \
+    } \
   ], \
   "width": 256 \
 }

@@ -8,6 +8,7 @@ scoreboard players reset item_index bigstone_sandbox.temp
 scoreboard players reset component_count bigstone_sandbox.temp
 scoreboard players reset loaded_index bigstone_sandbox.temp
 scoreboard players reset selected_index bigstone_sandbox.temp
+scoreboard players reset flip_flop bigstone_sandbox.temp
 
 execute store result score component_count bigstone_sandbox.temp \
   if data storage xolibs:playerdata storage.bigstone_sandbox.list.filtered[]
@@ -38,3 +39,4 @@ scoreboard players reset item_index bigstone_sandbox.temp
 scoreboard players reset component_count bigstone_sandbox.temp
 scoreboard players reset loaded_index bigstone_sandbox.temp
 scoreboard players reset selected_index bigstone_sandbox.temp
+scoreboard players reset flip_flop bigstone_sandbox.temp

@@ -6,7 +6,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       "text": "" \
     }, \
     { \
-      "translate": "bigstone_sandbox.dialog_menu.background.button_box", \
+      "translate": "bigstone_sandbox.dialog_menu.background.top", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0 \
     }, \

@@ -4,7 +4,19 @@ data modify storage bigstone_sandbox:data temp.add_item set value \
   "description": { \
     "contents": [ \
       "", \
-      "", \
+      { \
+        "translate": "bigstone_sandbox.dialog_menu.icon.public", \
+        "font": "bigstone_sandbox:menu", \
+        "shadow_color": 0, \
+        "hover_event": { \
+          "action": "show_text", \
+          "value": { \
+            "translate": "bigstone_sandbox.dialog_menu.public", \
+            "color": "dark_green", \
+            "font": "bigstone_sandbox:small_caps" \
+          } \
+        } \
+      }, \
       { \
         "translate": "space.2", \
         "font": "space:default" \
@@ -40,11 +52,23 @@ data modify storage bigstone_sandbox:data temp.add_item set value \
         } \
       }, \
       { \
-        "translate": "space.5", \
+        "translate": "space.-72", \
         "font": "space:default" \
       }, \
       { \
-        "text": "" \
+      "translate": "bigstone_sandbox.dialog_menu.background.menu_background", \
+      "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0 \
+      }, \
+      { \
+        "translate": "space.-10", \
+        "font": "space:default" \
+      }, \
+      { \
+        "translate": "newline_1" \
+      }, \
+      { \
+        "text": "ERROR" \
       } \
     ], \
     "width": 512 \
