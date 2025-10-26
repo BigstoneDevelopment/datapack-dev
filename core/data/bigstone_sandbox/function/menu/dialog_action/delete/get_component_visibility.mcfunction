@@ -1,0 +1,1 @@
+$data modify storage bigstone_sandbox:data temp.component_is_public set from storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}].data.public
