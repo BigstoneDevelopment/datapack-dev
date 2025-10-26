@@ -13,7 +13,6 @@ execute unless data storage bigstone_sandbox:data settings{"delete":1b} if data 
 execute unless data storage bigstone_sandbox:data settings{"delete":1b} if data storage bigstone_sandbox:data temp{"component_is_public":1b} run return fail
 
 data modify storage bigstone_sandbox:data temp.player_uuid set from entity @s UUID
-
 function bigstone_sandbox:menu/dialog_action/delete/delete_component with storage bigstone_sandbox:data temp
 
 function bigstone_sandbox:list/make_filters_list

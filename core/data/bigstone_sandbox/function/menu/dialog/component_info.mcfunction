@@ -1,11 +1,17 @@
+data remove storage bigstone_sandbox:data temp.player_uuid
 data remove storage bigstone_sandbox:data temp.body
 data remove storage bigstone_sandbox:data temp.component
+data remove storage bigstone_sandbox:data temp.is_manager
 
 function bigstone_sandbox:menu/dialog/component_info/body_init
 
 execute store result storage bigstone_sandbox:data temp.selected_index int 1 run scoreboard players get @s bigstone_sandbox.selected_index
 function bigstone_sandbox:menu/dialog/component_info/get_item_data with storage bigstone_sandbox:data temp
 
+data modify storage bigstone_sandbox:data temp.player_uuid set from entity @s UUID
+execute store success storage bigstone_sandbox:data temp.is_manager int 1 run function bigstone_sandbox:menu/dialog/component_info/test_if_component_manager with storage bigstone_sandbox:data temp
+
+execute if data storage bigstone_sandbox:data temp{"is_manager":1} run function bigstone_sandbox:menu/dialog/component_info/change_save_button
 execute if entity @s[tag=bigstone_sandbox.admin] run function bigstone_sandbox:menu/dialog/component_info/change_admin_button
 
 data modify storage bigstone_sandbox:data temp.body[0].contents[11].text set from storage bigstone_sandbox:data temp.component.source.component_name
@@ -31,5 +37,7 @@ function bigstone_sandbox:menu/dialog/component_info/tags_loop
 
 function bigstone_sandbox:menu/dialog/component_info/run_dialog with storage bigstone_sandbox:data temp
 
+data remove storage bigstone_sandbox:data temp.player_uuid
 data remove storage bigstone_sandbox:data temp.body
 data remove storage bigstone_sandbox:data temp.component
+data remove storage bigstone_sandbox:data temp.is_manager

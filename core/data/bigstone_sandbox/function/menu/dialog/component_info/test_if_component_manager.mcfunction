@@ -1,0 +1,1 @@
+$execute if data storage bigstone_sandbox:data components[$(selected_index)].data.managers[{"UUID":$(player_uuid)}] run return 1

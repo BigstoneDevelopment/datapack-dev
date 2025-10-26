@@ -284,17 +284,17 @@ data modify storage bigstone_sandbox:data temp.body set value \
         } \
       }, \
       { \
-        "translate": "bigstone_sandbox.dialog_menu.button.delete", \
+        "translate": "bigstone_sandbox.dialog_menu.button.save", \
         "font": "bigstone_sandbox:menu", \
         "click_event": { \
           "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -2" \
+          "command": "trigger bigstone_sandbox_menu set -27" \
         }, \
         "hover_event": { \
           "action": "show_text", \
           "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.delete", \
-            "color": "red", \
+            "translate": "bigstone_sandbox.dialog_menu.save", \
+            "color": "yellow", \
             "font": "bigstone_sandbox:small_caps" \
           } \
         } \
@@ -381,13 +381,13 @@ data modify storage bigstone_sandbox:data temp.body set value \
         "font": "bigstone_sandbox:menu", \
         "click_event": { \
           "action": "run_command", \
-          "command": "trigger bigstone_sandbox_menu set -2" \
+          "command": "trigger bigstone_sandbox_menu set -27" \
         }, \
         "hover_event": { \
           "action": "show_text", \
           "value": { \
-            "translate": "bigstone_sandbox.dialog_menu.delete", \
-            "color": "red", \
+            "translate": "bigstone_sandbox.dialog_menu.save", \
+            "color": "yellow", \
             "font": "bigstone_sandbox:small_caps" \
           } \
         } \
