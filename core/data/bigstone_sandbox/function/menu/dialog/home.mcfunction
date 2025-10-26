@@ -22,7 +22,7 @@ dialog show @s \
         "", \
         { \
           "translate": "bigstone_sandbox.dialog_menu.empty", \
-          "fallback": "WARNING! \n", \
+          "fallback": "WARNING!\n", \
           "color": "red", \
           "bold": true \
         }, \

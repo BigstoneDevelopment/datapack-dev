@@ -22,8 +22,9 @@ execute if score @s bigstone_sandbox_menu matches -21..-19 run return run functi
 execute if score @s bigstone_sandbox_menu matches -23 run return run function bigstone_sandbox:menu/dialog_action/previous_page
 execute if score @s bigstone_sandbox_menu matches -24 run return run function bigstone_sandbox:menu/dialog_action/next_page
 execute if score @s bigstone_sandbox_menu matches -25 run return run function bigstone_sandbox:menu/dialog_action/share
-execute if score @s bigstone_sandbox_menu matches 1000..1999 run return run function bigstone_sandbox:menu/dialog_action/info
-execute if score @s bigstone_sandbox_menu matches 2000..2999 run return run function bigstone_sandbox:menu/dialog_action/give_quick
+execute if score @s bigstone_sandbox_menu matches -26 run return run function bigstone_sandbox:menu/dialog_action/info
+execute if score @s bigstone_sandbox_menu matches 1000..1999 run return run function bigstone_sandbox:menu/dialog_action/quick_info
+execute if score @s bigstone_sandbox_menu matches 2000..2999 run return run function bigstone_sandbox:menu/dialog_action/quick_give
 execute if score @s bigstone_sandbox_menu matches 100000..199999 run return run function bigstone_sandbox:menu/dialog_action/toggle_filter
 
 execute if score @s bigstone_sandbox_menu matches 900 run return run function bigstone_sandbox:menu/dialog_action/options/default_to_components
