@@ -203,3 +203,16 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
   ], \
   "width": 256 \
 }
+
+data modify storage bigstone_sandbox:data temp.body append value \
+{ \
+  "type": "minecraft:plain_message", \
+  "contents": [ \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.background.bottom", \
+      "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0 \
+    } \
+  ], \
+  "width": 256 \
+}
