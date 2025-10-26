@@ -1,2 +1,2 @@
-$data remove storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}].data.managers[{"UUID":$(player_uuid)}]
-$execute unless data storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}].data.managers run data remove storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}]
+$data remove storage bigstone_sandbox:data d[{"source":{"UUID":$(component_uuid)}}].data.managers[{"UUID":$(player_uuid)}]
+$execute unless data storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}].data.managers[] run data remove storage bigstone_sandbox:data components[{"source":{"UUID":$(component_uuid)}}]
