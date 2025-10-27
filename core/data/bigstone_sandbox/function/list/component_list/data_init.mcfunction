@@ -115,13 +115,8 @@ data modify storage bigstone_sandbox:data temp.component set value \
         "item_use_effect": { \
           "type":"bigstone_sandbox", \
           "effects": [ \
-            "store_component", \
-            "collect_component", \
-            "delete_component" \
+            "place_component", \
           ], \
-          "betrow_effects": [ \
-            "creative_self_delete_component" \
-          ] \
         } \
       }, \
       "minecraft:consumable": { \
