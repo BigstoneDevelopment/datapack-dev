@@ -1,0 +1,21 @@
+This is how to use the rewritten api for item structures
+
+Save structure:
+/function item_structures:save {"x": 0, "y": 0, "z": 0}
+
+Load Structure:
+/function item_structures:load {"x": 0, "y": 0, "z": 0}
+
+
+Import structure:
+/data modify storage bigstone_sandbox:structures save ..
+
+Export Structure:
+/data get storage bigstone_sandbox:structures save ..
+
+
+Uninstall Library:
+/function item_structures:uninstall
+
+Cancel current function:
+/function item_structures:cancel

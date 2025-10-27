@@ -1,5 +1,6 @@
 {
     "values": [
-        "bigstone_sandbox:main/load"
+        "bigstone_sandbox:main/load",
+        "item_structures:zprivate/init"
     ]
 }
