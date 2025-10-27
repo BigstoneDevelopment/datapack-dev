@@ -29,6 +29,6 @@ execute if score #command_success bigstone_sandbox.temp matches 0 \
             { \
                 "translate": "bigstone_sandbox.tellraw_message.invalid_structure_placement", \
                 "fallback": "Structure Placement is Invalid.", \
-                "color":"dark_red", \
+                "color":"red", \
             } \
         ]
