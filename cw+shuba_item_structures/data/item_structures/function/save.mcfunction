@@ -1,15 +1,15 @@
-#execute store result score #x1 vect_x run data get entity @e[tag=start_point,limit=1] Pos[0]
-scoreboard players set #x1 vect_x 29999984
+execute store result score #x1 vect_x run data get entity @e[tag=start_point,limit=1] Pos[0]
+#scoreboard players set #x1 vect_x 29999984
 #set fixed width
 scoreboard players set system vect_x 16
 
-#execute store result score #y1 vect_y run data get entity @e[tag=start_point,limit=1] Pos[1]
-scoreboard players set #y1 vect_y 288
+execute store result score #y1 vect_y run data get entity @e[tag=start_point,limit=1] Pos[1]
+#scoreboard players set #y1 vect_y 288
 scoreboard players add #y1 vect_y 1
 
 scoreboard players set system vect_y 16
-#execute store result score #z1 vect_z run data get entity @e[tag=start_point,limit=1] Pos[2]
-scoreboard players set #z1 vect_z 29999984
+execute store result score #z1 vect_z run data get entity @e[tag=start_point,limit=1] Pos[2]
+#scoreboard players set #z1 vect_z 29999984
 
 scoreboard players set system vect_x 1
 
