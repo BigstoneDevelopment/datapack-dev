@@ -13,7 +13,8 @@ execute store result score #z1 vect_z run data get entity @e[tag=start_point,lim
 
 scoreboard players set system vect_x 1
 
-summon marker 29999984 287 29999984 {Tags:["positioner"]}
+#summon marker 29999984 287 29999984 {Tags:["positioner"]}
+summon marker ~ ~ ~ {Tags:["positioner"]}
 execute store result entity @e[tag=positioner,limit=1] Pos[0] double 1 run scoreboard players get #x1 vect_x
 execute store result entity @e[tag=positioner,limit=1] Pos[1] double 1 run scoreboard players get #y1 vect_y
 execute store result entity @e[tag=positioner,limit=1] Pos[2] double 1 run scoreboard players get #z1 vect_z
