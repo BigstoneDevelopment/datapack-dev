@@ -18,7 +18,7 @@ function bigstone_sandbox:menu/dialog_action/delete/delete_component with storag
 function bigstone_sandbox:list/make_filters_list
 execute as @a run function bigstone_sandbox:list/make_private_filtered_list
 
-function bigstone_sandbox:menu/dialog/component_menu
+function bigstone_sandbox:menu/dialog_action/delete/refresh_menu with storage bigstone_sandbox:data temp
 
 data remove storage bigstone_sandbox:data temp.selected_index
 data remove storage bigstone_sandbox:data temp.component_uuid
