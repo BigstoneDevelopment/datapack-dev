@@ -111,10 +111,31 @@ data modify storage bigstone_sandbox:data temp.component set value \
         } \
       ], \
       "minecraft:custom_data": { \
-        "bigstone_sandbox": {} \
+        "bigstone_sandbox": {}, \
+        "item_use_effect": { \
+          "type":"bigstone_sandbox", \
+          "effects": [ \
+            "store_component", \
+            "collect_component", \
+            "delete_component" \
+          ], \
+          "betrow_effects": [ \
+            "creative_self_delete_component" \
+          ] \
+        } \
+      }, \
+      "minecraft:consumable": { \
+        "consume_seconds": 0.0, \
+        "sound": "intentionally_empty", \
+        "has_consume_particles": false \
+      }, \
+      "minecraft:use_cooldown": { \
+        "seconds": 0.1, \
+        "cooldown_group": "bigstone_component" \
       }, \
       "!minecraft:jukebox_playable": {}, \
-      "minecraft:tooltip_style": "bigstone_sandbox:bigstone_sandbox" \
+      "minecraft:tooltip_style": "bigstone_sandbox:bigstone_sandbox", \
+      "max_stack_size": 64 \
     }, \
     "count": 1, \
     "id": "minecraft:music_disc_creator" \
