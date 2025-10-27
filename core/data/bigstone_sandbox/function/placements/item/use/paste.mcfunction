@@ -11,16 +11,24 @@ $execute if score #command_success bigstone_sandbox.temp matches 1 \
 #add translation here
 execute if score #command_success bigstone_sandbox.temp matches 0 \
     run return \
-        run tellraw @s {\
-            "bold":true,\
-            "color":"dark_red",\
-            "hover_event":{\
-                "action":"show_text",\
-                "value":[\
-                    {\
-                    "text":"This warning can appears if the referenced structure for this item isn't stored in this world. Please import your structure through the proper method through the bigstone dialog menu"\
-                    }\
-                ]\
-            },\
-        "text":"[Structure Placement is Invalid]"\
-    }
+        run tellraw @s [ \
+            "", \
+            { \
+                "text": "[", \
+                "color": "dark_gray" \
+            }, \
+            { \
+                "translate": "bigstone_sandbox.tellraw_message.title", \
+                "fallback": "Bigstone Sandbox", \
+                "color": "gold" \
+            }, \
+            { \
+                "text": "] ", \
+                "color": "dark_gray" \
+            }, \
+            { \
+                "translate": "bigstone_sandbox.tellraw_message.invalid_structure_placement", \
+                "fallback": "Structure Placement is Invalid.", \
+                "color":"dark_red", \
+            } \
+        ]
