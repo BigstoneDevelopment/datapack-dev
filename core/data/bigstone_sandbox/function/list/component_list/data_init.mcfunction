@@ -125,7 +125,7 @@ data modify storage bigstone_sandbox:data temp.component set value \
         "has_consume_particles": false \
       }, \
       "minecraft:use_cooldown": { \
-        "seconds": 0.1, \
+        "seconds": 0.3, \
         "cooldown_group": "bigstone_component" \
       }, \
       "!minecraft:jukebox_playable": {}, \

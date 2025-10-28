@@ -7,3 +7,5 @@ title @s actionbar [{"text":"Process Canceled, ","color":"red"},{"text":"memory 
 
 # hide bossbar
 bossbar set bigstone_sandbox.progress visible false
+
+return 1

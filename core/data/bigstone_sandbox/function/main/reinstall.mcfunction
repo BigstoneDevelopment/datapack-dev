@@ -1,3 +1,5 @@
+dialog clear @a
+
 execute as @a run advancement revoke @s everything
 
 scoreboard objectives remove bigstone_sandbox.cast_mode

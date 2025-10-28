@@ -454,7 +454,50 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       ] \
     }, \
     { \
+      "translate": "newline_2" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.background.import", \
+      "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0 \
+    }, \
+    { \
       "translate": "newline_1" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.reinstall", \
+      "color": "gold", \
+      "click_event": { \
+        "action": "run_command", \
+        "command": "function #bigstone_sandbox:reinstall" \
+      }, \
+      "hover_event": { \
+        "action": "show_text", \
+        "value": { \
+          "translate": "bigstone_sandbox.dialog_menu.reinstall", \
+          "color": "gold", \
+          "font": "bigstone_sandbox:small_caps" \
+        } \
+      } \
+    }, \
+    { \
+      "translate": "newline_2" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.uninstall", \
+      "color": "dark_red", \
+      "click_event": { \
+        "action": "run_command", \
+        "command": "function #bigstone_sandbox:uninstall" \
+      }, \
+      "hover_event": { \
+        "action": "show_text", \
+        "value": { \
+          "translate": "bigstone_sandbox.dialog_menu.uninstall", \
+          "color": "dark_red", \
+          "font": "bigstone_sandbox:small_caps" \
+        } \
+      } \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.background.bottom", \

@@ -13,3 +13,5 @@ tag @s add bigstone_sandbox.saveTarget
 
 # save structure data
 $execute positioned $(x) $(y) $(z) run function item_structures:zprivate/save
+
+return 1

@@ -5,7 +5,7 @@ scoreboard objectives add bigstone_sandbox.vect_z dummy
 
 scoreboard objectives add bigstone_sandbox.constant dummy
 scoreboard objectives add bigstone_sandbox.commands dummy
-scoreboard players set limit bigstone_sandbox.commands 100000
+scoreboard players set limit bigstone_sandbox.commands 200000
 
 # initialize bossbar
 bossbar add bigstone_sandbox.progress {"text":"Progress","color":"green"}

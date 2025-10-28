@@ -1,5 +1,7 @@
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.cleaning_up","fallback":"Cleaning up. Please wait...","color":"gray"}]
 
+dialog clear @a
+
 scoreboard objectives remove bigstone_sandbox_menu
 scoreboard objectives remove bigstone_sandbox.cast_mode
 scoreboard objectives remove bigstone_sandbox.invalid_highlight

@@ -1,5 +1,6 @@
 function bigstone_sandbox:list/component_list/data_init
 
+data modify storage bigstone_sandbox:data temp.component.source.structure_data set from storage bigstone_sandbox:data import.structure_data
 data modify storage bigstone_sandbox:data temp.component.source.component_name set from storage bigstone_sandbox:data import.component_name
 data modify storage bigstone_sandbox:data temp.component.source.creator set from storage bigstone_sandbox:data import.creator
 data modify storage bigstone_sandbox:data temp.component.source.orientation set from storage bigstone_sandbox:data import.orientation
