@@ -7,7 +7,7 @@ data modify storage bigstone_sandbox:data temp.component set value \
         "text": "", \
         "font": "bigstone_sandbox:small_caps" \
       }, \
-      "minecraft:item_model": "", \
+      "minecraft:item_model": "bigstone_sandbox:component_item", \
       "minecraft:lore": [ \
         { \
           "color": "gray", \
