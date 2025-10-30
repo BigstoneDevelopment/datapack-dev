@@ -2,7 +2,7 @@ scoreboard players set @s bigstone_sandbox.commands 0
 data remove storage bigstone_sandbox:structures save
 
 data merge storage bigstone_sandbox:structures {save:{size:[16,16,16],blocks:[I;],index:[]},anti_index:[]}
-tellraw @a ["size: ",{nbt:"save.size",storage:"bigstone_sandbox:structures"}]
+#tellraw @a ["size: ",{nbt:"save.size",storage:"bigstone_sandbox:structures"}]
 
 data remove storage bs:out block
 

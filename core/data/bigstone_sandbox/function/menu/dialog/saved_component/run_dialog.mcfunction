@@ -15,7 +15,7 @@ $dialog show @s \
         "translate": "bigstone_sandbox.dialog_menu.open_in_browser", \
         "color": "gray" \
       }, \
-      "initial": '$(source_data)', \
+      "initial": 'https://sandbox.bigstone.dev/upload/#$(source_data)', \
       "max_length": 2147483647, \
       "multiline": { \
         "height": 128 \
