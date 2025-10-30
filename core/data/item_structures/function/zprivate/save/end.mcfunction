@@ -19,7 +19,7 @@ scoreboard players operation bytes_nbt bigstone_sandbox.commands *= #4 bigstone_
 scoreboard players operation bytes_nbt bigstone_sandbox.commands *= #100 bigstone_sandbox.constant
 scoreboard players operation bytes bigstone_sandbox.commands += bytes_nbt bigstone_sandbox.commands
 # print
-execute if score bytes bigstone_sandbox.commands matches ..999 run return run tellraw @a ["approximate structure data size: ",{score:{name:"bytes",objective:"bigstone_sandbox.commands"}}," B"]
+execute if score bytes bigstone_sandbox.commands matches ..999 run return run tellraw @a [{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.aprox_structure_data_size","fallback":"Approximate Structure data size: ","color":"gray"},{score:{name:"bytes",objective:"bigstone_sandbox.commands"}},{"text":" B","color":"gray"}]
 scoreboard players operation kB bigstone_sandbox.commands = bytes bigstone_sandbox.commands
 scoreboard players operation kB bigstone_sandbox.commands /= #1000 bigstone_sandbox.constant
 scoreboard players operation bytes bigstone_sandbox.commands %= #1000 bigstone_sandbox.constant
