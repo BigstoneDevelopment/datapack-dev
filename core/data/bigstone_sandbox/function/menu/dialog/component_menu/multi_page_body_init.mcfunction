@@ -30,7 +30,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       } \
     }, \
     { \
-      "translate": "space.38", \
+      "translate": "space.30", \
       "font": "space:default" \
     }, \
     { \
@@ -52,6 +52,22 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     { \
       "translate": "space.17", \
       "font": "space:default" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.button.breaker", \
+      "font": "bigstone_sandbox:menu", \
+      "click_event": { \
+        "action": "run_command", \
+        "command": "trigger bigstone_sandbox_menu set -28" \
+      }, \
+      "hover_event": { \
+        "action": "show_text", \
+        "value": { \
+          "translate": "bigstone_sandbox.dialog_menu.breaker", \
+          "color": "red", \
+          "font": "bigstone_sandbox:small_caps" \
+        } \
+      } \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.search", \
@@ -122,7 +138,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       } \
     }, \
     { \
-      "translate": "space.38", \
+      "translate": "space.30", \
       "font": "space:default" \
     }, \
     { \
@@ -162,7 +178,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       } \
     }, \
     { \
-      "translate": "space.38", \
+      "translate": "space.30", \
       "font": "space:default" \
     }, \
     { \
@@ -185,6 +201,23 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     { \
       "translate": "space.17", \
       "font": "space:default" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "shadow_color": 0, \
+      "font": "bigstone_sandbox:menu", \
+      "click_event": { \
+        "action": "run_command", \
+        "command": "trigger bigstone_sandbox_menu set -28" \
+      }, \
+      "hover_event": { \
+        "action": "show_text", \
+        "value": { \
+          "translate": "bigstone_sandbox.dialog_menu.breaker", \
+          "color": "red", \
+          "font": "bigstone_sandbox:small_caps" \
+        } \
+      } \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
@@ -259,7 +292,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       } \
     }, \
     { \
-      "translate": "space.38", \
+      "translate": "space.30", \
       "font": "space:default" \
     }, \
     { \
