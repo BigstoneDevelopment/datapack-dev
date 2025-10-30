@@ -8,7 +8,7 @@ Load Structure:
 
 
 Import structure:
-/data modify storage bigstone_sandbox:structures save ..
+/data modify storage bigstone_sandbox:structures structureData ..
 
 Export Structure:
 /data get storage bigstone_sandbox:structures save ..

@@ -20,7 +20,8 @@ data modify storage bigstone_sandbox:data temp.component set value \
           ], \
           "color": "dark_gray", \
           "italic": 0, \
-          "translate": "bigstone_sandbox.component.made_by" \
+          "translate": "bigstone_sandbox.component.made_by", \
+          "fallback": "Made by %s" \
         }, \
         { \
           "text": "" \
@@ -37,7 +38,8 @@ data modify storage bigstone_sandbox:data temp.component set value \
           ], \
           "color": "blue", \
           "italic": 0, \
-          "translate": "bigstone_sandbox.dialog_menu.port_north" \
+          "translate": "bigstone_sandbox.dialog_menu.port_north", \
+          "fallback": "North: %s" \
         }, \
         { \
           "with": [ \
@@ -51,7 +53,8 @@ data modify storage bigstone_sandbox:data temp.component set value \
           ], \
           "color": "red", \
           "italic": 0, \
-          "translate": "bigstone_sandbox.dialog_menu.port_south" \
+          "translate": "bigstone_sandbox.dialog_menu.port_south", \
+          "fallback": "South: %s" \
         }, \
         { \
           "with": [ \
@@ -65,7 +68,8 @@ data modify storage bigstone_sandbox:data temp.component set value \
           ], \
           "color": "green", \
           "italic": 0, \
-          "translate": "bigstone_sandbox.dialog_menu.port_east" \
+          "translate": "bigstone_sandbox.dialog_menu.port_east", \
+          "fallback": "East: %s" \
         }, \
         { \
           "with": [ \
@@ -79,10 +83,12 @@ data modify storage bigstone_sandbox:data temp.component set value \
           ], \
           "color": "yellow", \
           "italic": 0, \
-          "translate": "bigstone_sandbox.dialog_menu.port_west" \
+          "translate": "bigstone_sandbox.dialog_menu.port_west", \
+          "fallback": "West: %s" \
         }, \
         { \
           "translate": "bigstone_sandbox.dialog_menu.port_top", \
+          "fallback": "Top: %s", \
           "with": [ \
             { \
               "text": "", \
@@ -97,6 +103,7 @@ data modify storage bigstone_sandbox:data temp.component set value \
         }, \
         { \
           "translate": "bigstone_sandbox.dialog_menu.port_bottom", \
+          "fallback": "Bottom: %s", \
           "with": [ \
             { \
               "text": "", \
@@ -125,7 +132,7 @@ data modify storage bigstone_sandbox:data temp.component set value \
         "has_consume_particles": false \
       }, \
       "minecraft:use_cooldown": { \
-        "seconds": 0.3, \
+        "seconds": 0.1, \
         "cooldown_group": "bigstone_component" \
       }, \
       "!minecraft:jukebox_playable": {}, \

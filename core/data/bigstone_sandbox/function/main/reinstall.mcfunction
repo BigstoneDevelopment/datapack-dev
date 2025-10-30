@@ -55,6 +55,8 @@ tag @a remove bigstone_sandbox.highlightMode
 
 forceload remove 29999984 29999984 29999999 29999999
 
+#kill @e[tag=bigstone_sandbox.component_break_detector]
+
 # lib uninstall
 function item_structures:uninstall
 

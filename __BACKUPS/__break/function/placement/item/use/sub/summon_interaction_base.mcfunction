@@ -1,0 +1,1 @@
+$summon minecraft:interaction $(x).00 $(y).995 $(z).00 {width:16.001f, height:0.05f, Tags:["bigstone_sandbox.component_break_detector"], data:{x:$(x1), y:$(y1), z:$(z1)}}

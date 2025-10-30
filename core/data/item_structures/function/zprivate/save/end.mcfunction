@@ -1,4 +1,4 @@
-title @a[tag=bigstone_sandbox.saveTarget] actionbar {"text":"Component Saved","color":"gray"}
+title @a[tag=bigstone_sandbox.saveTarget] actionbar [{text:"✓",bold:true,color:"green"},{text:" Component Saved",bold:false,color:"gray"}]
 kill @e[tag=bigstone_sandbox.saver]
 
 tag @a[tag=bigstone_sandbox.saveTarget] remove bigstone_sandbox.saveTarget

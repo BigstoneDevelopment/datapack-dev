@@ -1,8 +1,24 @@
-# add player tag
-tag @s add bigstone_sandbox.loadTarget
+# store target uuid in storage
+data modify storage bigstone_sandbox:structures temp_target set from entity @s UUID
 
-# load saved structure data
-data modify storage bigstone_sandbox:structures load set from storage bigstone_sandbox:structures save
-$execute positioned $(x) $(y) $(z) run function item_structures:zprivate/load
+# push to queue
+$data modify storage bigstone_sandbox:structures queue append value { \
+    x: $(x), \
+    y: $(y), \
+    z: $(z), \
+    data: {}, \
+    target: [] \
+}
+
+# insert data
+data modify storage bigstone_sandbox:structures queue[-1].data set from storage bigstone_sandbox:structures placementData
+data modify storage bigstone_sandbox:structures queue[-1].target set from storage bigstone_sandbox:structures temp_target
+
+# cleanup temp storage
+data remove storage bigstone_sandbox:structures placementData
+data remove storage bigstone_sandbox:structures temp_target
+
+# start processing
+function item_structures:zprivate/queue/load/process
 
 return 1

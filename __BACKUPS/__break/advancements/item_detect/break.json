@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags:['bigstone_sandbox.component_break_detector']}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "bigstone_sandbox:main/events/item/break"
+    }
+}
