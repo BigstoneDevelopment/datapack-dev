@@ -12,7 +12,7 @@ $summon text_display ~ ~ ~ {\
     Passengers:[\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[0f,0f],\
@@ -20,7 +20,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,16.0f],\
+                translation:[7.2f,0.0f,16.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -28,7 +28,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[90f,0f],\
@@ -36,7 +36,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,0.0f],\
+                translation:[7.2f,0.0f,0.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -44,7 +44,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[180f,0f],\
@@ -52,14 +52,14 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,0.0f],\
+                translation:[-8.8f,0.0f,0.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
             background:$(color1)},\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[270f,0f],\
@@ -67,7 +67,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,16.0f],\
+                translation:[-8.8f,0.0f,16.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -75,7 +75,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[0f,90f],\
@@ -83,14 +83,14 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,0.0f],\
+                translation:[7.2f,0.0f,0.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
             background:$(color3)},\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[0f,-90f],\
@@ -98,7 +98,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,-16.0f,16.0f],\
+                translation:[7.2f,-16.0f,16.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -106,7 +106,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[0f,0f],\
@@ -114,7 +114,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,0.0f],\
+                translation:[7.2f,0.0f,0.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -122,7 +122,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[90f,0f],\
@@ -130,7 +130,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,-16.0f],\
+                translation:[7.2f,0.0f,-16.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -138,7 +138,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[180f,0f],\
@@ -146,7 +146,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,-16.0f],\
+                translation:[-8.8f,0.0f,-16.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -154,7 +154,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[270f,0f],\
@@ -162,7 +162,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,0.0f],\
+                translation:[-8.8f,0.0f,0.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -170,7 +170,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[0f,90f],\
@@ -178,7 +178,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,-16.0f],\
+                translation:[7.2f,0.0f,-16.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -186,7 +186,7 @@ $summon text_display ~ ~ ~ {\
         },\
         {\
             id:"minecraft:text_display",\
-            see_through:1b,start_interpolation:0,\
+            see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
             teleport_duration:0,\
             Rotation:[0f,-90f],\
@@ -194,7 +194,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,-16.0f,0.0f],\
+                translation:[7.2f,-16.0f,0.01f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
