@@ -5,7 +5,7 @@ execute anchored eyes positioned ^ ^ ^ \
 execute store result score #rayhit bigstone_sandbox.temp run data get storage bs:out raycast.hit_point
 #exit if cast failed and kill highlight
 execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute if entity @s[tag=bigstone_sandbox.highlightMode] run function bigstone_sandbox:placements/item/post_hold/item
-execute if score #rayhit bigstone_sandbox.temp matches 0 run return run execute if entity @s[tag=bigstone_sandbox.highlightMode] run return fail
+execute if data storage bigstone_sandbox:data settings{placement_highlight:0b} run return run execute if entity @s[tag=bigstone_sandbox.highlightMode] run function bigstone_sandbox:placements/item/post_hold/item
 # if in gamemodes such as spectator or adventure
 execute if entity @s[gamemode=!survival,gamemode=!creative] run function bigstone_sandbox:placements/item/post_hold/item
 execute if entity @s[gamemode=!survival,gamemode=!creative] run return fail

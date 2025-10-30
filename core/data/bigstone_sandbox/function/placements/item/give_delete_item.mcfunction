@@ -5,7 +5,7 @@ give @s music_disc_creator[ \
                             "italic": 0b, \
                             "font": "bigstone_sandbox:small_caps" \
                         }, \
-                        item_model="minecraft:mace", \
+                        item_model="bigstone_sandbox:component_breaker", \
                         lore=[ \
                             { \
                                 "color": "gray", \
