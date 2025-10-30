@@ -1,1 +1,0 @@
-playsound minecraft:block.copper_bulb.place block @a ~8 ~8 ~8 10.0
