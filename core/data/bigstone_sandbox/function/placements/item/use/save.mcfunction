@@ -1,5 +1,6 @@
 # save structure
 scoreboard players set #command_success bigstone_sandbox.temp 0
+data remove storage bigstone_sandbox:structures save
 
 $execute \
     store success score #command_success bigstone_sandbox.temp \
