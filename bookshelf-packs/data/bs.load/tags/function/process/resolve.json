@@ -1,6 +1,30 @@
 {
   "values": [
+    "bs.load:resolve/bitwise",
+    "bs.load:resolve/block",
+    "bs.load:resolve/color",
+    "bs.load:resolve/dump",
+    "bs.load:resolve/environment",
+    "bs.load:resolve/random",
+    "bs.load:resolve/generation",
+    "bs.load:resolve/health",
     "bs.load:resolve/hitbox",
-    "bs.load:resolve/raycast"
+    "bs.load:resolve/id",
+    "bs.load:resolve/interaction",
+    "bs.load:resolve/position",
+    "bs.load:resolve/link",
+    "bs.load:resolve/log",
+    "bs.load:resolve/math",
+    "bs.load:resolve/move",
+    "bs.load:resolve/raycast",
+    "bs.load:resolve/schedule",
+    "bs.load:resolve/sidebar",
+    "bs.load:resolve/spline",
+    "bs.load:resolve/string",
+    "bs.load:resolve/time",
+    "bs.load:resolve/tree",
+    "bs.load:resolve/vector",
+    "bs.load:resolve/view",
+    "bs.load:resolve/xp"
   ]
 }

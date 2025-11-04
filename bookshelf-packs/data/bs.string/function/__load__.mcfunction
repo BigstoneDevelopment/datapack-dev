@@ -20,6 +20,8 @@ scoreboard objectives add bs.const dummy [{text:"BS ",color:"dark_gray"},{text:"
 
 scoreboard players set 8 bs.const 8
 
-execute unless data storage bs:const log.messages[{namespaces:["bs.string"]}] run data modify storage bs:const log.messages[{namespaces:["bs"]}].namespaces append value "bs.string"
+execute unless data storage bs:const log.messages[{namespaces:["bs.string"]}] run \
+  data modify storage bs:const log.messages[{namespaces:["bs"]}].namespaces append value "bs.string"
+
 
 function bs.string:import/char_table

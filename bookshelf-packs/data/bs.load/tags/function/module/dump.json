@@ -1,0 +1,6 @@
+{
+  "replace": true,
+  "values": [
+    "bs.dump:__load__"
+  ]
+}

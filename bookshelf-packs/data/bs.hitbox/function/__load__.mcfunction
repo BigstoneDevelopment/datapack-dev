@@ -40,3 +40,7 @@ scoreboard players set 116129781 bs.const 116129781
 scoreboard players set 268435456 bs.const 268435456
 
 data modify storage bs:data hitbox.offsets set value []
+
+execute unless data storage bs:const log.messages[{namespaces:["bs.hitbox"]}] run \
+  data modify storage bs:const log.messages[{namespaces:["bs"]}].namespaces append value "bs.hitbox"
+

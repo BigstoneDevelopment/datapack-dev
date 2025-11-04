@@ -265,7 +265,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://wiki.bigstone.dev" \
+            "url": "https://wiki.bigstone.dev/#󐍰\uEe01" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -333,7 +333,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://wiki.bigstone.dev" \
+            "url": "https://wiki.bigstone.dev/#󐍰\uEe01" \
           }, \
           "hover_event": { \
             "action": "show_text", \
