@@ -23,7 +23,8 @@ data modify storage bigstone_sandbox:data temp.menu_items set from storage xolib
 data modify storage bigstone_sandbox:data temp.macros.item_index set value 0
 scoreboard players set item_index bigstone_sandbox.temp 0
 function bigstone_sandbox:menu/dialog/component_menu/add_items_loop
-execute if score component_count bigstone_sandbox.temp matches ..100 run function bigstone_sandbox:menu/dialog/component_menu/single_page_body_init
+execute if score component_count bigstone_sandbox.temp matches ..0 run function bigstone_sandbox:menu/dialog/component_menu/empty_page_body_init
+execute if score component_count bigstone_sandbox.temp matches 1..100 run function bigstone_sandbox:menu/dialog/component_menu/single_page_body_init
 execute if score component_count bigstone_sandbox.temp matches 101.. run function bigstone_sandbox:menu/dialog/component_menu/multi_page_body_init
 
 execute if score component_count bigstone_sandbox.temp matches 101.. run data modify storage bigstone_sandbox:data temp.body[0].contents[{"translate": "bigstone_sandbox.dialog_menu.current_page"}].with[0].text set string storage bigstone_sandbox:data temp.loaded_index
