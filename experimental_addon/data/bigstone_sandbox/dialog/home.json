@@ -233,7 +233,7 @@
           "shadow_color": 0,
           "click_event": {
             "action": "open_url",
-            "url": "https://bigstone.dev"
+            "url": "https://bigstone.dev/"
           },
           "hover_event": {
             "action": "show_text",
@@ -255,7 +255,7 @@
           "shadow_color": 0,
           "click_event": {
             "action": "open_url",
-            "url": "https://discord.bigstone.dev"
+            "url": "https://discord.bigstone.dev/"
           },
           "hover_event": {
             "action": "show_text",
@@ -278,7 +278,7 @@
           "shadow_color": 0,
           "click_event": {
             "action": "open_url",
-            "url": "https://wiki.bigstone.dev"
+            "url": "https://wiki.bigstone.dev/#󐍰\uEe01"
           },
           "hover_event": {
             "action": "show_text",
@@ -301,7 +301,7 @@
           "shadow_color": 0,
           "click_event": {
             "action": "open_url",
-            "url": "https://bigstone.dev"
+            "url": "https://bigstone.dev/"
           },
           "hover_event": {
             "action": "show_text",
@@ -323,7 +323,7 @@
           "shadow_color": 0,
           "click_event": {
             "action": "open_url",
-            "url": "https://discord.bigstone.dev"
+            "url": "https://discord.bigstone.dev/"
           },
           "hover_event": {
             "action": "show_text",
@@ -346,7 +346,7 @@
           "shadow_color": 0,
           "click_event": {
             "action": "open_url",
-            "url": "https://wiki.bigstone.dev"
+            "url": "https://wiki.bigstone.dev/#󐍰\uEe01"
           },
           "hover_event": {
             "action": "show_text",
@@ -377,7 +377,7 @@
           },
           "click_event": {
             "action": "open_url",
-            "url": "https://bigstone.dev"
+            "url": "https://bigstone.dev/"
           }
         },
         {

@@ -41,10 +41,10 @@ $execute \
 # play sound if playment succeeded
 $execute if score #command_success bigstone_sandbox.temp matches 1 \
     run execute positioned $(x) $(y) $(z) \
-        run playsound minecraft:block.copper_bulb.step block @a ~8 ~8 ~8 10.0
+        run playsound minecraft:block.copper_bulb.step block @a ~8 ~8 ~8 10.0 1 1
 $execute if score #command_success bigstone_sandbox.temp matches 1 \
     run execute positioned $(x) $(y) $(z) \
-        run playsound minecraft:block.bone_block.place block @a ~8 ~8 ~8 10.0
+        run playsound minecraft:block.bone_block.place block @a ~8 ~8 ~8 10.0 1 1
 
 # log error message if placement failed
 execute if score #command_success bigstone_sandbox.temp matches 0 \

@@ -1,6 +1,5 @@
 {
   "pack": {
-    "pack_format": 80,
     "description": [
       {
         "text": "ᴀ ꜱᴀɴᴅʙᴏx ꜰᴏʀ ʙɪɢꜱᴛᴏɴᴇ",
@@ -15,6 +14,12 @@
         "color": "gray"
       }
     ],
+
+    "pack_format": 80,
+
+    "min_format": 80,
+    "max_format": 88,
+
     "supported_formats": {
       "min_inclusive": 80,
       "max_inclusive": 88
@@ -24,8 +29,23 @@
     "entries": [
       {
         "directory": "supported_versions",
+
+        "min_format": 80,
+        "max_format": 88,
+
         "formats": {
           "min_inclusive": 80,
+          "max_inclusive": 88
+        }
+      },
+      {
+        "directory": "format_88",
+        
+        "min_format": 88,
+        "max_format": 88,
+
+        "formats": {
+          "min_inclusive": 88,
           "max_inclusive": 88
         }
       }
