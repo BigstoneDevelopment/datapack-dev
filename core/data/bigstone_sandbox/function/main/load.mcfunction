@@ -99,3 +99,17 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
             components: [] \
         } \
     }
+
+    # show warning
+    #execute store result storage bigstone_sandbox:data temp.maxCommandChainLength int 1 run gamerule maxCommandChainLength
+    #execute store result score maxCommandChainLength bigstone_sandbox.temp run data get storage bigstone_sandbox:data temp.maxCommandChainLength 1
+    #scoreboard players set minCommandChainLength bigstone_sandbox.temp 200000
+
+    #execute if score maxCommandChainLength bigstone_sandbox.temp < minCommandChainLength bigstone_sandbox.temp run tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.maxCommandChainLength_warning","fallback":"Warning: The gamerule maxCommandChainLength needs to be greater than 200000!","color":"red"}]
+        
+    #scoreboard players reset maxCommandChainLength bigstone_sandbox.temp
+    #scoreboard players reset minCommandChainLength bigstone_sandbox.temp
+    #data remove storage bigstone_sandbox:data temp.maxCommandChainLength
+
+    # auto fix (quick setup)
+    gamerule maxCommandChainLength 200000
