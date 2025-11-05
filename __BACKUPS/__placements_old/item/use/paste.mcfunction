@@ -6,7 +6,7 @@ $execute \
 #play sound if playment succeeded
 $execute if score #command_success bigstone_sandbox.temp matches 1 \
     run execute positioned $(x) $(y) $(z) \
-        run playsound minecraft:block.stone.place block @a ~8 ~8 ~8 10.0
+        run playsound minecraft:block.stone.place block @a ~8 ~8 ~8 10.0 1 1
 
 #add translation here
 execute if score #command_success bigstone_sandbox.temp matches 0 \

@@ -5,7 +5,7 @@ The datapack is mainly developed by BigstoneDevelopment
 
 
 THE WIKI:
-http://wiki.bigstone.dev
+http://wiki.bigstone.dev/
 
 THE REPO:
 https://github.com/BigstoneDevelopment/datapack

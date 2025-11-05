@@ -220,7 +220,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://bigstone.dev" \
+            "url": "https://bigstone.dev/" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -242,7 +242,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://discord.bigstone.dev" \
+            "url": "https://discord.bigstone.dev/" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -265,7 +265,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://wiki.bigstone.dev" \
+            "url": "https://wiki.bigstone.dev/#󐍰\uEe01" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -288,7 +288,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://bigstonedevelopment.github.io" \
+            "url": "https://bigstone.dev/" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -310,7 +310,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://dsc.gg/bigstone" \
+            "url": "https://discord.bigstone.dev/" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -333,7 +333,7 @@ dialog show @s \
           "shadow_color": 0, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://wiki.bigstone.dev" \
+            "url": "https://wiki.bigstone.dev/#󐍰\uEe01" \
           }, \
           "hover_event": { \
             "action": "show_text", \
@@ -364,7 +364,7 @@ dialog show @s \
           }, \
           "click_event": { \
             "action": "open_url", \
-            "url": "https://github.com/bigstonedevelopment" \
+            "url": "https://bigstone.dev/" \
           } \
         }, \
         { \
