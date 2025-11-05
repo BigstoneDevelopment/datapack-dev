@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "#bs.load:module/id",
+    "#bs.load:module/position",
+    "bs.link:__load__"
+  ]
+}
