@@ -8,6 +8,7 @@ bossbar set bigstone_sandbox.progress visible false
 ## data size estimate
 # 4 bytes per entry
 execute store result score bytes bigstone_sandbox.commands run data get storage bigstone_sandbox:structures save.blocks
+execute if score bytes bigstone_sandbox.commands matches ..0 run return run tellraw @a [{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.structure_failed","fallback":"Failed to save structure, please report this!","color":"red"}]
 scoreboard players operation bytes bigstone_sandbox.commands *= #4 bigstone_sandbox.constant
 # 69 bytes per unique block state
 scoreboard players set bytes_index bigstone_sandbox.commands 69
