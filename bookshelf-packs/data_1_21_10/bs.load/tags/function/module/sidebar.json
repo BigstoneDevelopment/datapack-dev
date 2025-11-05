@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "#bs.load:module/log",
+      "required": false
+    },
+    "bs.sidebar:__load__"
+  ]
+}
