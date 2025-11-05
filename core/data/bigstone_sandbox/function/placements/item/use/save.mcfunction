@@ -38,6 +38,3 @@ execute if score #command_success bigstone_sandbox.temp matches 0 \
                 "color":"red", \
             } \
         ]
-
-# show result
-function bigstone_sandbox:menu/dialog/saved_component
