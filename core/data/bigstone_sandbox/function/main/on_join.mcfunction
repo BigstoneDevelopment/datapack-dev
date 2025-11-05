@@ -11,6 +11,8 @@ execute if entity @s[tag=bigstone_sandbox.info_on_join] run tellraw @s ["",{"tex
 
 #issues here
 execute if predicate bigstone_sandbox:item_detect/in_hotbar run advancement grant @s only bigstone_sandbox:item_detect/inactive_in_hotbar
+execute if predicate bigstone_sandbox:item_detect/in_hotbar run advancement revoke @s only bigstone_sandbox:item_detect/hold
+execute if predicate bigstone_sandbox:item_detect/in_hotbar run advancement revoke @s from bigstone_sandbox:item_detect/place
 #execute if predicate bigstone_sandbox:item_detect/in_hotbar run advancement revoke @s only bigstone_sandbox:item_detect/active_in_hotbar
 
 #execute unless predicate bigstone_sandbox:item_detect/in_hotbar run advancement revoke @s only bigstone_sandbox:item_detect/inactive_in_hotbar
