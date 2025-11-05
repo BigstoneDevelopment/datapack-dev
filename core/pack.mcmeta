@@ -44,10 +44,7 @@
         "min_format": 88,
         "max_format": 88,
 
-        "formats": {
-          "min_inclusive": 88,
-          "max_inclusive": 88
-        }
+        "formats": 88
       }
     ]
   }

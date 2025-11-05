@@ -1,5 +1,5 @@
 ## Bookshelf - edited version of #bs.block:get_block to exclude NBT, which is handled separately
-
+say thisshouldrun
 #read block, undid shuba optimisation
 data remove storage bs:out block
 loot replace entity B5-0-0-0-3 contents loot bs.block:block/get_block

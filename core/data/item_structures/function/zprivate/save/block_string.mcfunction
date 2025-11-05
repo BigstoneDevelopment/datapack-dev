@@ -1,4 +1,5 @@
 ## Bookshelf - edited version of #bs.block:get_block to exclude NBT, which is handled separately
+say hithisshouldntrun
 
 #read block, undid shuba optimisation
 data remove storage bs:out block
