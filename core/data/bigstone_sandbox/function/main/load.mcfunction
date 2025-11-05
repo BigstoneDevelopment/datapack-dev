@@ -1,5 +1,4 @@
 # update version for check
-function bigstone_sandbox:main/version/format
 function bigstone_sandbox:main/version/supported
 
 # reload message
