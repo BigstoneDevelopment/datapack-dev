@@ -1,4 +1,4 @@
-function xolibs:api/playerdata/load
+function bs.xolibs:api/playerdata/load
 data remove storage bigstone_sandbox:data temp.menu_items
 data remove storage bigstone_sandbox:data temp.macros
 data remove storage bigstone_sandbox:data temp.body
@@ -11,7 +11,7 @@ scoreboard players reset selected_index bigstone_sandbox.temp
 scoreboard players reset flip_flop bigstone_sandbox.temp
 
 execute store result score component_count bigstone_sandbox.temp \
-  if data storage xolibs:playerdata storage.bigstone_sandbox.list.filtered[]
+  if data storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.filtered[]
 execute store result storage bigstone_sandbox:data temp.components_count int 1 run \
   scoreboard players add component_count bigstone_sandbox.temp 100
 scoreboard players remove component_count bigstone_sandbox.temp 100
@@ -19,7 +19,7 @@ execute store result score loaded_index bigstone_sandbox.temp run scoreboard pla
 execute store result storage bigstone_sandbox:data temp.loaded_index int 1 run \
   scoreboard players add loaded_index bigstone_sandbox.temp 1
 
-data modify storage bigstone_sandbox:data temp.menu_items set from storage xolibs:playerdata storage.bigstone_sandbox.list.loaded
+data modify storage bigstone_sandbox:data temp.menu_items set from storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.loaded
 data modify storage bigstone_sandbox:data temp.macros.item_index set value 0
 scoreboard players set item_index bigstone_sandbox.temp 0
 function bigstone_sandbox:menu/dialog/component_menu/add_items_loop

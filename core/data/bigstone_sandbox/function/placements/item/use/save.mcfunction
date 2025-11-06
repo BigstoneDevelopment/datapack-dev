@@ -4,7 +4,7 @@ data remove storage bigstone_sandbox:structures save
 
 $execute \
     store success score #command_success bigstone_sandbox.temp \
-        run function item_structures:save {"x": $(x), "y": $(y), "z": $(z)}
+        run function bs.structures:save {"x": $(x), "y": $(y), "z": $(z)}
 
 # play sound if playment succeeded
 $execute if score #command_success bigstone_sandbox.temp matches 1 \

@@ -39,11 +39,17 @@
         }
       },
       {
-        "directory": "format_88",
-        
-        "min_format": 88,
-        "max_format": 88,
+        "directory": "format_80-81",
+        "min_format": 80,
+        "max_format": 81,
 
+        "formats": {
+          "min_inclusive": 80,
+          "max_inclusive": 81
+        }
+      },
+      {
+        "directory": "format_88",
         "formats": 88
       }
     ]
