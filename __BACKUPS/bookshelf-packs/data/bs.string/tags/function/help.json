@@ -1,0 +1,6 @@
+{
+  "replace": true,
+  "values": [
+    "bs.string:__help__"
+  ]
+}

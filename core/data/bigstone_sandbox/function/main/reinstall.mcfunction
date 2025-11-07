@@ -19,10 +19,10 @@ scoreboard objectives remove bigstone_sandbox.temp.import_percent
 scoreboard objectives remove bigstone_sandbox.temp.import_done
 scoreboard objectives remove consts
 
-data remove storage xolibs:playerdata player
-data remove storage xolibs:playerdata storage
-data remove storage xolibs:playerdata rom
-data remove storage xolibs:playerdata temp
+data remove storage bigstone_sandbox:playerdata player
+data remove storage bigstone_sandbox:playerdata storage
+data remove storage bigstone_sandbox:playerdata rom
+data remove storage bigstone_sandbox:playerdata temp
 
 data remove storage bigstone_sandbox:data newUUID
 data remove storage bigstone_sandbox:data components
@@ -58,6 +58,6 @@ forceload remove 29999984 29999984 29999999 29999999
 #kill @e[tag=bigstone_sandbox.component_break_detector]
 
 # lib uninstall
-function item_structures:uninstall
+function bs.structures:uninstall
 
 reload

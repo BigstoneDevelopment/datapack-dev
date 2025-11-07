@@ -1,2 +1,0 @@
-$data modify storage bigstone_sandbox:structures macro.block set from storage bigstone_sandbox:structures load.index[$(index)]
-function item_structures:zprivate/load/block_place_setblock with storage bigstone_sandbox:structures macro

@@ -1,1 +1,0 @@
-return run data modify storage xolibs:playerdata temp.test.UUID set from entity @s UUID

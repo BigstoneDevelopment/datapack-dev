@@ -1,6 +1,10 @@
 {
     "values": [
+        "bs.load:init",
+        "#bs.load:load",
+
         "bigstone_sandbox:main/load",
-        "item_structures:zprivate/init"
+        
+        "bs.structures:zprivate/init"
     ]
 }

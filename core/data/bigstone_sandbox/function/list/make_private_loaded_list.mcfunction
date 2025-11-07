@@ -1,9 +1,9 @@
 # uses score @s bigstone_sandbox.loaded_index as input
 
-function xolibs:api/playerdata/load
+function bs.xolibs:api/playerdata/load
 data remove storage bigstone_sandbox:data temp.loaded_index
 
-data remove storage xolibs:playerdata storage.bigstone_sandbox.list.loaded[]
+data remove storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.loaded[]
 execute store result storage bigstone_sandbox:data temp.loaded_index int 1 run scoreboard players get @s bigstone_sandbox.loaded_index
 function bigstone_sandbox:list/loaded_list/get_items with storage bigstone_sandbox:data temp
 

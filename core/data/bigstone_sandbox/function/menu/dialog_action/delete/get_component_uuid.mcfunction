@@ -1,1 +1,1 @@
-$data modify storage bigstone_sandbox:data temp.component_uuid set from storage xolibs:playerdata storage.bigstone_sandbox.list.loaded[$(selected_index)].source.UUID
+$data modify storage bigstone_sandbox:data temp.component_uuid set from storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.loaded[$(selected_index)].source.UUID

@@ -1,6 +1,6 @@
-function xolibs:api/playerdata/load
+function bs.xolibs:api/playerdata/load
 
-data modify storage xolibs:playerdata storage.bigstone_sandbox.list.filters[] merge value \
+data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.filters[] merge value \
 { \
   "include": false, \
   "exclude": false \

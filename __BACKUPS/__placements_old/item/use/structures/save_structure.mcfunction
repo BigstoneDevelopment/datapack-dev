@@ -19,11 +19,11 @@ $setblock 29999999 305 29999999 structure_block[mode=save]{\
 #make a getaway
 setblock 29999999 306 29999999 minecraft:redstone_block replace
 #stash the data
-#function #item_structures:save
+#function #bs.structures:save
 
 
-#function xolibs:api/playerdata/load
-#data modifiy data xolibs:playerdata storage.bigstone_sandbox.draft
+#function bs.xolibs:api/playerdata/load
+#data modifiy data bigstone_sandbox:playerdata storage.bigstone_sandbox.draft
 
 #data modify storage bigstone_sandbox:data temp.component.save set from storage item_structures save
 #data modify storage bigstone_sandbox:data temp.component.id set from 
