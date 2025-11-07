@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{components:{\"minecraft:custom_name\": \"\",\"minecraft:custom_data\":{bigstone_sandbox_input:1b}},count:1,id:\"minecraft:writtable_book\"}]}"
+  }
+}

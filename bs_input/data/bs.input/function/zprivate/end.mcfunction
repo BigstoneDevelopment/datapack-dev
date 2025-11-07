@@ -1,8 +1,14 @@
+# debug print
+tellraw @s {storage:"bigstone_sandbox:playerdata",nbt:"storage.bigstone_sandbox_input.out",color:"green"}
+
 # clear inv
 clear @s
 
+# clear actionbar
+title @s actionbar ''
+
+# allow interactions
+function bs.input:zprivate/stop_interactions/stop
+
 # load inv
-function bs.xolibs:api/playerdata/load
-#fix this Please
-#data modify entity @s Inventory. set from storage bigstone_sandbox:playerdata storage.bigstone_sandbox_input.inv
-#item replace entity @s container.0 with 
+function bs.input:zprivate/load_inv/start

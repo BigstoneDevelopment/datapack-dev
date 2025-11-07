@@ -1,0 +1,1 @@
+item replace entity @n[type=item_frame,distance=..0.5] container.0 with air

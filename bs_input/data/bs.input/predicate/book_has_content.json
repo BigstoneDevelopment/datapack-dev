@@ -1,0 +1,25 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "slots": {
+                "weapon.mainhand": {
+                    "items": "minecraft:writable_book",
+                    "count": 1,
+                    "components": {
+                        "minecraft:writable_book_content": {
+                            "pages": []
+                        }
+                    },
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "bigstone_sandbox_input": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

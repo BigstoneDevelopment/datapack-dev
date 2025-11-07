@@ -1,9 +1,17 @@
-# save inv
+# load playerdata
 function bs.xolibs:api/playerdata/load
+
+# save prompt
+$data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox_input.prompt set value '$(prompt)'
+
+# save inv
 data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox_input.inv set from entity @s Inventory
 
-# clear inv
-clear @s
+# give item and clear inv
+function bs.input:zprivate/fix
 
-# give book
-item replace entity @s weapon.mainhand with writable_book[custom_data={bigstone_sandbox_input: 1b}]
+# stop interactions
+function bs.input:zprivate/stop_interactions/start
+
+# give tag
+tag @s add bigstone_sandbox.input
