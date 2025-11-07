@@ -50,8 +50,10 @@
       },
       {
         "directory": "format_88",
+        
         "min_format": 88,
         "max_format": 88,
+
         "formats": 88
       }
     ]
