@@ -1,1 +1,1 @@
-function bs.input:zprivate/start
+$function bs.input:zprivate/start {prompt:'$(prompt)'}

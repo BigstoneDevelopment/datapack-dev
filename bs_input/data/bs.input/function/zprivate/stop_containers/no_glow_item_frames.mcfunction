@@ -1,0 +1,2 @@
+execute if data entity @n[type=glow_item_frame,distance=..0.5] Item{id:"minecraft:writable_book",components:{"minecraft:custom_data":{bigstone_sandbox_input:1b}}} run return run function bs.input:zprivate/stop_containers/extract/glow_item_frame
+execute if entity @s[distance=..10] positioned ^ ^ ^0.1 run function bs.input:zprivate/stop_containers/no_glow_item_frames
