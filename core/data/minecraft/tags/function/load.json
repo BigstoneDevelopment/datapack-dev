@@ -5,6 +5,6 @@
 
         "bigstone_sandbox:main/load",
         
-        "bs.structures:zprivate/init"
+        "item_structures:zprivate/init"
     ]
 }

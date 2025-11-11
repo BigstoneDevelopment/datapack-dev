@@ -1,1 +1,0 @@
-execute as @e[tag=bigstone_sandbox.org_x,type=marker] if score @s bigstone_sandbox.vect_y matches 0.. at @s run function bs.structures:zprivate/save/move_x
