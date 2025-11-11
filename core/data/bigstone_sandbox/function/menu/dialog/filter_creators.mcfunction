@@ -4,7 +4,7 @@ data remove storage bigstone_sandbox:data temp.filters
 data remove storage bigstone_sandbox:data temp.buttons
 data remove storage bigstone_sandbox:data temp.body
 scoreboard players reset * bigstone_sandbox.temp
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 
 function bigstone_sandbox:menu/dialog/filter/body_init_creators
 function bigstone_sandbox:menu/dialog/filter/init_buttons_draft

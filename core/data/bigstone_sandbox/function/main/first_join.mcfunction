@@ -1,4 +1,4 @@
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 
 data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox merge value {filter: {include: {}, exclude: {}}}
 #tag @s add bigstone_sandbox.default_to_components

@@ -13,7 +13,7 @@ kill @e[ \
         ]
 
 # give book
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox_input.inv set from entity @s Inventory
 
 item replace entity @s weapon.mainhand with writable_book[ \

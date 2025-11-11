@@ -1,5 +1,5 @@
 # load playerdata
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 
 # save prompt
 $data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox_input.prompt set value '$(prompt)'
