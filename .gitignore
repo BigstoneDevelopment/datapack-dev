@@ -1,2 +1,9 @@
 .DS_Store
+
+/core_build
+/experimental_build
+
 /dpm_modules
+/dpm_modules/*
+*/dpm_modules
+*/dpm_modules/*

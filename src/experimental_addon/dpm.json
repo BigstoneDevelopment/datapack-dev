@@ -1,0 +1,12 @@
+{
+    "name": "Bigstone Sandbox",
+    "licensePath": "./LICENSE.txt",
+    "datapackPath": "./src",
+    "buildPath": "../../experimental_build",
+    "load": [
+        "bigstone_sandbox:main/load"
+    ],
+    "tick": [
+        "bigstone_sandbox:main/tick"
+    ]
+}
