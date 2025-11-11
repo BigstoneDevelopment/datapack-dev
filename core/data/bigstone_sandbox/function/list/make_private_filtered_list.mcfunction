@@ -1,6 +1,6 @@
 # uses storage bigstone_sandbox:playerdata storage.bigstone_sandbox.filter as input
 data remove storage bigstone_sandbox:data temp.list
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 
 data remove storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.filtered[]
 #function bigstone_sandbox:list/filtered_list/get_items with storage bigstone_sandbox:playerdata storage.bigstone_sandbox.filter

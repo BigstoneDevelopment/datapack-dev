@@ -1,7 +1,7 @@
 data remove storage bigstone_sandbox:data temp.filter
 data remove storage bigstone_sandbox:data temp.index
 scoreboard players reset * bigstone_sandbox.temp
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 
 execute store result storage bigstone_sandbox:data temp.index int 1 run scoreboard players remove @s bigstone_sandbox_menu 100000
 function bigstone_sandbox:menu/dialog_action/filter/get_filter_at_index with storage bigstone_sandbox:data temp

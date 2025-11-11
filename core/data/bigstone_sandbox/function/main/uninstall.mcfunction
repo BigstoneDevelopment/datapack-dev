@@ -57,6 +57,6 @@ tag @a remove bigstone_sandbox.highlightMode
 forceload remove 29999984 29999984 29999999 2999999
 
 # lib uninstall
-function bs.structures:uninstall
+function item_structures:uninstall
 
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.title","fallback":"Bigstone Sandbox","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"bigstone_sandbox.tellraw_message.uninstalled","fallback":"Done! You can remove the datapack now.","color":"gray"}]

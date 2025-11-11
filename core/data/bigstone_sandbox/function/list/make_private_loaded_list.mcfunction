@@ -1,6 +1,6 @@
 # uses score @s bigstone_sandbox.loaded_index as input
 
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 data remove storage bigstone_sandbox:data temp.loaded_index
 
 data remove storage bigstone_sandbox:playerdata storage.bigstone_sandbox.list.loaded[]

@@ -1,4 +1,4 @@
-function bs.xolibs:api/playerdata/load
+function xolibs:api/playerdata/load
 
 data remove storage bigstone_sandbox:data temp.body
 data remove storage bigstone_sandbox:data temp.selected_index

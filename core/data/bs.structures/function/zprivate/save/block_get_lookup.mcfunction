@@ -1,1 +1,0 @@
-$data modify storage bigstone_sandbox:structures save.stack set from storage bigstone_sandbox:structures id.$(block)

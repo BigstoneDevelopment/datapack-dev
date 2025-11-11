@@ -1,1 +1,0 @@
-return run data modify storage bigstone_sandbox:playerdata temp.test.UUID set from entity @s UUID
