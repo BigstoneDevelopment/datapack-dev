@@ -55,7 +55,7 @@ execute if data storage bigstone_sandbox:data {is_setup: 1b} run return fail
 
     # load storage
 
-    function bigstone_sandbox:main/storage/characters
+    function character_lut:load
 
     data merge storage bigstone_sandbox:data \
     { \

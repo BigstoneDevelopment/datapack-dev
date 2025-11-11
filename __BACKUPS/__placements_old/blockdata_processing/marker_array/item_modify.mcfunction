@@ -1,1 +1,0 @@
-$item replace entity @s weapon.mainhand with minecraft:chest[custom_data={block_array:$(block_array)}]
