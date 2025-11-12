@@ -5,5 +5,5 @@
 
 /dpm_modules
 /dpm_modules/*
-*/dpm_modules
+/src/*/dpm_modules
 */dpm_modules/*
