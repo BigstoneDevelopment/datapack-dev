@@ -1,2 +1,0 @@
-scoreboard objectives add bigstone_sandbox.has_book dummy [{text:"BS ",color:"gold"},{text:"Has_book",color:"gray"}]
-scoreboard objectives add bigstone_sandbox.has_book.old dummy [{text:"BS ",color:"gold"},{text:"Has_book.old",color:"gray"}]

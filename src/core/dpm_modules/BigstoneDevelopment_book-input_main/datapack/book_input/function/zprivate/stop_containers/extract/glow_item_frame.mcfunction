@@ -1,1 +1,0 @@
-item replace entity @n[type=glow_item_frame,distance=..0.5] container.0 with air

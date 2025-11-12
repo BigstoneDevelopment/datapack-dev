@@ -3,12 +3,4 @@
 /core_build
 /experimental_build
 
-/dpm_modules
-/dpm_modules/*
-/src/core/dpm_modules/
-/src/core/dpm_modules/*
-/src/core/dpm_modules
-src/core/dpm_modules/
-src/core/dpm_modules/*
-src/core/dpm_modules
-*/dpm_modules/*
+**/dpm_modules

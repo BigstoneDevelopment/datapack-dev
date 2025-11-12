@@ -1,9 +1,0 @@
-{
-    "name": "Character LUT",
-    "description": "A Minecraft Datapack character lut.",
-    "author": "BigstoneDevelopment",
-    "licensePath": "./LICENSE.txt",
-
-    "supportedVersions": ">5",
-    "base": "./datapack"
-}

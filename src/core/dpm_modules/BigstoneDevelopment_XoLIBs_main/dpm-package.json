@@ -1,8 +1,0 @@
-{
-    "name": "XoLIBs",
-    "description": "Player-specific data into a modifiable storage location",
-    "author": "Xoliks",
-
-    "supportedVersions": ">61",
-    "base": "./datapack"
-}

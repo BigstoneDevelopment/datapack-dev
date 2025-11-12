@@ -1,1 +1,0 @@
-return run function bs.block:match/check with storage bs:out block

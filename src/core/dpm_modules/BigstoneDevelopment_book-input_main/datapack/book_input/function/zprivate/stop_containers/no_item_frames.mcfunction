@@ -1,2 +1,0 @@
-execute if data entity @n[type=item_frame,distance=..0.5] Item{id:"minecraft:writable_book",components:{"minecraft:custom_data":{bigstone_sandbox_input:1b}}} run return run function book_input:zprivate/stop_containers/extract/item_frame
-execute if entity @s[distance=..10] positioned ^ ^ ^0.1 run function book_input:zprivate/stop_containers/no_item_frames

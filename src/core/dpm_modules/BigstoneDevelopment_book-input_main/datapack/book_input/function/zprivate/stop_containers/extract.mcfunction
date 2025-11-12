@@ -1,3 +1,0 @@
-data modify storage bigstone_sandbox:input book append from block ~ ~ ~ Items[{id:"minecraft:writable_book",components:{"minecraft:custom_data":{bigstone_sandbox_input:1b}}}]
-execute unless data storage bigstone_sandbox:input book[-1].components run data modify storage bigstone_sandbox:input book[-1].components set value {}
-function book_input:zprivate/stop_containers/extract/book with storage bigstone_sandbox:input book[-1]
