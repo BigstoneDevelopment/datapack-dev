@@ -10,7 +10,7 @@ $summon text_display ~ ~ ~ {\
     teleport_duration:0,\
     Tags:["bigBlockHighlightRoot","highlightID_$(SUID)"],\
     Passengers:[\
-            {\
+    {\
             id:"minecraft:text_display",\
             see_through:0b,start_interpolation:0,\
             interpolation_duration:0,\
@@ -20,7 +20,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,16.01f],\
+                translation:[7.2f,0.0f,16.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -36,7 +36,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,0.01f],\
+                translation:[7.2f,0.0f,0.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -52,7 +52,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,0.01f],\
+                translation:[-8.8f,0.0f,0.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -68,7 +68,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,16.01f],\
+                translation:[-8.8f,0.0f,16.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -84,7 +84,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,0.01f],\
+                translation:[7.2f,0.0f,0.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -100,7 +100,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,-16.0f,16.01f],\
+                translation:[7.2f,-16.0f,16.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -116,7 +116,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,0.01f],\
+                translation:[7.2f,0.0f,0.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -132,7 +132,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,-15.99f],\
+                translation:[7.2f,0.0f,-15.992f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -148,7 +148,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,-15.99f],\
+                translation:[-8.8f,0.0f,-15.992f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -164,7 +164,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[-8.8f,0.0f,0.01f],\
+                translation:[-8.8f,0.0f,0.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -180,7 +180,7 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,0.0f,-15.99],\
+                translation:[7.2f,0.0f,-15.992],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
@@ -196,11 +196,791 @@ $summon text_display ~ ~ ~ {\
             transformation:{\
                 left_rotation:[0f,0f,0f,1f],\
                 right_rotation:[0f,0f,0f,1f],\
-                translation:[7.2f,-16.0f,0.01f],\
+                translation:[7.2f,-16.0f,0.008f],\
                 scale:[64f,64f,1f]\
             },\
             text:{"text":"　"},\
             background:$(color4)\
+        },\
+        \
+        \
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,0.0f,16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,15.95f,16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[15.977f,0.0f,16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[0.025f,0f,16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,0.0f,-16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,15.95f,-16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-15.977f,0.0f,-16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-0.025f,0f,-16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        \
+        \
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,0.0f,0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,15.95f,0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[15.977f,0.0f,0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[0.025f,0f,0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,0.0f,-0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,15.95f,-0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-15.977f,0.0f,-0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-0.025f,0f,-0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        \
+        \
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,0.0f,0.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,15.95f,0.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[15.977f,0.0f,0.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[0.025f,0f,0.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,0.0f,0.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,15.95f,0.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-15.977f,0.0f,0.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-0.025f,0f,0.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        \
+        \
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,0.0f,-16f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,15.95f,-16f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[15.977f,0.0f,-16f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[0.025f,0f,-16f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,0.0f,16f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,15.95f,16f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-15.977f,0.0f,16f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[-90f,0f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-0.025f,0f,16f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        \
+        \
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,0.0f,-16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,15.95f,-16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[15.977f,0.0f,-16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[0.025f,0f,-16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,0.0f,16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,15.95f,16.0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-15.977f,0.0f,16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-0.025f,0f,16.0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        \
+        \
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,0.0f,0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[7.2f,15.95f,0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[15.977f,0.0f,0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[0f,180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[0.025f,0f,0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,0.0f,0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-8.8f,15.95f,0f],\
+                scale:[64f,0.2f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-15.977f,0.0f,0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
+        },\
+        {\
+            id:"minecraft:text_display",\
+            see_through:1b,start_interpolation:0,\
+            interpolation_duration:0,\
+            teleport_duration:0,\
+            Rotation:[180f,-180f],\
+            brightness:{sky:15,block:15},\
+            transformation:{\
+                left_rotation:[0f,0f,0f,1f],\
+                right_rotation:[0f,0f,0f,1f],\
+                translation:[-0.025f,0f,0f],\
+                scale:[0.2f,64f,1f]\
+            },\
+            text:{"text":"　"},\
+            background:-1\
         }\
     ]\
 }
