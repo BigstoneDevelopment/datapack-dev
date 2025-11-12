@@ -1,1 +1,0 @@
-schedule function example_addon:add_components 2s

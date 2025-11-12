@@ -1,0 +1,1 @@
+$function book_input:zprivate/start {prompt:'$(prompt)'}

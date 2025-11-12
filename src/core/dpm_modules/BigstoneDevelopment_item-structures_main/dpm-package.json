@@ -1,0 +1,17 @@
+{
+    "name": "Item Structures",
+    "description": "item structures datapack, originally created by cloud wolf, updated by shuba shuba",
+    "author": "Shuba Shuba",
+    "licensePath": "./LICENSE.txt",
+
+    "supportedVersions": "80-88",
+    "base": "./datapack",
+
+    "overlays": {
+        "88": "./overlays/88"
+    },
+
+    "load": [
+        "item_structures:zprivate/init"
+    ]
+}

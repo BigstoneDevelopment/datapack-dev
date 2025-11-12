@@ -1,0 +1,43 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "ᴀ ꜱᴀɴᴅʙᴏx ꜰᴏʀ ʙɪɢꜱᴛᴏɴᴇ",
+        "color": "yellow"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "@BigstoneDevelopment                   ",
+        "italic": true,
+        "color": "gray"
+      }
+    ],
+
+    "pack_format": 80,
+
+    "min_format": 80,
+    "max_format": 88,
+
+    "supported_formats": {
+      "min_inclusive": 80,
+      "max_inclusive": 88
+    }
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "supported_versions",
+
+        "min_format": 80,
+        "max_format": 88,
+
+        "formats": {
+          "min_inclusive": 80,
+          "max_inclusive": 88
+        }
+      }
+    ]
+  }
+}
