@@ -15,7 +15,6 @@
     "dependencies": [
         "BigstoneDevelopment/bookshelf/main",
         "BigstoneDevelopment/XoLIBs/main",
-        "BigstoneDevelopment/character-lut/main",
         "BigstoneDevelopment/item-structures/main",
         "BigstoneDevelopment/book-input/main"
     ]
