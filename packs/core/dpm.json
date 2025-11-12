@@ -1,17 +1,21 @@
 {
     "name": "Bigstone Sandbox",
     "licensePath": "./LICENSE.txt",
+
     "datapackPath": "./src",
     "buildPath": "../../core_build",
+
     "load": [
         "bigstone_sandbox:main/load"
     ],
     "tick": [
         "bigstone_sandbox:main/tick"
     ],
+
     "dependencies": [
         "BigstoneDevelopment/bookshelf/main",
         "BigstoneDevelopment/XoLIBs/main",
+        "BigstoneDevelopment/character-lut/main",
         "BigstoneDevelopment/item-structures/main",
         "BigstoneDevelopment/book-input/main"
     ]
