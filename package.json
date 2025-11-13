@@ -1,0 +1,22 @@
+{
+  "name": "bigstone_sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/BigstoneDevelopment/datapack-dev#readme",
+  "bugs": {
+    "url": "https://github.com/BigstoneDevelopment/datapack-dev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigstoneDevelopment/datapack-dev.git"
+  },
+  "license": "ISC",
+  "author": "BigstoneDevelopment",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd ./packs/core && dpm build && cd ../../",
+    "dev": "cd ./packs/core && dpm dev && cd ../../",
+    "install:packages": "cd ./packs/core && dpm install && cd ../../"
+  }
+}

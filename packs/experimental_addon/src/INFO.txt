@@ -1,0 +1,16 @@
+Bigstone Sandbox Datapack
+A datapack that allows bigstoners to build with ease without needing to install mods!
+
+The datapack is mainly developed by BigstoneDevelopment
+
+
+THE WIKI:
+http://wiki.bigstone.dev/
+
+THE REPO:
+https://github.com/BigstoneDevelopment/datapack
+
+
+© Copyright 2025 BigstoneDevelopment
+
+Made by Arttale, Xoliks and Huckle

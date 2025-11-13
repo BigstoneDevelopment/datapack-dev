@@ -1,0 +1,14 @@
+{
+    "files.watcherExclude": {
+        "**/dpm_modules/**": true,
+        "**/core_build/**": true,
+        "**/experimental_build/***": true
+    },
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/.github": true,
+        "**/dpm_modules": true,
+        "**/core_build": true,
+        "**/experimental_build": true
+    }
+}
