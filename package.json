@@ -15,8 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "cd ./src/core && dpm build && cd ../../",
-    "dev": "cd ./src/core && dpm dev && cd ../../",
-    "install:packages": "cd ./src/core && dpm install && cd ../../"
+    "build": "cd ./packs/core && dpm build && cd ../../",
+    "dev": "cd ./packs/core && dpm dev && cd ../../",
+    "install:packages": "cd ./packs/core && dpm install && cd ../../"
   }
 }
