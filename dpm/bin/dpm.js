@@ -199,6 +199,7 @@ ${licenseText}`;
       if (this.logs) log.warn("No dependencies found in dpm.json.");
       return [];
     }
+    await this.importFiles(this.modulesDir, "/dpm_modules");
     if (this.logs) log.info(`Merging ${deps.length} dependencies...`);
     await Promise.all(deps.map((depOrig) => this.processDependency(depOrig)));
   }
@@ -394,7 +395,6 @@ Under MIT License`;
       await fsp.mkdir("/build");
       await fsp.mkdir("/dpm_modules");
       await this.importFiles(this.datapackSrc, "/build");
-      await this.importFiles(this.modulesDir, "/dpm_modules");
       await this.parseProjectBase();
       await this.mergeDependencies();
       await this.mergePackMetaOverlays(this.mcMeta);
