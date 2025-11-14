@@ -15,8 +15,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "cd ./packs/core && dpm build && cd ../../",
-    "dev": "cd ./packs/core && dpm dev && cd ../../",
-    "install:packages": "cd ./packs/core && dpm install && cd ../../"
+    "build": "cd ./packs/core && node ../../dpm/bin/dpm.js build && cd ../../",
+    "dev": "cd ./packs/core && node ../../dpm/bin/dpm.js dev && cd ../../",
+    "install:packages": "cd ./packs/core && node ../../dpm/bin/dpm.js install && cd ../../",
+    "setup:dpm": "cd ./dpm && npm install && cd ../"
   }
 }
