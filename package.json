@@ -18,6 +18,9 @@
     "build": "cd ./packs/core && node ../../dpm/bin/dpm.js build && cd ../../",
     "dev": "cd ./packs/core && node ../../dpm/bin/dpm.js dev && cd ../../",
     "install:packages": "cd ./packs/core && node ../../dpm/bin/dpm.js install && cd ../../",
+    "experiment:build": "cd ./packs/experimental_addon && node ../../dpm/bin/dpm.js build && cd ../../",
+    "experiment:dev": "cd ./packs/experimental_addon && node ../../dpm/bin/dpm.js dev && cd ../../",
+    "experiment:install:packages": "cd ./packs/experimental_addon && node ../../dpm/bin/dpm.js install && cd ../../",
     "setup:dpm": "cd ./dpm && npm install && cd ../"
   }
 }
