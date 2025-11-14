@@ -169,7 +169,7 @@ class DPMBuilder {
   }
   async parseProjectBase() {
     if (this.logs) log.info("Parsing project datapack...");
-    const meta = await fsp.readFile("/build/pack.mcmeta");
+    const meta = await readJSONCached(fsp, "/build/pack.mcmeta");
     if (meta) this.mcMeta = meta;
     else throw new Error("Pack.mcmeta not found");
     if (this.config.tick) this.tickFunctions = [
@@ -198,6 +198,10 @@ ${licenseText}`;
     if (deps.length === 0) {
       if (this.logs) log.warn("No dependencies found in dpm.json.");
       return [];
+    }
+    if (!await exists(promises, this.modulesDir)) {
+      if (this.logs) log.error("No dependencies installed from dpm.json.");
+      return process.exit();
     }
     await this.importFiles(this.modulesDir, "/dpm_modules");
     if (this.logs) log.info(`Merging ${deps.length} dependencies...`);
@@ -384,8 +388,8 @@ Under MIT License`;
       creditHeader,
       ...licenses
     ].join();
-    await fsp.writeFile(path.join("build", "LICENSES.txt"), finalLicense, { encoding: "utf8" });
-    await fsp.writeFile(path.join("build", "pack.mcmeta"), JSON.stringify(this.mcMeta, null, 4));
+    await fsp.writeFile(path.join("/build", "LICENSES.txt"), finalLicense, { encoding: "utf8" });
+    await fsp.writeFile(path.join("/build", "pack.mcmeta"), JSON.stringify(this.mcMeta, null, 4));
   }
   async build() {
     try {
@@ -397,7 +401,7 @@ Under MIT License`;
       await this.importFiles(this.datapackSrc, "/build");
       await this.parseProjectBase();
       await this.mergeDependencies();
-      await this.mergePackMetaOverlays(this.mcMeta);
+      await this.mergePackMetaOverlays();
       await this.createLoadTickFunctions();
       await this.generateDummyFiles(this.dataPaths);
       await this.writeFinalBuild(this.licenseTexts);
@@ -604,54 +608,42 @@ function validateDpmConfig(config, pkgName) {
   return true;
 }
 async function install$1(pkg, projectDir) {
-  try {
-    const parts = pkg.replace(/^@/, "").split("/");
-    let [user, repo, branch = "main"] = parts;
-    if (branch == "") branch = "main";
-    if (!user || !repo) {
-      log.error(`Invalid package format: ${pkg}`);
-      return;
-    }
-    const repoUrl = `https://github.com/${user}/${repo}`;
-    const zipUrl = `${repoUrl}/archive/refs/heads/${branch}.zip`;
-    const apiUrl = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/dpm-package.json`;
-    const modulesDir = path.join(projectDir, "dpm_modules");
-    const pkgDir = path.join(modulesDir, `${user}_${repo}_${branch}`);
-    fs.mkdirSync(modulesDir, { recursive: true });
-    const config = await fetchDpmConfig(apiUrl);
-    if (!config) {
-      log.error(`${pkg} does not contain a valid dpm-package.json at the branch root.`);
-      log.debug(`Expected at: ${apiUrl}`);
-      return;
-    }
-    ;
-    if (!validateDpmConfig(config, pkg)) {
-      log.error(`Invalid dpm-package.json for ${pkg}`);
-      return;
-    }
-    ;
-    log.debug(`- ${zipUrl}`);
-    const tmpZip = path.join(modulesDir, `${repo}-${branch}.zip`);
-    await downloadFile(zipUrl, tmpZip);
-    if (!fs.existsSync(tmpZip) || fs.statSync(tmpZip).size < 500) {
-      throw new Error("Downloaded ZIP file is invalid or empty.");
-    }
-    const zip = new AdmZip(tmpZip);
-    zip.extractAllTo(modulesDir, true);
-    fs.unlinkSync(tmpZip);
-    const extractedDir = path.join(modulesDir, `${repo}-${branch}`);
-    if (fs.existsSync(pkgDir)) {
-      fs.rmSync(pkgDir, { recursive: true, force: true });
-    }
-    ;
-    if (fs.existsSync(extractedDir)) {
-      fs.renameSync(extractedDir, pkgDir);
-    }
-    ;
-    log.success(`Installed ${pkg} > ${pkgDir}`);
-  } catch (err) {
-    log.error(`Failed to install ${pkg}: ${err.message}`);
+  const parts = pkg.replace(/^@/, "").split("/");
+  let [user, repo, branch = "main"] = parts;
+  if (branch == "") branch = "main";
+  if (!user || !repo) {
+    log.error(`Invalid package format: ${pkg}`);
+    return;
   }
+  const repoUrl = `https://github.com/${user}/${repo}`;
+  const zipUrl = `${repoUrl}/archive/refs/heads/${branch}.zip`;
+  const apiUrl = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/dpm-package.json`;
+  const modulesDir = path.join(projectDir, "dpm_modules");
+  const pkgDir = path.join(modulesDir, `${user}_${repo}_${branch}`);
+  fs.mkdirSync(modulesDir, { recursive: true });
+  const config = await fetchDpmConfig(apiUrl);
+  if (!config) {
+    log.error(`${pkg} does not contain a valid dpm-package.json at the branch root.`);
+    log.debug(`Expected at: ${apiUrl}`);
+    return;
+  }
+  if (!validateDpmConfig(config, pkg)) {
+    log.error(`Invalid dpm-package.json for ${pkg}`);
+    return;
+  }
+  log.debug(`- ${zipUrl}`);
+  const tmpZip = path.join(modulesDir, `${repo}-${branch}.zip`);
+  await downloadFile(zipUrl, tmpZip);
+  if (!fs.existsSync(tmpZip) || fs.statSync(tmpZip).size < 500) {
+    throw new Error("Downloaded ZIP file is invalid or empty.");
+  }
+  const zip = new AdmZip(tmpZip);
+  var zipEntries = zip.getEntries();
+  zipEntries.forEach(function(zipEntry) {
+    console.log(`${repo}-${branch}`, zipEntry.entryName);
+  });
+  zip.extractEntryTo(`${repo}-${branch}/`, pkgDir, false, true);
+  log.success(`Installed ${pkg} > ${pkgDir}`);
 }
 const install = {
   name: "install [packages...]",
@@ -715,16 +707,18 @@ const install = {
       log.success("Updated dependencies in dpm.json");
     }
     log.line();
+    let successCount = 0;
     for (const pkg of targets) {
       log.info(`Installing ${pkg}...`);
       try {
         await install$1(pkg, projectDir);
+        successCount++;
       } catch (err) {
         log.error(`Failed to install ${pkg}: ${err.message}`);
       }
     }
     log.line();
-    log.success("All packages installed successfully.");
+    log.success(`${successCount} package(s) installed successfully.`);
     process.exit();
   }
 };
