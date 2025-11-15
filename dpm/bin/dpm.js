@@ -239,6 +239,10 @@ ${licenseText}`;
     const depBase = path.join(depPath, depConfig.base || "./datapack");
     const depBuildPath = path.join("/build", depName);
     const depDataPath = path.join(depBuildPath, "data");
+    if (!await exists(fsp, depBase)) {
+      log.warn(`Invalid DPM package (missing datapack path): ${dep}`);
+      return;
+    }
     await fsp.mkdir(depBuildPath, { recursive: true });
     await copyRecursive(fsp, depBase, depDataPath);
     this.dataPaths.push(depDataPath);
@@ -639,6 +643,7 @@ async function install$1(pkg, projectDir) {
   }
   const zip = new AdmZip(tmpZip);
   zip.extractEntryTo(`${repo}-${branch}/`, pkgDir, false, true);
+  fs.unlinkSync(tmpZip);
   log.success(`Installed ${pkg} > ${pkgDir}`);
 }
 const install = {
