@@ -845,13 +845,18 @@ const __vite_glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   default: uninstall
 }, Symbol.toStringTag, { value: "Module" }));
-const program = new Command();
-const modules = /* @__PURE__ */ Object.assign({ "./commands/build.js": __vite_glob_0_0, "./commands/dev.js": __vite_glob_0_1, "./commands/info.js": __vite_glob_0_2, "./commands/install.js": __vite_glob_0_3, "./commands/package.js": __vite_glob_0_4, "./commands/uninstall.js": __vite_glob_0_5 });
-for (const path2 in modules) {
-  const mod = modules[path2];
-  const cmd = mod.default;
-  if (!cmd) continue;
-  const sub = program.command(cmd.name).description(cmd.description).action(cmd.run);
-  if (cmd.alias) sub.alias(cmd.alias);
+function run(argv = process.argv) {
+  const program = new Command();
+  const modules = /* @__PURE__ */ Object.assign({ "./commands/build.js": __vite_glob_0_0, "./commands/dev.js": __vite_glob_0_1, "./commands/info.js": __vite_glob_0_2, "./commands/install.js": __vite_glob_0_3, "./commands/package.js": __vite_glob_0_4, "./commands/uninstall.js": __vite_glob_0_5 });
+  for (const path2 in modules) {
+    const mod = modules[path2];
+    const cmd = mod.default;
+    if (!cmd) continue;
+    const sub = program.command(cmd.name).description(cmd.description).action(cmd.run);
+    if (cmd.alias) sub.alias(cmd.alias);
+  }
+  program.parse(argv);
 }
-program.parse(process.argv);
+export {
+  run as default
+};
