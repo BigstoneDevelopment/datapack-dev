@@ -125,6 +125,7 @@ class DPMBuilder {
     async function walk(rdir, vdir) {
       const items = await promises.readdir(rdir, { withFileTypes: true });
       for (const item of items) {
+        if (item.name.startsWith(".")) continue;
         const src = path.join(rdir, item.name);
         const dst = path.join(vdir, item.name);
         if (item.isDirectory()) {
@@ -237,19 +238,16 @@ ${licenseText}`;
       ...depConfig.load
     ];
     const depBase = path.join(depPath, depConfig.base || "./datapack");
-    const depBuildPath = path.join("/build", depName);
-    const depDataPath = path.join(depBuildPath, "data");
     if (!await exists(fsp, depBase)) {
       log.warn(`Invalid DPM package (missing datapack path): ${dep}`);
       return;
     }
-    await fsp.mkdir(depBuildPath, { recursive: true });
+    const depDataPath = path.join("/build", "data");
+    if (!await exists(fsp, depDataPath)) {
+      log.warn(`Invalid datapack src`);
+      return process.exit();
+    }
     await copyRecursive(fsp, depBase, depDataPath);
-    this.dataPaths.push(depDataPath);
-    this.overlays.push({
-      range: depConfig.supportedVersions || "*",
-      directory: depName
-    });
     if (depConfig.overlays) {
       for await (const [key, overlayPath] of Object.entries(depConfig.overlays)) {
         const folderName = path.basename(path.join(depPath, overlayPath));
@@ -343,11 +341,10 @@ ${licenseText}`;
       if (await exists(fsp, loadTagPath2)) await fsp.rm(loadTagPath2);
       if (await exists(fsp, tickTagPath2)) await fsp.rm(tickTagPath2);
     }
-    const tagFunctionPath = path.join("build", "data", "minecraft", "tags", "function");
+    const tagFunctionPath = path.join("/build", "data", "minecraft", "tags", "function");
     const loadTagPath = path.join(tagFunctionPath, "load.json");
     const tickTagPath = path.join(tagFunctionPath, "tick.json");
-    await fsp.mkdir(path.dirname(loadTagPath), { recursive: true });
-    await fsp.mkdir(path.dirname(tickTagPath), { recursive: true });
+    await fsp.mkdir(path.dirname(tagFunctionPath), { recursive: true });
     await fsp.writeFile(loadTagPath, JSON.stringify({
       values: this.loadFunctions
     }, null, 4));
@@ -356,28 +353,17 @@ ${licenseText}`;
       values: this.tickFunctions
     }, null, 4));
   }
-  async generateDummyFiles(dataPaths) {
-    const creditHeader = ``;
-    const targetDataDir = path.join("/build", "data");
-    const tasks = [];
-    for (const sourcePath of dataPaths) {
-      if (!await exists(fsp, sourcePath)) continue;
-      log.debug(`Overlay: scanning ${sourcePath}`);
-      tasks.push(this.copyDummyRecursive(sourcePath, targetDataDir, creditHeader));
-    }
-    await Promise.all(tasks);
-  }
-  async copyDummyRecursive(src, dest, content) {
+  async copyDummyRecursive(src, dest) {
     const entries = await fsp.readdir(src, { withFileTypes: true });
     await Promise.all(entries.map(async (entry) => {
       const srcFull = path.join(src, entry.name);
       const destFull = path.join(dest, entry.name);
       if (entry.isDirectory()) {
         await fsp.mkdir(destFull, { recursive: true });
-        return this.copyDummyRecursive(srcFull, destFull, content);
+        return this.copyDummyRecursive(srcFull, destFull);
       } else {
         await fsp.mkdir(path.dirname(destFull), { recursive: true });
-        return fsp.writeFile(destFull, content, { encoding: "utf8" });
+        return fsp.writeFile(destFull, "", { encoding: "utf8" });
       }
     }));
   }
@@ -407,7 +393,6 @@ Under MIT License`;
       await this.mergeDependencies();
       await this.mergePackMetaOverlays();
       await this.createLoadTickFunctions();
-      await this.generateDummyFiles(this.dataPaths);
       await this.writeFinalBuild(this.licenseTexts);
       await this.exportFiles("/build", this.buildDir);
     } catch (e) {

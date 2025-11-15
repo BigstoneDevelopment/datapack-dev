@@ -13,7 +13,7 @@
         "BigstoneDevelopment/bookshelf/main",
         "BigstoneDevelopment/XoLIBs/main",
         "BigstoneDevelopment/item-structures/main",
-        "BigstoneDevelopment/book-input/main",
-        "BigstoneDevelopment/character-lut/main"
+        "BigstoneDevelopment/character-lut/main",
+        "BigstoneDevelopment/book-input/main"
     ]
 }
