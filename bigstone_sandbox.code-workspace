@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "./packs/core/src/data/bigstone_sandbox",
+			"path": "./packs/core/src/data",
 			"name": "Datapack"
 		},
 		{
