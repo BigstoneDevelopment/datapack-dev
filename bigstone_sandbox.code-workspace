@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "./packs/core/src/data/bigstone_sandbox",
+			"name": "Datapack"
+		},
+		{
+			"path": "./packs/experimental_addon/src/data",
+			"name": "Experimental Addon"
+		},
+		{
+			"path": "../../../resourcepacks/bigstone_sandbox/assets",
+			"name": "Resource Pack"
+		},
+		{
+			"path": ".",
+			"name": "[/] Datapack"
+		},
+		{
+			"path": "../../../resourcepacks/bigstone_sandbox",
+			"name": "[/] Resource Pack"
+		}
+	],
+	"settings": {}
+}
