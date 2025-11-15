@@ -638,10 +638,6 @@ async function install$1(pkg, projectDir) {
     throw new Error("Downloaded ZIP file is invalid or empty.");
   }
   const zip = new AdmZip(tmpZip);
-  var zipEntries = zip.getEntries();
-  zipEntries.forEach(function(zipEntry) {
-    console.log(`${repo}-${branch}`, zipEntry.entryName);
-  });
   zip.extractEntryTo(`${repo}-${branch}/`, pkgDir, false, true);
   log.success(`Installed ${pkg} > ${pkgDir}`);
 }
