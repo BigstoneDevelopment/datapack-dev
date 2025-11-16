@@ -341,6 +341,7 @@ data modify storage bigstone_sandbox:data temp.body append value \
   "contents": [ \
     { \
       "translate": "bigstone_sandbox.dialog_menu.background.bottom", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0 \
     } \

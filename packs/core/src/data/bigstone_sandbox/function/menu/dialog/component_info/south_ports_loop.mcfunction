@@ -8,7 +8,8 @@ execute if data storage bigstone_sandbox:data temp.component.source.ports.south[
 { \
   "extra": [ \
     { \
-      "translate": "bigstone_sandbox.dialog_menu.port_delimiter" \
+      "translate": "bigstone_sandbox.dialog_menu.port_delimiter", \
+      "fallback": ", " \
     } \
   ] \
 }
