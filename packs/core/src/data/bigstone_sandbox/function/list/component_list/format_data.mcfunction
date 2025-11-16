@@ -19,7 +19,9 @@ data modify storage bigstone_sandbox:data temp.component.item.components."minecr
 execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.managers set value [{}]
 execute if entity @s[type=player] run data modify storage bigstone_sandbox:data temp.component.data.managers[0].UUID set from entity @s UUID 
 
-data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:item_name".text set from storage bigstone_sandbox:data temp.component.source.component_name
+#data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:item_name".text set from storage bigstone_sandbox:data temp.component.source.component_name
+data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:item_name"[0].with[0].text set from storage bigstone_sandbox:data temp.component.source.component_name
+data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:item_name"[1].fallback set from storage bigstone_sandbox:data temp.component.source.component_name
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[0].text set from storage bigstone_sandbox:data temp.component.source.description
 data modify storage bigstone_sandbox:data temp.component.item.components."minecraft:lore"[1].with[0] set from storage bigstone_sandbox:data temp.component.source.creator
 

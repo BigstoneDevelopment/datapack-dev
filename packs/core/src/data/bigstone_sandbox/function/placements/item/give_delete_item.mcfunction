@@ -1,23 +1,43 @@
 give @s music_disc_creator[ \
-                        custom_name={ \
-                            "color": "red", \
-                            "text": "Component Breaker", \
-                            "italic": 0b, \
-                            "font": "bigstone_sandbox:small_caps" \
-                        }, \
+                        custom_name=[ \
+                            { \
+                                "color": "red", \
+                                "translate": "bigstone_sandbox.item.component_breaker", \
+                                "fallback": "", \
+                                "italic": 0b, \
+                                "font": "bigstone_sandbox:small_caps" \
+                            }, \
+                            { \
+                                "color": "red", \
+                                "translate": "bigstone_sandbox.dialog_menu.empty", \
+                                "fallback": "Component Breaker", \
+                                "italic": 0b, \
+                                "font": "minecraft:default" \
+                            } \
+                        ], \
                         item_model="bigstone_sandbox:component_breaker", \
                         lore=[ \
                             { \
                                 "color": "gray", \
-                                "text": "Used to break Bigstone components safely.", \
+                                "translate": "bigstone_sandbox.item.component_breaker_description", \
+                                "fallback": "Used to break Bigstone components safely.", \
                                 "italic": 0b \
                             }, \
                             "", \
-                            { \
-                                "color": "yellow", \
-                                "text": "Right click to use", \
-                                "font": "bigstone_sandbox:small_caps" \
-                            } \
+                            [ \
+                                { \
+                                    "color": "yellow", \
+                                    "translate": "bigstone_sandbox.item.right_click_action", \
+                                    "fallback": "", \
+                                    "font": "bigstone_sandbox:small_caps" \
+                                }, \
+                                { \
+                                    "color": "yellow", \
+                                    "translate": "bigstone_sandbox.dialog_menu.empty", \
+                                    "fallback": "Right click to use", \
+                                    "font": "minecraft:default" \
+                                } \
+                            ] \
                         ], \
                         custom_data={ \
                             "item_use_effect":{ \

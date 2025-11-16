@@ -2,19 +2,55 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
 { \
   "type": "minecraft:plain_message", \
   "contents": [ \
+    "", \
     { \
-      "text": "" \
+      "translate": "bigstone_sandbox.dialog_menu.empty", \
+      "fallback": "WARNING!\n", \
+      "color": "red", \
+      "bold": true \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.empty", \
+      "fallback": "Bigstone Sandbox ", \
+      "color": "gold" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.empty", \
+      "fallback": "requires a " \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.empty", \
+      "fallback": "resource pack", \
+      "color": "blue", \
+      "underlined": true, \
+      "click_event": { \
+        "action": "open_url", \
+        "url": "https://github.com/BigstoneDevelopment/resource-pack" \
+      }, \
+      "hover_event": { \
+        "action": "show_text", \
+        "value": { \
+          "text": "Click to download" \
+        } \
+      } \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.empty", \
+      "fallback": " please download and install it" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.background.top", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0 \
     }, \
     { \
       "translate": "newline_2", \
+      "fallback": "" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.home", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -31,10 +67,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.22", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.previous_page", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -51,10 +89,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.15", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.saver", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -71,6 +111,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.breaker", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -87,10 +128,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.4", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.search", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -107,6 +150,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.filter", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -123,6 +167,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.import", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -139,10 +184,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.15", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.next_page", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -159,10 +206,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.22", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.close_menu", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
         "action": "run_command", \
@@ -179,9 +228,11 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "newline_1", \
+      "fallback": "" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0, \
       "click_event": { \
@@ -199,10 +250,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.22", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0, \
       "click_event": { \
@@ -220,10 +273,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.15", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "shadow_color": 0, \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
@@ -241,6 +296,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "shadow_color": 0, \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
@@ -258,10 +314,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.4", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "shadow_color": 0, \
       "font": "bigstone_sandbox:menu", \
       "click_event": { \
@@ -279,6 +337,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0, \
       "click_event": { \
@@ -296,6 +355,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0, \
       "click_event": { \
@@ -313,10 +373,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.15", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0, \
       "click_event": { \
@@ -334,10 +396,12 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "space.22", \
+      "fallback": "", \
       "font": "space:default" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.button.blank", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0, \
       "click_event": { \
@@ -355,9 +419,11 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "newline_1", \
+      "fallback": "" \
     }, \
     { \
       "translate": "bigstone_sandbox.dialog_menu.current_page", \
+      "fallback": "", \
       "color": "dark_gray", \
       "with": [ \
         { \
@@ -380,6 +446,7 @@ data modify storage bigstone_sandbox:data temp.body append value \
   "contents": [ \
     { \
       "translate": "bigstone_sandbox.dialog_menu.background.bottom", \
+      "fallback": "", \
       "font": "bigstone_sandbox:menu", \
       "shadow_color": 0 \
     } \

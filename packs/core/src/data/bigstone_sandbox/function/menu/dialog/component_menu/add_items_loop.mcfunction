@@ -19,7 +19,7 @@ function bigstone_sandbox:menu/dialog/component_menu/add_item_macros with storag
 scoreboard players remove item_index bigstone_sandbox.temp 2000
 
 data modify storage bigstone_sandbox:data temp.add_item.item set from storage bigstone_sandbox:data temp.menu_items[0].item
-data modify storage bigstone_sandbox:data temp.add_item.description.contents[{"text": "ERROR"}] set from storage bigstone_sandbox:data temp.menu_items[0].source.component_name
+data modify storage bigstone_sandbox:data temp.add_item.description.contents[{"with":[{"text": "ERROR"}]}].with[0] set from storage bigstone_sandbox:data temp.menu_items[0].source.component_name
 
 execute if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":true} run data modify storage bigstone_sandbox:data temp.body append from storage bigstone_sandbox:data temp.add_item
 execute if data storage bigstone_sandbox:data settings{"private":1b} if data storage bigstone_sandbox:data temp.menu_items[0].data{"public":false} run data modify storage bigstone_sandbox:data temp.body append from storage bigstone_sandbox:data temp.add_item
