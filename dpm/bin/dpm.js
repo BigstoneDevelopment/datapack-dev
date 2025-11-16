@@ -150,6 +150,7 @@ class DPMBuilder {
           await walk(src, dst);
         } else {
           const data = await fsp.readFile(src);
+          await promises.mkdir(path.dirname(dst), { recursive: true });
           await promises.writeFile(dst, data);
         }
       }
@@ -344,7 +345,7 @@ ${licenseText}`;
     const tagFunctionPath = path.join("/build", "data", "minecraft", "tags", "function");
     const loadTagPath = path.join(tagFunctionPath, "load.json");
     const tickTagPath = path.join(tagFunctionPath, "tick.json");
-    await fsp.mkdir(path.dirname(tagFunctionPath), { recursive: true });
+    await fsp.mkdir(tagFunctionPath, { recursive: true });
     await fsp.writeFile(loadTagPath, JSON.stringify({
       values: this.loadFunctions
     }, null, 4));
@@ -394,6 +395,8 @@ Under MIT License`;
       await this.mergePackMetaOverlays();
       await this.createLoadTickFunctions();
       await this.writeFinalBuild(this.licenseTexts);
+
+      if (this.logs) log.info("Exporting files...");
       await this.exportFiles("/build", this.buildDir);
     } catch (e) {
       log.error(e);
