@@ -57,6 +57,33 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
     }, \
     { \
       "translate": "newline_1" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.background.export", \
+      "font": "bigstone_sandbox:menu", \
+      "shadow_color": 0 \
+    }, \
+    { \
+      "translate": "newline_1" \
+    }, \
+    { \
+      "translate": "bigstone_sandbox.dialog_menu.temporary_item", \
+      "color": "yellow", \
+      "click_event": { \
+        "action": "run_command", \
+        "value": "trigger bigstone_sandbox_menu set -30" \
+      }, \
+      "hover_event": { \
+        "action": "show_text", \
+        "value": { \
+          "translate": "bigstone_sandbox.dialog_menu.temporary_item_hover", \
+          "color": "yellow", \
+          "font": "bigstone_sandbox:small_caps" \
+        } \
+      } \
+    }, \
+    { \
+      "translate": "newline_1" \
     } \
   ], \
   "width": 256 \

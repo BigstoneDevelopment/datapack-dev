@@ -132,7 +132,7 @@ dialog show @s \
           "translate": "newline_3" \
         }, \
         { \
-          "translate": "bigstone_sandbox.dialog_menu.uiux_artists_subtitle", \
+          "translate": "bigstone_sandbox.dialog_menu.asset_artists_subtitle", \
           "color": "gray", \
           "shadow_color": 0 \
         }, \
@@ -148,7 +148,7 @@ dialog show @s \
           "translate": "newline_1" \
         }, \
         { \
-          "translate": "bigstone_sandbox.dialog_menu.credits.uiux_artists", \
+          "translate": "bigstone_sandbox.dialog_menu.credits.asset_artists", \
           "color": "dark_gray", \
           "shadow_color": 0 \
         }, \

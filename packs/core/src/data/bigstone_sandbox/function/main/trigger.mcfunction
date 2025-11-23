@@ -26,6 +26,7 @@ execute if score @s bigstone_sandbox_menu matches -26 run return run function bi
 execute if score @s bigstone_sandbox_menu matches -27 run return run function bigstone_sandbox:menu/dialog_action/save
 execute if score @s bigstone_sandbox_menu matches -28 run return run function bigstone_sandbox:placements/item/give_delete_item
 execute if score @s bigstone_sandbox_menu matches -29 run return run function bigstone_sandbox:placements/item/give_save_item
+execute if score @s bigstone_sandbox_menu matches -30 run return run function bigstone_sandbox:menu/dialog_action/temp_item
 execute if score @s bigstone_sandbox_menu matches 1000..1999 run return run function bigstone_sandbox:menu/dialog_action/quick_info
 execute if score @s bigstone_sandbox_menu matches 2000..2999 run return run function bigstone_sandbox:menu/dialog_action/quick_give
 execute if score @s bigstone_sandbox_menu matches 100000..199999 run return run function bigstone_sandbox:menu/dialog_action/toggle_filter
