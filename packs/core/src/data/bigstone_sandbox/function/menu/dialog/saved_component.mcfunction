@@ -1,3 +1,7 @@
+# save to player for temp item
+function xolibs:api/playerdata/load
+data modify storage bigstone_sandbox:playerdata storage.bigstone_sandbox.temp_saved.save set from storage bigstone_sandbox:structures save
+
 data remove storage bigstone_sandbox:data temp.body
 data remove storage bigstone_sandbox:data temp.source_data
 
