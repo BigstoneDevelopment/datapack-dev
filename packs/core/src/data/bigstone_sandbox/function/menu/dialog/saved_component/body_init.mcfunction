@@ -71,7 +71,7 @@ data modify storage bigstone_sandbox:data temp.body prepend value \
       "color": "yellow", \
       "click_event": { \
         "action": "run_command", \
-        "value": "trigger bigstone_sandbox_menu set -30" \
+        "command": "trigger bigstone_sandbox_menu set -30" \
       }, \
       "hover_event": { \
         "action": "show_text", \
